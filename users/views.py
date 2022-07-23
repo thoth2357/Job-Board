@@ -25,8 +25,8 @@ def register(request):
         if form.is_valid():
              form.save()
              user = form.cleaned_data.get('username')
-             messages.success(request, 'Account was created for' + user)
-             return redirect('home_page')
+             messages.success(request, 'Account was created successfully for user:' + user  )
+             return redirect('login')
         else:
             messages.error(request, 'Error Processing Your Request')
             context = {'form' : form}
@@ -61,6 +61,36 @@ def create_resume(request):
         return render(request, 'create-resume.html', context) # passing in context means you are passing  context = {'form': form}
 
 
-class ResumeDetailView(DetailView):
+class ResumeDetailView(DetailView): #class based view require must less coding compared to function based view
     model = Resume
     template_name = 'resume-detail.html'
+
+def resume_detail(request, slug):
+    obj = Resume.objects.get(slug = slug)
+    
+    educations =  Education.objects.filter(resume=obj) 
+    context = {}  
+    context['object'] = obj #we can use object... in our HTML file now with this
+    context['educations'] = educations
+    
+    if request.method == 'POST':
+        edu_form = EducationForm(request.POST)
+        if edu_form.is_valid():
+            o = edu_form.save(commit=False)
+            
+            o.resume = obj
+            o.save()
+            
+            messages.success(request, 'Resume updated Succesfully')
+            return redirect('profile')  #('resume-detail', slug = slug)
+        else:
+            messages.error(request, 'Error Processing your Request')
+            context['edu_form'] = edu_form
+            return render(request, 'resume-detail.html', context)
+        
+    if request.method == 'GET':
+        edu_form = EducationForm()
+        context['edu_form'] = edu_form
+        return render(request,  'resume-detail.html', context)
+    
+    return render(request, 'resume-detail.html', context)
