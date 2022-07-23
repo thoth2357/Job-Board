@@ -128,3 +128,47 @@ class ResumeForm(forms.ModelForm):
         'cover_letter',
          'cv'
         ]
+        
+class EducationForm(forms.ModelForm):
+    LEVEL5A = 'NQF 5 - Certificate'
+    LEVEL5B = 'NQF 5 - Higher Certificate'
+    LEVEL5C = 'NQF 5 - First Diploma'
+    LEVEL6A = 'NQF 6 - Batchelors Degree'
+    LEVEL6B = 'NQF 6 - Professional first degree postgraduate'
+    LEVEL6C = 'NQF 6 - General first degree'
+    LEVEL7A = 'NQF 7 - Postgraduate Diploma'
+    LEVEL7B = 'NQF 7 - Honours Degree'
+    LEVEL7C = 'NQF 7 - Masters Degree'
+    LEVEL8 = 'NQF 8 - Doctors Degree'
+    
+    LEVEL_CHOICES = [
+    (LEVEL5A, 'NQF 5 - Certificate'),
+    (LEVEL5B, 'NQF 5 - Higher Certificate'),
+    (LEVEL5C, 'NQF 5 - First Diploma'),
+    (LEVEL6A, 'NQF 6 - Batchelors Degree'),
+    (LEVEL6B, 'NQF 6 - Professional first degree postgraduate'),
+    (LEVEL6C, 'NQF 6 - General first degree'),
+    (LEVEL7A, 'NQF 7 - Postgraduate Diploma'),
+    (LEVEL7B, 'NQF 7 - Honours Degree'),
+    (LEVEL7C, 'NQF 7 - Masters Degree'),
+    (LEVEL8, 'NQF 8 - Doctors Degree'),
+    ]
+    
+    
+    institution = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control resume', 'placeholder': 'Enter Institution Name'}))
+    qualification = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control resume', 'placeholder': 'Enter qualification'}))
+    degree = forms.ChoiceField(choices = LEVEL_CHOICES, widget=forms.Select(attrs={'class': 'nice-select rounded'}))
+    start_date = forms.DateField(required=True, widget=forms.DateInput(attrs={'class': 'form-control', 'placeholder': 'Enter start date: '}))
+    graduated = forms.DateField(required=True, widget=forms.DateInput(attrs={'class': 'form-control', 'placeholder': 'Enter graduation date: '}))
+    major_subject = forms.CharField(required=True, widget=forms.TextInput(attrs={'class': 'form-control resume', 'placeholder': 'Enter major subject'}))
+    
+    class Meta:
+        model = Education
+        fields = [
+            'institution', 
+            'qualification',
+            'degree',
+            'start_date', 
+            'graduated',
+            'major_subject'
+        ]
