@@ -94,10 +94,32 @@
     </header>
 
     <!-- HOME -->
+    {% if messages %}
+    {% for message in messages %}
+ 
+    {% if message.tags == 'error' %}
+   <div class = 'alert alert-danger'>
+    {{ message }}
+   </div>
+   {% else %}
+   <div class = 'alert alert-{{ message.tags }}'>
+    {{ message }}
+   </div>
+   {% endif %}
+ 
+   {% endfor %}
+   {% endif %}
     <section class="site-section">
         <div class="container">
           <div class="row">
-           {% csrf_token %}
+          
+           <form class="p-4 border rounded" method = 'POST' enctype="multipart/form-data" >
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            <!-- DEBUG -->
+                      {% for field in form %}
+                          {% if field.errors %}{{ field.html_name }}: {{ field.errors }}{% endif %}
+                      {% endfor %}
             {% comment %} <div class="spinner-border text-primary ">
               <h2 class="mb-4">Make your Resume</h2>
               <form class="p-4 border rounded", submit= 'POST' enctype="multipart/form-data" > nctype="multipart/form-data"  add this
@@ -180,14 +202,8 @@
                       <label class="text-muted" >Profile Image</label>
                       {{ form.image }}
                     </div>
-                    {% if form.image.errors %}
-                      {% for error in form.image.errors %}
-                      <div class="alert alert-danger">
-                        <strong>{{ error|escape }}</strong>
-                      </div>
-                    {% endfor %}
-                    {% endif %}
-                   </div>
+                    
+                   
                    <div class="col-md-12"
 
                     <div class="form-group app-label">
@@ -196,26 +212,64 @@
                       <label class="text-muted" >Ethnicity</label>
                       {{ form.ethnicity }}
                     </div>
-                    {% if form.ethnicity.errors %}
-                      {% for error in form.ethnicity.errors %}
-                      <div class="alert alert-danger">
-                        <strong>{{ error|escape }}</strong>
-                      </div>
-                    {% endfor %}
-                    {% endif %}
+                    
                    </div>
-                   <label class="text-muted" >Ethnicity</label>
+                   <label class="text-muted" >Date birth</label>
                    {{ form.date_birth }}
                  </div>
-                 {% if form.date_birth.errors %}
-                   {% for error in form.date_birth.errors %}
-                   <div class="alert alert-danger">
-                     <strong>{{ error|escape }}</strong>
-                   </div>
-                 {% endfor %}
-                 {% endif %}
+                
                 </div>
-                  <div class="row form-group">
+              <div>
+                <label class="text-muted" >Gender</label>
+                {{ form.sex}}
+              </div>
+             
+              <div>
+                <label class="text-muted" >marital_status</label>
+                {{ form.marital_status}}
+              </div>
+              
+              <div>
+                <label class="text-muted" >addressLine1</label>
+                {{ form.addressLine1}}
+              </div>
+              
+              <div>
+                <label class="text-muted" >addressLine2</label>
+                {{ form.addressLine2}}
+              </div>
+              
+              <div>
+                <label class="text-muted" >suburb</label>
+                {{ form.suburb}}
+              </div>
+              
+              <div>
+                <label class="text-muted" >city</label>
+                {{ form.city}}
+              </div>
+              
+              
+              <div>
+                <label class="text-muted" >province</label>
+                {{ form.province}}
+              </div>
+              
+              <div>
+                <label class="text-muted" >cover_letter</label>
+                {{ form.phoneNumber}}
+              </div>
+               <div>
+                <label class="text-muted" >cover_letter</label>
+                {{ form.cover_letter}}
+              </div>
+              
+              <div>
+                <label class="text-muted" >cv</label>
+                {{ form.cv}}
+              </div>
+              
+                  {% comment %} <div class="row form-group">
                     <div class="col-md-12 mb-3 mb-md-0">
                       <label class="text-black" for="fname">Username</label>
                       {{ form.username }}
@@ -233,16 +287,10 @@
                       {{ form.username }}
                     </div>
                   </div>
-                  <div class="row form-group">
-                    <div class="col-md-12 mb-3 mb-md-0">
-                      <label class="text-black" for="fname">Username</label>
-                      {{ form.username }}
-                    </div>
-                  </div>
-                </div>
+                </div> {% endcomment %}
                 <div class="row form-group">
                   <div class="col-md-12">
-                    <input type="submit" value="submit" class="btn px-4 btn-primary text-white">
+                    <input type="submit" value="create-resume" class="btn px-4 btn-primary text-white">
                   </div>
                 </div>
   
@@ -299,14 +347,7 @@
           </div>
         </div>
 
-        <div class="row text-center">
-          <div class="col-12">
-            <p class="copyright"><small>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
-          </div>
-        </div>
+       
       </div>
     </footer>
   
