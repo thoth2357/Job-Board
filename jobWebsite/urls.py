@@ -28,7 +28,7 @@ urlpatterns = [
     path('', jobs_views.home, name='home_page'),   #this is home function inside the views.py in the jobs folder
     path('register/', users_views.register, name='signup-login_page'), #if someone goes to /register they are gonna find it
     path('users/create/', users_views.create_resume, name='create-resume'), #
-    path('users/view/<slug:slug>/', users_views.ResumeDetailView.as_view(), name='create-resume'), #
+    path('users/view/<slug:slug>/', users_views.resume_detail, name='resume-detail'), #name shall be same as we have in reverse(), it is class based view
     path('profile/', users_views.profile, name='profile'), #if someone goes to /register they are gonna find it
     path('login/', auth_views.LoginView.as_view(template_name = 'login.html'), name= 'login'), #this will be class based view.For class based view, have to add as_view in the end
     path('logout/', auth_views.LogoutView.as_view(template_name = 'logout.html'), name= 'logout'), 
