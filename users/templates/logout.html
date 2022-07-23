@@ -99,21 +99,17 @@
           <div class="row">
             
             <div class="col-lg-6">
-              <h2 class="mb-4">You have been logged in </h2>
+              <h2 class="mb-4">You have been logged out </h2>
               <form class="p-4 border rounded", submit= 'POST'>
   
-                <a href="{{% url 'login' %}}" class="smoothscroll scroll-top">
-                    <span class="icon-keyboard_arrow_up"></span>
+                <a href="{% url 'login' %}" class="smoothscroll scroll-top">
+                    Login
                 </a>
-                <a href="{{% url 'home_page' %}}" class="smoothscroll scroll-top">
-                    <span class="icon-keyboard_arrow_up"></span>
+                <a href="{% url 'home_page' %}" class="smoothscroll scroll-top">
+                   Home Page
                 </a>
   
-                <div class="row form-group">
-                  <div class="col-md-12">
-                    <input type="submit" value="Log In" class="btn px-4 btn-primary text-white">
-                  </div>
-                </div>
+                
   
               </form>
             </div>
