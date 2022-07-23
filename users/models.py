@@ -100,7 +100,7 @@ class Resume(models.Model):
         return '{} {} {}'.format(self.first_name,self.user.last_name, self.uniqueId)
     
     
-    def get_absolute_url(self):
+    def get_absolute_url(self):  #we will give slug to it, which will be self.first_name,self.user.last_name, self.uniqueId, this is how we will navigate to detail page
         return reverse('resume-detail', kwargs ={'slug' : self.slug}) #
     
     
@@ -123,3 +123,47 @@ class Resume(models.Model):
         
         
         super(Resume, self).save(*args, **kwargs)
+
+class Education(models.Model):
+    LEVEL5A = 'NQF 5 - Certificate'
+    LEVEL5B = 'NQF 5 - Higher Certificate'
+    LEVEL5C = 'NQF 5 - First Diploma'
+    LEVEL6A = 'NQF 6 - Batchelors Degree'
+    LEVEL6B = 'NQF 6 - Professional first degree postgraduate'
+    LEVEL6C = 'NQF 6 - General first degree'
+    LEVEL7A = 'NQF 7 - Postgraduate Diploma'
+    LEVEL7B = 'NQF 7 - Honours Degree'
+    LEVEL7C = 'NQF 7 - Masters Degree'
+    LEVEL8 = 'NQF 8 - Doctors Degree'
+    
+    LEVEL_CHOICES = [
+    (LEVEL5A, 'NQF 5 - Certificate'),
+    (LEVEL5B, 'NQF 5 - Higher Certificate'),
+    (LEVEL5C, 'NQF 5 - First Diploma'),
+    (LEVEL6A, 'NQF 6 - Batchelors Degree'),
+    (LEVEL6B, 'NQF 6 - Professional first degree postgraduate'),
+    (LEVEL6C, 'NQF 6 - General first degree'),
+    (LEVEL7A, 'NQF 7 - Postgraduate Diploma'),
+    (LEVEL7B, 'NQF 7 - Honours Degree'),
+    (LEVEL7C, 'NQF 7 - Masters Degree'),
+    (LEVEL8, 'NQF 8 - Doctors Degree'),
+    ]
+    
+    institution = models.CharField(null=True, blank =True, max_length=200)
+    qualification = models.CharField(null=True, blank =True, max_length=200)
+    degree = models.CharField(choices=LEVEL_CHOICES, default=LEVEL5A , max_length=200)
+    start_date = models.DateField(blank=True, null=True)
+    graduated = models.DateField(blank=True, null=True)
+    major_subject = models.CharField(null=True, blank=True, max_length=200)
+    date_created = models.DateTimeField(default=timezone.now)
+    resume = models.ForeignKey(Resume, on_delete=models.CASCADE)
+    
+    
+    def __str__(self):
+        return '{} for {} {}'.format(self.qualification, self.resume.user.first_name, self.resume.user.last_name)
+ 
+        
+    
+    
+    
+    
