@@ -53,9 +53,15 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
+                {% if user.resume  %}
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#contact">Complete/Update Resume</a>
+                  <a class="nav-link js-scroll-trigger" href="{% url 'resume-detail' user.resume.slug %}">View Resume</a> {% comment "" %} once we have slug we should mention it there like user.resume.slug{% endcomment %}
               </li>
+              {% else  %}
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="{% url 'create-resume' %}">Create Resume</a>
+              </li>
+              {% endif %}
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contact">Search for Jobs</a>
             </li>
@@ -293,6 +299,96 @@
                         SKILLS
     ======================================================-->       
       <section class=" d-flex flex-column" id="skills">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addEducation">
+          <span class = "mdi mdi-plus mdi-24px"></span> {% comment "This is to give a button design like icon button property in flutter" %}{% endcomment %}  
+            Add Education
+        </button>
+
+        {% if educations %}
+        {% for education in educations %}
+        <div class="col-lg-12 mt-4 pt-2">
+          <div class="component -wrapper rounded shadow">
+            <div class="p-4 border-bottom bg-light">
+              <h4 class="title mb-0">{{ education.institution }}</h4>
+            </div>
+
+            <div class="p-4">
+              <div class="row">
+                <div class="col">
+                  <p><strong>Qualification: </strong> {{ education.qualification }}</p>
+                </div>
+
+                <div class="col">
+                  <p><strong>Level of qualification </strong> {{ education.level }}</p>
+                </div>
+
+                <div class="col">
+                  <p><strong>Start Date: </strong> {{ education.start_date }}</p>
+                </div>
+
+                <div class="col">
+                  <p><strong>End Date: </strong> {{ education.start_date }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+          <!-- Modal -->
+        <div class="modal fade" id="#addEducation" tabindex="-1"  aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                <form class="p-4 border rounded" method = 'POST' enctype="multipart/form-data" >
+                  {% csrf_token %}
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                   <div class="modal-body">
+                    <div class="form-group app-label">
+
+
+                      <label class="text-muted" >Profile Image</label>
+                      {{ edu_form.institution }}
+                    </div>
+                    <div class="form-group app-label">
+
+
+                      <label class="text-muted" >Qualification</label>
+                      {{ edu_form.qualification }}
+                    </div>
+                    <div>
+                     <label class="text-muted" >Degree</label>
+                      {{ edu_form.degree }}
+                    </div>
+                    <div>
+                     <label class="text-muted" >Education Start Date</label>
+                      {{ edu_form.start_date }}
+                    </div>
+                    <div>
+                     <label class="text-muted" >Graduation Date</label>
+                      {{ edu_form.graduated }}
+                    </div>
+                    <div>
+                     <label class="text-muted" >Major Subject</label>
+                     {{ edu_form.major_subject }}
+                    </div>
+                    
+                      
+                       
+                   </div>
+                 <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+               </form>
+               </div>
+            </div>
+         </div>
+
          <div class="p-lg-5 p-3 skill-cover">
           <h3 class="text-center text-white">Coding Skills</h3>
           <div class="row text-center my-auto "> 
