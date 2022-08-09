@@ -30,9 +30,12 @@ urlpatterns = [
     path('users/create/', users_views.create_resume, name='create-resume'), #
     path('users/view/<slug:slug>/', users_views.resume_detail, name='resume-detail'), #name shall be same as we have in reverse(), it is class based view
     path('profile/', users_views.profile, name='profile'), #if someone goes to /register they are gonna find it
+    path('jobs/', jobs_views.job_list, name='job-list'),
+    path('jobs/<slug:slug>', jobs_views.job_detail, name='job-detail'), #slug will help us identify the specific instance of job
     path('login/', auth_views.LoginView.as_view(template_name = 'login.html'), name= 'login'), #this will be class based view.For class based view, have to add as_view in the end
     path('logout/', auth_views.LogoutView.as_view(template_name = 'logout.html'), name= 'logout'), 
     path('logging-in/', users_views.login, name= 'logging'),
+    
 ]
 
 if settings.DEBUG:
