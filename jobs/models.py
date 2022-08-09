@@ -105,7 +105,7 @@ class Jobs(models.Model):
     location = models.CharField(max_length=200)
     salary = models.CharField(max_length=100)
     uniqueId = models.CharField(null=True, blank=True, max_length=100 )
-    type = models.CharField(max_length=10,choices =TYPE_CHOICES, default=FULL_TIME)
+    type = models.CharField(max_length=10,choices =TYPE_CHOICES, default=FULL_TIME,null=True, blank=True,)
     experience = models.CharField(max_length=10,choices = EXP_CHOICES, default = TIER1)
     summary = models.TextField(null=True, blank=True) #text ffield is bigger than char field, more area to write stuff
     description = models.TextField(null=True, blank=True) 
