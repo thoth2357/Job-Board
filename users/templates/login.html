@@ -4,23 +4,24 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>JobBoard </title>
+    <title>jobWebsite</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Free-Template.co" />
+    <link rel="shortcut icon" href="ftco-32x32.png">
     
     <link rel="stylesheet" href="{% static 'app/css/custom-bs.css' %}">
-    <link rel="stylesheet" href="{% static 'app/css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/jquery.fancybox.min.css' %}"> 
     <link rel="stylesheet" href="{% static 'app/css/bootstrap-select.min.css' %}">
     <link rel="stylesheet" href="{% static 'app/fonts/icomoon/style.css' %}">
     <link rel="stylesheet" href="{% static 'app/fonts/line-icons/style.css' %}">
     <link rel="stylesheet" href="{% static 'app/css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'app/css/animate.min.css' %}">
-    <link rel="stylesheet" href="{% static 'app/css/quill.snow.css' %}">
-    
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="{% static 'app/css/style.css ' %}">   
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">  
   </head>
   <body id="top">
 
@@ -52,39 +53,59 @@
 
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="index.html" class="nav-link">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="#" class="nav-link active">Home</a></li>
+              <li><a href="#">About</a></li>
               <li class="has-children">
-                <a href="job-listings.html">Job Listings</a>
+                <a href="#">Job Listings</a>
                 <ul class="dropdown">
-                  <li><a href="job-single.html">Job Single</a></li>
-                  <li><a href="post-job.html">Post a Job</a></li>
+                  <li><a href="#">Job Single</a></li>
+                  <li><a href="#">Post a Job</a></li>
                 </ul>
               </li>
               <li class="has-children">
                 <a href="services.html">Pages</a>
                 <ul class="dropdown">
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="service-single.html">Service Single</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="faq.html">Frequently Ask Questions</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Service Single</a></li>
+                  <li><a href="#">Blog Single</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Portfolio Single</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Frequently Ask Questions</a></li>
+                  <li><a href="#">Gallery</a></li>
                 </ul>
               </li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Post a Job</a></li>
-              <li class="d-lg-none"><a href="login.html">Log In</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+              <li class="d-lg-none"><a href="#"><span class="mr-2">+</span> Post a Job</a></li>
+              {% if user.is_authenticated %}
+              <li class="d-lg-none"><a href="#">Profile</a></li>
+              {% else %}
+              <li class="d-lg-none"><a href="#">Login</a></li>
+              {% endif %}
+
+              {% if user.is_authenticated %}
+              <li class="d-lg-none"><a href="#">{{ user.first_name }}  {{user.last_name}}</a></li>
+              {% else %}
+              <li class="d-lg-none"><a href="#">Signup</a></li>
+              {% endif %}
+
+
+              
+              <li class="d-lg-none"><a href="#">{{ user.first_name}} {{user.last_name }}</a></li>
+       
+              <li class="d-lg-none"><a href="#">Sign up</a></li>
             </ul>
           </nav>
           
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
-              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Post a Job</a>
-              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              <a href="#" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Post a Job</a>
+              {% if user.is_authenticated %}
+              <a href="#" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Profile</a>
+              {% else %}
+              <a href="#" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              {% endif %}
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
