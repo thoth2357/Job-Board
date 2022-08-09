@@ -1,9 +1,13 @@
 
+from cgi import test
+import email
+from turtle import title
 import requests
 from bs4 import BeautifulSoup
 import json
 
 import pandas as pd
+from datetime import date
 
 from jobs.models import *
 from django.contrib.auth.models import User
@@ -78,25 +82,57 @@ def transform(soup):
 
 joblist = []
 
+final_jobs = []
 for i in range(0,70,10):
     print(f'Getting page, {i}')
     c = extract(0)
 #print(transform(c))   #will tell how many there are
     transform(c)
+    final_jobs.append(transform(c))
+
+
+
+
+
+#print(transform(c))   #will tell how many there are
+     
+
+
+the_user = User.objects.get(email='bhargava.kavya2009@gmail.com')
+#the_company = Company.objects.get(uniqueId = '139266d6')
+for test_job in final_jobs: #the way this is structed is that job will only fit one category
     
-
-df = pd.DataFrame(joblist)
-
-print(df.head())
-
-
-df.to_csv('mckinesy-jobs-1.csv')
-
-final_jobs = []
-
-for x in table1:
-    job = jobScan(x)  #x will be the 
-    final_jobs.append(job)
+    if 'Director' in test_job['title']:
+        the_category = Category.objects.get(title= 'Director')
+    elif 'Engineer' in test_job['title']:
+        the_category = Category.objects.get(title= 'Engineer')
+    elif 'Developer' in test_job['title']:
+        the_category = Category.objects.get(title= 'Developer')
+    elif 'Databases' in test_job['title']:
+        the_category = Category.objects.get(title= 'Databases')
+    elif 'Business Development' in test_job['title']:
+        the_category = Category.objects.get(title= 'Business Development')
+    elif 'Technology' in test_job['title']:
+        the_category = Category.objects.get(title= 'Technology')
+    elif 'Research' in test_job['title']:
+        the_category = Category.objects.get(title= 'Research')
+    elif 'Trainee' in test_job['title']:
+        the_category = Category.objects.get(title= 'Trainee')
+    elif 'Specialist' in test_job['title']:
+        the_category = Category.objects.get(title= 'Specialist')
+    elif 'Manager' in test_job['title']:
+        the_category = Category.objects.get(title= 'Manager')
+    else:
+        the_category = Category.objects.get(title= 'Uncategorised')
     
-the_user = User.objects.get()
-    
+    newjob = Jobs.objects.create(
+        title = test_job['title'],
+        location = test_job['location'],
+        date_posted = date.today(),
+        type = test_job['type'],
+        contract_type = test_job['contract_type'],
+        urlLink = test_job['url'],
+       # company = the_company,
+        category = the_category,
+        owner = the_user,
+    )
