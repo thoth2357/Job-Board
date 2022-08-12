@@ -133,6 +133,13 @@ LOGIN_REDIRECT_URL = 'home_page'
 LOGIN_URL = '/login'
 
 
+# Celery Broker - Redis  
+CELERY_BROKER_URL = 'redis://localhost:6379'  
+CELERY_RESULT_BACKEND = 'redis://localhost:6379'  
+CELERY_ACCEPT_CONTENT = ['application/json']  
+CELERY_TASK_SERIALIZER = 'json'  
+CELERY_RESULT_SERIALIZER = 'json'  
+CELERY_TIMEZONE = "Asia/New_York"
 
 
 
