@@ -22,6 +22,8 @@ class Scraper():
         self.chrome_options.add_argument(f'user-agent={self.userAgent}')
         self.URL = ""
     def get_driver_headless(self):
+        """
+        Returns a webdriver object
+        """
         return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_options)
     
-    def 
