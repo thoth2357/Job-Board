@@ -9,7 +9,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from fake_useragent import UserAgent
 
 
-
 class Scraper():
     def __init__(self) -> None:
         #chrome option
@@ -35,5 +34,4 @@ class Scraper():
         """
         driver.get(URL)
         return driver.page_source
-    
     
