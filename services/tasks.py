@@ -8,6 +8,8 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from fake_useragent import UserAgent
 
+#importing model from models.py
+from .models import Scraping_Service
 
 class Scraper():
     def __init__(self) -> None:
@@ -34,4 +36,14 @@ class Scraper():
         """
         driver.get(URL)
         return driver.page_source
-    
+
+def get_url_links_from_db():
+    """
+    Returns all the URLs from the database
+    """
+    return [link for link in Scraping_Service.objects.all()]
+
+def start_web_scraping():
+    Scraper = Scraper()
+    driver = Scraper.get_driver_headless()
+    page_source = Scraper.get_page_source(driver, 'https://giphy.com/login')
