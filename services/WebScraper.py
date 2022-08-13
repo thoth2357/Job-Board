@@ -1,4 +1,7 @@
 #importing modules
+
+from __future__ import absolute_import, unicode_literals
+from celery import shared_task
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -20,10 +23,17 @@ class Scraper():
         self.ua = UserAgent(use_cache_server=False)
         self.userAgent = self.ua.random
         self.chrome_options.add_argument(f'user-agent={self.userAgent}')
-        self.URL = ""
     def get_driver_headless(self):
         """
         Returns a webdriver object
         """
         return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_options)
+    
+    def get_page_source(self, driver, URL):
+        """
+        Returns the page source of the webpage
+        """
+        driver.get(URL)
+        return driver.page_source
+    
     
