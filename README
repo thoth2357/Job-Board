@@ -1,0 +1,7 @@
+#starting celery beat and worker process
+celery -A jobWebsite beat -l info --logfile=celery.beat.log --detach  
+celery -A jobWebsite worker -l info --logfile=celery.log --detach
+
+#starting redis
+redis-server --daemonize yes  
+redis-cli ping
