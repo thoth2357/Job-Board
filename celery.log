@@ -164,3 +164,399 @@ Trying again in 32.00 seconds... (16/100)
   warnings.warn('''Using settings.DEBUG leads to a memory
 
 [2022-08-27 10:52:50,445: INFO/MainProcess] celery@oyewunmi-Asteria ready.
+[2022-08-27 11:53:11,334: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '135bff8f-797c-483d-abcc-b5c8087f2e09', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '135bff8f-797c-483d-abcc-b5c8087f2e09', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen40098@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:07:04,982: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '1aa7ca1c-79a2-4af8-8c7d-f84d35f27f0c', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '1aa7ca1c-79a2-4af8-8c7d-f84d35f27f0c', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:08:04,983: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '954043d8-71cd-4798-af8e-ddbd9808c71b', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '954043d8-71cd-4798-af8e-ddbd9808c71b', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:09:04,983: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '30b6292d-1312-434d-9d53-5cf39bc6b8e8', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '30b6292d-1312-434d-9d53-5cf39bc6b8e8', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:13:04,985: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': 'f278c88a-d52c-4c05-a0f7-8d35b1e579a7', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'f278c88a-d52c-4c05-a0f7-8d35b1e579a7', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:14:04,986: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '83dbbb04-759b-4e8e-97ad-b0c2428fd0fb', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '83dbbb04-759b-4e8e-97ad-b0c2428fd0fb', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:15:04,986: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': 'eeeeb635-aa28-45b2-aa40-2841fdbb6deb', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'eeeeb635-aa28-45b2-aa40-2841fdbb6deb', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:17:04,988: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '74313011-aaa7-495f-8479-fb9b0094ff97', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '74313011-aaa7-495f-8479-fb9b0094ff97', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:18:04,988: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '8831b241-6fec-4c2d-aea6-fe316e3f9155', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '8831b241-6fec-4c2d-aea6-fe316e3f9155', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:19:04,989: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '0f4a4db7-e8b9-47f1-81bd-dd88f6b3ca34', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '0f4a4db7-e8b9-47f1-81bd-dd88f6b3ca34', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:21:05,461: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': 'cf15bf72-c9d4-472f-b31e-12c3e744c24f', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'cf15bf72-c9d4-472f-b31e-12c3e744c24f', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:24:05,463: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '000d072d-aa29-4fa6-befc-1cbc02979cb0', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '000d072d-aa29-4fa6-befc-1cbc02979cb0', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen75457@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:47:34,487: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '6c5905ca-f782-489f-8be6-ae66cf0b67a7', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '6c5905ca-f782-489f-8be6-ae66cf0b67a7', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen78948@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:48:34,475: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': 'ac1c172c-ae56-4ab7-9866-e51d604ad0be', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ac1c172c-ae56-4ab7-9866-e51d604ad0be', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen78948@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:49:34,476: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '232014d4-f16d-4e4f-892d-de4611487094', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '232014d4-f16d-4e4f-892d-de4611487094', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen78948@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:54:34,477: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': 'a8c2f037-2323-4610-838d-ddade8ede5b9', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'a8c2f037-2323-4610-838d-ddade8ede5b9', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen78948@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-27 23:59:34,477: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': 'ac761a15-1ad4-42c6-9fe3-5758c4870c84', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': 'ac761a15-1ad4-42c6-9fe3-5758c4870c84', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen78948@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
+[2022-08-28 00:04:34,489: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_indeed'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_indeed', 'id': '16d5ae77-2027-415d-b44c-44015151e7ec', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '16d5ae77-2027-415d-b44c-44015151e7ec', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen81074@oyewunmi-Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE1/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_indeed'
