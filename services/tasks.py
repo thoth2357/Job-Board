@@ -48,6 +48,4 @@ def start_web_scraping_indeed():
                     driver.get(link.url_link)
                     
                     
-
-
                 
