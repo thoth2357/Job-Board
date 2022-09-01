@@ -10,7 +10,8 @@ from fake_useragent import UserAgent
 
 #importing model from models.py
 from .models import Scraping_Service
-# from jobWebsite.celery import start_scrapping_service_indeed, start_scrapping_service_linkedin
+from bs4 import BeautifulSoup as beauty
+import cloudscraper
 
 class Scraper():
     def __init__(self) -> None:
