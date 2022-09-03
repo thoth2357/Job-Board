@@ -9,44 +9,32 @@ from webdriver_manager.chrome import ChromeDriverManager
 from fake_useragent import UserAgent
 
 #importing model from models.py
+from jobs.models import Jobs
 from .models import Scraping_Service
 from bs4 import BeautifulSoup as beauty
 import cloudscraper
-
-class Scraper():
-    def __init__(self) -> None:
-        #chrome option
-        self.chrome_options = Options()
-        self.chrome_options.add_argument("--window-size=1920,1080")
-        self.chrome_options.headless = True
-        self.chrome_options.add_argument("--disable-dev-shm-usage")
-        self.chrome_options.add_argument("--no-sandbox")
-        prefs = {"profile.managed_default_content_settings.images": 2}
-        self.chrome_options.add_experimental_option("prefs", prefs)
-        self.ua = UserAgent(use_cache_server=False)
-        self.userAgent = self.ua.random
-        self.chrome_options.add_argument(f'user-agent={self.userAgent}')
-
-        self.get_url_links_from_db()
-
-    def get_driver_headless(self):
-        """
-        Returns a webdriver object
-        """
-        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=self.chrome_options)
-        return self.driver
-
-# def   
+import re
 
 
 @shared_task
 def start_web_scraping_indeed():
-    scraper = Scraper()
-    driver = scraper.get_driver_headless()
+    scraper = cloudscraper.create_scraper(delay=10, browser='chrome') 
     for link in Scraping_Service.objects.all():
             if link.is_active:
                 if link.url_link.split('.')[1] == 'indeed':
-                    driver.get(link.url_link)
+                    info  = scraper.get(link.url_link).content
+                    soup = beauty(info, 'html.parser')
+                    jobs_card = soup.find_all('div', class_='job_seen_beacon') #get all jobs cards
+                    for card in jobs_card:
+                        job_title = card.find("span",id=re.compile("^jobTitle-")).text
+                        company_name = card.find('span',class_ = "companyName").text
+                        company_location = card.find('div',class_="companyLocation").text
+                        job_rating = card.find('span', class_="ratingNumber")['aria-label']
+                        job_duties = card.find('div', class_="job-snippet").find('li').text
+                        job_type  = card.find('div', class_="attribute_snippet")
+                        job_entry = Jobs.objects.create(title=job_title, company=company_name, location=company_location, rating=job_rating, duties=job_duties, contract_type=job_type)
+                        job_entry.save()
+                    logger                    
                     
                     
                 
