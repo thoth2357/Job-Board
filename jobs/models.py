@@ -166,7 +166,7 @@ class Jobs(models.Model):
     applications =models.TextField(null=True, blank=True)
     date_posted = models.DateTimeField(null=True, blank=True)
     contract_type = models.CharField(max_length=100, null= True, blank=True)
-    urlLink = models.CharField(max_length=500, null=True, blank=True) 
+    url_link = models.CharField(max_length=500, null=True, blank=True) 
     
     def _str_(self):
        return '{} - {} - {}'.format(self.company, self.title, self.location) #this will say "company" is looking for "title"
