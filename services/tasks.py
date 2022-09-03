@@ -29,22 +29,19 @@ def start_web_scraping_indeed():
                     soup = beauty(info, 'html.parser')
                     jobs_card = soup.find_all('div', class_='job_seen_beacon') #get all jobs cards
                     for card in jobs_card:
-                        try:
-                            job_title = card.find("span",id=re.compile("^job_").find('span')).text
-                            company_name = card.find('span',class_ = "companyName").text
-                            company_location = card.find('div',class_="companyLocation").text
-                            job_rating = card.find('span', class_="ratingNumber")['aria-label']
-                            job_duties = card.find('div', class_="job-snippet").find('li').text
-                            job_type  = card.find('div', class_="attribute_snippet")
-                            add = link.url_link.split('/')[0] + "//" + link.url_link.split('/')[2]
-                            url_link = card.find('h2', class_=re.compile("^jobTitle")).find('a')['href']
-                            url_link = add + url_link
-                            job_entry = Jobs.objects.create(title=job_title, company=company_name, location=company_location, rating=job_rating, duties=job_duties, contract_type=job_type,url_link=url_link)
-                            job_entry.save()
-                            logging.info(f'{job_title} has been added to the database')
-                        except Exception as e:
-                            logging.error(f'Error: {e}')
-                            job_entry = Jobs.objects.create(title=job_title, company=company_name, location=company_location, rating=job_rating, duties=job_duties, contract_type=job_type,url_link=url_link)
-                            job_entry.save()
+                        v=card.find_all('span')
+                        print(v)
+                        job_title = card.find("a",id=re.compile("^job_")).find('span').text
+                        company_name = card.find('span',class_ = "companyName").text
+                        company_location = card.find('div',class_="companyLocation").text
+                        job_rating = card.find('span', class_="ratingNumber")['aria-label']
+                        job_duties = card.find('div', class_="job-snippet").find('li').text
+                        job_type  = card.find('div', class_="attribute_snippet")
+                        add = link.url_link.split('/')[0] + "//" + link.url_link.split('/')[2]
+                        url_link = card.find('h2', class_=re.compile("^jobTitle")).find('a')['href']
+                        url_link = add + url_link
+                        job_entry = Jobs.objects.create(title=job_title, company=company_name, location=company_location, rating=job_rating, duties=job_duties, contract_type=job_type,url_link=url_link)
+                        job_entry.save()
+                        logging.info(f'{job_title} has been added to the database')
             else:
                 logging.info(f'{link.url_link} is not active')
