@@ -18,16 +18,18 @@ jobs_card = soup.find_all('div', class_='job_seen_beacon') #get all jobs cards
 jobs_card_span = soup.find_all('span', class_='jobtitle')
 for card in jobs_card:
             v=card.find_all('span')
-            print(card.find("span",id=re.compile("^jobTitle-")))
+            # print(v)
+            print(card.find("a",id=re.compile("^job_")).find('span').text)
             print("\n")
-            print(card.find('span',class_ = "companyName"))
+            print(card.find('span',class_ = "companyName").text)
             print("\n")
-            print(card.find('div',class_="companyLocation"))
+            print(card.find('div',class_="companyLocation").text)
             print("\n")
             print(card.find('span', class_="ratingNumber")['aria-label'])
             print("\n")
-            print(card.find('div', class_="job-snippet").find('li'))
-            break
+            print(card.find('div', class_="job-snippet").find('li').text)
+            print("\n")
+            print(card.find('h2', class_=re.compile("^jobTitle")).find('a')['href'])
 '''
 span 1 = job title  -> to find use that jobTitle exists in id
 span 2 = company name -> use span class of companyName
