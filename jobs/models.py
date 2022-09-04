@@ -1,5 +1,5 @@
 from django.db import models
-
+import uuid
 class Jobs(models.Model):
     title = models.CharField(max_length=200, null=True, blank=True)
     company = models.CharField(max_length=200, null=True, blank=True)
@@ -12,7 +12,7 @@ class Jobs(models.Model):
     requirements = models.TextField(null=True, blank=True)
     duties = models.TextField(null=True, blank=True)
     applications =models.TextField(null=True, blank=True)
-    # date_posted = models.DateTimeField(null=True, blank=True)
+    date_posted = models.DateTimeField(null=True, blank=True)
     contract_type = models.CharField(max_length=100, null= True, blank=True)
     url_link = models.CharField(max_length=500, null=True, blank=True) 
     
@@ -20,6 +20,5 @@ class Jobs(models.Model):
        return f'{self.company} {self.title} {self.location}'
     
     def save(self, *args, **kwargs):
-        
         if self.uniqueId is None:
-            self.uniqueId = str(uuid4())
+            self.uniqueId = str(uuid.uuid4())

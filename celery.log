@@ -1,27 +1,122 @@
-[2022-09-03 22:04:16,813: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[c24d0a28-6b6c-4735-8743-9f7f3cc848b8] received
-[2022-09-03 22:04:21,908: ERROR/ForkPoolWorker-6] Task services.tasks.start_web_scraping_indeed[c24d0a28-6b6c-4735-8743-9f7f3cc848b8] raised unexpected: AttributeError("'NoneType' object has no attribute 'text'")
+[2022-09-03 23:26:21,300: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[1bc99567-3f12-4c14-a0d6-2cfb81cb17f4] received
+[2022-09-03 23:26:24,637: INFO/ForkPoolWorker-6] Professional Development Specialist – McKinsey Digital (Buil... has been added to the database
+[2022-09-03 23:26:24,638: INFO/ForkPoolWorker-6] Knowledge Analyst - Delivery Modernization Hub - McKinsey Di... has been added to the database
+[2022-09-03 23:26:24,639: INFO/ForkPoolWorker-6] Office Services Coordinator has been added to the database
+[2022-09-03 23:26:24,640: INFO/ForkPoolWorker-6] Engagement Services Administrator - with Portuguese or Manda... has been added to the database
+[2022-09-03 23:26:24,640: INFO/ForkPoolWorker-6] Data Analyst has been added to the database
+[2022-09-03 23:26:24,641: INFO/ForkPoolWorker-6] Professional Development Manager – McKinsey Digital (Build H... has been added to the database
+[2022-09-03 23:26:24,641: INFO/ForkPoolWorker-6] Intern - Implementation has been added to the database
+[2022-09-03 23:26:24,641: INFO/ForkPoolWorker-6] Capabilities & Insights Analyst - Life Sciences has been added to the database
+[2022-09-03 23:26:24,642: INFO/ForkPoolWorker-6] Professional Development Manager - McKinsey Digital has been added to the database
+[2022-09-03 23:26:24,642: INFO/ForkPoolWorker-6] Senior Implementation Facilitator - FIG, McKinsey Implementa... has been added to the database
+[2022-09-03 23:26:24,643: INFO/ForkPoolWorker-6] Business Presentation Specialist (Trainee) has been added to the database
+[2022-09-03 23:26:24,643: INFO/ForkPoolWorker-6] Professional Development Manager - McKinsey Transformation has been added to the database
+[2022-09-03 23:26:24,644: INFO/ForkPoolWorker-6] Receptionist has been added to the database
+[2022-09-03 23:26:24,644: INFO/ForkPoolWorker-6] Solution Delivery Analyst - Catalyst Zero has been added to the database
+[2022-09-03 23:26:24,644: INFO/ForkPoolWorker-6] Senior Finance Associate - Payments has been added to the database
+[2022-09-03 23:26:24,645: ERROR/ForkPoolWorker-6] Task services.tasks.start_web_scraping_indeed[1bc99567-3f12-4c14-a0d6-2cfb81cb17f4] raised unexpected: AttributeError("'NoneType' object has no attribute 'split'")
 Traceback (most recent call last):
   File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
     R = retval = fun(*args, **kwargs)
   File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
     return self.run(*args, **kwargs)
   File "/run/media/oyewunmio/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 32, in start_web_scraping_indeed
-    job_title = card.find("a",id=re.compile("^job_")).find('span').text
+    if link.url_link.split(".")[1] == "indeed":
+AttributeError: 'NoneType' object has no attribute 'split'
+[2022-09-03 23:28:12,989: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-09-03 23:28:12,993: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-03 23:28:14,001: INFO/MainProcess] mingle: all alone
+[2022-09-03 23:28:14,043: WARNING/MainProcess] /run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-09-03 23:28:14,044: INFO/MainProcess] celery@Asteria ready.
+[2022-09-03 23:29:59,057: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[a5c82ce3-ecf6-4f5f-9c32-f54b9ffc0989] received
+[2022-09-03 23:30:01,132: INFO/ForkPoolWorker-6] Professional Development Specialist – McKinsey Digital (Buil... None has been added to the database
+[2022-09-03 23:30:01,133: INFO/ForkPoolWorker-6] Knowledge Analyst - Delivery Modernization Hub - McKinsey Di... None has been added to the database
+[2022-09-03 23:30:01,134: INFO/ForkPoolWorker-6] Office Services Coordinator None has been added to the database
+[2022-09-03 23:30:01,164: INFO/ForkPoolWorker-6] Engagement Services Administrator - with Portuguese or Manda... None has been added to the database
+[2022-09-03 23:30:01,165: INFO/ForkPoolWorker-6] Professional Development Manager – McKinsey Digital (Build H... None has been added to the database
+[2022-09-03 23:30:01,165: INFO/ForkPoolWorker-6] Data Analyst None has been added to the database
+[2022-09-03 23:30:01,166: INFO/ForkPoolWorker-6] Intern - Implementation None has been added to the database
+[2022-09-03 23:30:01,166: INFO/ForkPoolWorker-6] Professional Development Manager - McKinsey Digital None has been added to the database
+[2022-09-03 23:30:01,167: INFO/ForkPoolWorker-6] Capabilities & Insights Analyst - Life Sciences None has been added to the database
+[2022-09-03 23:30:01,167: INFO/ForkPoolWorker-6] Senior Implementation Facilitator - FIG, McKinsey Implementa... None has been added to the database
+[2022-09-03 23:30:01,168: INFO/ForkPoolWorker-6] Business Presentation Specialist (Trainee) None has been added to the database
+[2022-09-03 23:30:01,168: INFO/ForkPoolWorker-6] Professional Development Manager - McKinsey Transformation None has been added to the database
+[2022-09-03 23:30:01,169: INFO/ForkPoolWorker-6] Solution Delivery Analyst - Catalyst Zero None has been added to the database
+[2022-09-03 23:30:01,169: INFO/ForkPoolWorker-6] Receptionist None has been added to the database
+[2022-09-03 23:30:01,170: INFO/ForkPoolWorker-6] Senior Finance Associate - Payments None has been added to the database
+[2022-09-03 23:30:01,212: ERROR/ForkPoolWorker-6] Task services.tasks.start_web_scraping_indeed[a5c82ce3-ecf6-4f5f-9c32-f54b9ffc0989] raised unexpected: AttributeError("'NoneType' object has no attribute 'split'")
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/oyewunmio/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 32, in start_web_scraping_indeed
+    if link.url_link.split(".")[1] == "indeed":
+AttributeError: 'NoneType' object has no attribute 'split'
+
+[2022-09-03 23:36:15,855: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[e9087948-980e-4d71-b65a-984b13584932] received
+[2022-09-03 23:36:17,879: INFO/ForkPoolWorker-6] Knowledge Analyst - Delivery Modernization Hub - McKinsey Di... None has been added to the database
+[2022-09-03 23:36:17,879: INFO/ForkPoolWorker-6] Professional Development Specialist – McKinsey Digital (Buil... None has been added to the database
+[2022-09-03 23:36:17,880: INFO/ForkPoolWorker-6] Office Services Coordinator None has been added to the database
+[2022-09-03 23:36:17,880: INFO/ForkPoolWorker-6] Engagement Services Administrator - with Portuguese or Manda... None has been added to the database
+[2022-09-03 23:36:17,881: INFO/ForkPoolWorker-6] Professional Development Manager – McKinsey Digital (Build H... None has been added to the database
+[2022-09-03 23:36:17,881: INFO/ForkPoolWorker-6] Data Analyst None has been added to the database
+[2022-09-03 23:36:17,882: INFO/ForkPoolWorker-6] Capabilities & Insights Analyst - Life Sciences None has been added to the database
+[2022-09-03 23:36:17,882: INFO/ForkPoolWorker-6] Intern - Implementation None has been added to the database
+[2022-09-03 23:36:17,883: INFO/ForkPoolWorker-6] Professional Development Manager - McKinsey Digital None has been added to the database
+[2022-09-03 23:36:17,883: INFO/ForkPoolWorker-6] Senior Implementation Facilitator - FIG, McKinsey Implementa... None has been added to the database
+[2022-09-03 23:36:17,884: INFO/ForkPoolWorker-6] Business Presentation Specialist (Trainee) None has been added to the database
+[2022-09-03 23:36:17,884: INFO/ForkPoolWorker-6] Professional Development Manager - McKinsey Transformation None has been added to the database
+[2022-09-03 23:36:17,885: INFO/ForkPoolWorker-6] Solution Delivery Analyst - Catalyst Zero None has been added to the database
+[2022-09-03 23:36:17,885: INFO/ForkPoolWorker-6] Receptionist None has been added to the database
+[2022-09-03 23:36:17,886: INFO/ForkPoolWorker-6] Senior Finance Associate - Payments None has been added to the database
+[2022-09-03 23:36:17,887: ERROR/ForkPoolWorker-6] Task services.tasks.start_web_scraping_indeed[e9087948-980e-4d71-b65a-984b13584932] raised unexpected: AttributeError("'NoneType' object has no attribute 'split'")
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/oyewunmio/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 32, in start_web_scraping_indeed
+    if link.url_link.split(".")[1] == "indeed":
+AttributeError: 'NoneType' object has no attribute 'split'
+[2022-09-03 23:37:12,550: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-09-03 23:37:12,552: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-03 23:37:13,561: INFO/MainProcess] mingle: all alone
+[2022-09-03 23:37:13,683: WARNING/MainProcess] /run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-09-03 23:37:13,683: INFO/MainProcess] celery@Asteria ready.
+[2022-09-03 23:38:27,192: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[f0dfe144-42bf-4d42-a7ba-4f1db236b46f] received
+[2022-09-03 23:38:29,359: ERROR/ForkPoolWorker-6] Task services.tasks.start_web_scraping_indeed[f0dfe144-42bf-4d42-a7ba-4f1db236b46f] raised unexpected: AttributeError("'NoneType' object has no attribute 'text'")
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/oyewunmio/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 40, in start_web_scraping_indeed
+    job_title = card.find("a", id=re.compile("^job_")).find("span").text
 AttributeError: 'NoneType' object has no attribute 'text'
-[2022-09-03 22:08:55,373: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[0583a0c1-726c-46b4-98c3-1e62fe844e75] received
-[2022-09-03 22:08:57,178: INFO/ForkPoolWorker-6] Professional Development Specialist – McKinsey Digital (Buil... has been added to the database
-[2022-09-03 22:08:57,178: INFO/ForkPoolWorker-6] Data Analyst has been added to the database
-[2022-09-03 22:08:57,179: INFO/ForkPoolWorker-6] Engagement Services Administrator - with Portuguese or Manda... has been added to the database
-[2022-09-03 22:08:57,179: INFO/ForkPoolWorker-6] Office Services Coordinator has been added to the database
-[2022-09-03 22:08:57,180: INFO/ForkPoolWorker-6] Knowledge Analyst - Delivery Modernization Hub - McKinsey Di... has been added to the database
-[2022-09-03 22:08:57,180: INFO/ForkPoolWorker-6] Intern - Implementation has been added to the database
-[2022-09-03 22:08:57,181: INFO/ForkPoolWorker-6] Professional Development Manager – McKinsey Digital (Build H... has been added to the database
-[2022-09-03 22:08:57,181: INFO/ForkPoolWorker-6] Capabilities & Insights Analyst - Life Sciences has been added to the database
-[2022-09-03 22:08:57,182: INFO/ForkPoolWorker-6] Professional Development Manager - McKinsey Transformation has been added to the database
-[2022-09-03 22:08:57,182: INFO/ForkPoolWorker-6] Business Presentation Specialist (Trainee) has been added to the database
-[2022-09-03 22:08:57,183: INFO/ForkPoolWorker-6] Professional Development Manager - McKinsey Digital has been added to the database
-[2022-09-03 22:08:57,183: INFO/ForkPoolWorker-6] Senior Implementation Facilitator - FIG, McKinsey Implementa... has been added to the database
-[2022-09-03 22:08:57,183: INFO/ForkPoolWorker-6] Receptionist has been added to the database
-[2022-09-03 22:08:57,184: INFO/ForkPoolWorker-6] Solution Delivery Analyst - Catalyst Zero has been added to the database
-[2022-09-03 22:08:57,184: INFO/ForkPoolWorker-6] Senior Finance Associate - Payments has been added to the database
-[2022-09-03 22:08:57,185: INFO/ForkPoolWorker-6] Task services.tasks.start_web_scraping_indeed[0583a0c1-726c-46b4-98c3-1e62fe844e75] succeeded in 1.811003367009107s: None
+[2022-09-03 23:39:54,277: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-09-03 23:39:54,282: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-03 23:39:55,292: INFO/MainProcess] mingle: all alone
+[2022-09-03 23:39:55,318: WARNING/MainProcess] /run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-09-03 23:39:55,318: INFO/MainProcess] celery@Asteria ready.
+[2022-09-03 23:41:26,257: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[8c0ded5e-8dcd-4b05-92c9-99beda65cfd3] received
+[2022-09-03 23:41:28,292: ERROR/ForkPoolWorker-6] Task services.tasks.start_web_scraping_indeed[8c0ded5e-8dcd-4b05-92c9-99beda65cfd3] raised unexpected: AttributeError("'NoneType' object has no attribute 'text'")
+Traceback (most recent call last):
+  File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/oyewunmio/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/oyewunmio/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 40, in start_web_scraping_indeed
+    job_title = card.find("a", id=re.compile("^job_")).find("span").text
+AttributeError: 'NoneType' object has no attribute 'text'
+[2022-09-04 10:25:40,783: INFO/MainProcess] Task celery.backend_cleanup[0276ac98-217d-420d-99bb-3bd584c36d78] received
+[2022-09-04 10:25:40,992: INFO/ForkPoolWorker-6] Task celery.backend_cleanup[0276ac98-217d-420d-99bb-3bd584c36d78] succeeded in 0.06275815999833867s: None
