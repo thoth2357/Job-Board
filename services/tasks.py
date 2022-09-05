@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from fake_useragent import UserAgent
 
 # importing model from models.py
-from jobs.models import Jobs
+from jobs.models import Job
 from .models import Scraping_Service
 from bs4 import BeautifulSoup as beauty
 import cloudscraper
@@ -30,7 +30,11 @@ def start_web_scraping_indeed():
     for link in Scraping_Service.objects.all():
         if link.is_active:
             if link.url_link.split(".")[1] == "indeed":
-                info = scraper.get(link.url_link).content
+                try:
+                    info = scraper.get(link.url_link).content
+                except Exception:
+                    logging.error("Error in getting link")
+                    break
                 soup = beauty(info, "html.parser")
                 jobs_card = soup.find_all(
                     "div", class_="job_seen_beacon"
@@ -50,7 +54,7 @@ def start_web_scraping_indeed():
                         "a"
                     )["href"]
                     url_link = add + url_link
-                    job_entry = Jobs.objects.create(
+                    job_entry = Job.objects.create(
                         title=job_title,
                         company=company_name,
                         location=company_location,
@@ -59,6 +63,7 @@ def start_web_scraping_indeed():
                         contract_type=job_type,
                         url_link=url_link,
                     )
+                    job_entry.save()
                     logging.info(f"{job_entry.id} {job_title} has been added to the database")
         else:
             logging.info(f"{link.url_link} is not active")

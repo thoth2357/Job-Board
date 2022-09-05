@@ -1,10 +1,10 @@
 from django.db import models
 import uuid
-class Jobs(models.Model):
+class Job(models.Model):
     title = models.CharField(max_length=200, null=True, blank=True)
     company = models.CharField(max_length=200, null=True, blank=True)
     category = models.CharField(max_length=200, null=True, blank=True)
-    location = models.CharField(max_length=200)
+    location = models.CharField(max_length=200,null=True, blank=True)
     rating = models.CharField(max_length=200, null=True, blank=True)
     salary = models.CharField(max_length=100, null=True, blank=True)
     uniqueId = models.CharField(null=True, blank=True, max_length=100 )
@@ -22,3 +22,4 @@ class Jobs(models.Model):
     def save(self, *args, **kwargs):
         if self.uniqueId is None:
             self.uniqueId = str(uuid.uuid4())
+            super(Job, self).save(*args, **kwargs)

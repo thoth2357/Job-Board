@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Jobs
+from .models import Job
 
 
 # Create your views here. #It tells django what html file to display
