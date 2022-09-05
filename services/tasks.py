@@ -67,3 +67,7 @@ def start_web_scraping_indeed():
                     logging.info(f"{job_entry.id} {job_title} has been added to the database")
         else:
             logging.info(f"{link.url_link} is not active")
+
+
+def start_web_scraping_linkedin():
+    pass

@@ -22,4 +22,8 @@ class Job(models.Model):
     def save(self, *args, **kwargs):
         if self.uniqueId is None:
             self.uniqueId = str(uuid.uuid4())
-            super(Job, self).save(*args, **kwargs)
+        if "remote" in self.location.lower():
+            self.contract_type = "Remote"
+        else:
+            self.contract_type = "Onsite"
+        super(Job, self).save(*args, **kwargs)
