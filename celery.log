@@ -46,3 +46,526 @@
 [2022-09-06 06:39:54,014: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[8d5d53da-86c7-4bea-b71e-9fe167df1115] succeeded in 0.029612328042276204s: None
 [2022-09-07 08:12:58,736: INFO/MainProcess] Task celery.backend_cleanup[2bab40b6-81ea-4519-aebe-25b817eec4da] received
 [2022-09-07 08:12:59,014: INFO/ForkPoolWorker-1] Task celery.backend_cleanup[2bab40b6-81ea-4519-aebe-25b817eec4da] succeeded in 0.09277798602124676s: None
+[2022-09-15 13:51:38,727: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2022-09-15 13:51:40,807: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+[2022-09-15 13:51:44,814: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+[2022-09-15 13:51:50,824: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+[2022-09-15 13:51:58,834: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+[2022-09-15 13:52:08,848: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 12.00 seconds... (6/100)
+
+[2022-09-15 13:52:20,865: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 14.00 seconds... (7/100)
+
+[2022-09-15 13:52:34,883: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 16.00 seconds... (8/100)
+
+[2022-09-15 13:52:48,541: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2022-09-15 13:52:50,547: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+[2022-09-15 13:52:50,903: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 18.00 seconds... (9/100)
+
+[2022-09-15 13:52:54,552: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+[2022-09-15 13:53:00,562: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+[2022-09-15 13:53:08,573: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+[2022-09-15 13:53:08,924: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 20.00 seconds... (10/100)
+
+[2022-09-15 13:53:18,586: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 12.00 seconds... (6/100)
+
+[2022-09-15 13:53:28,947: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 22.00 seconds... (11/100)
+
+[2022-09-15 13:53:30,601: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 14.00 seconds... (7/100)
+
+[2022-09-15 13:53:44,619: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 16.00 seconds... (8/100)
+
+[2022-09-15 13:53:50,973: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 24.00 seconds... (12/100)
+
+[2022-09-15 13:54:00,638: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 18.00 seconds... (9/100)
+
+[2022-09-15 13:54:15,001: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 26.00 seconds... (13/100)
+
+[2022-09-15 13:54:18,659: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 20.00 seconds... (10/100)
+
+[2022-09-15 13:54:38,682: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 22.00 seconds... (11/100)
+
+[2022-09-15 13:54:41,030: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 28.00 seconds... (14/100)
+
+[2022-09-15 13:55:00,705: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 24.00 seconds... (12/100)
+
+[2022-09-15 13:55:09,062: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 30.00 seconds... (15/100)
+
+[2022-09-15 13:55:24,734: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 26.00 seconds... (13/100)
+
+[2022-09-15 13:55:39,097: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:55:50,765: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 28.00 seconds... (14/100)
+
+[2022-09-15 13:56:11,133: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:56:18,798: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 30.00 seconds... (15/100)
+
+[2022-09-15 13:56:43,171: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:56:48,831: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:57:15,207: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:57:20,867: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:57:47,244: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:57:52,904: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:58:19,281: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:58:24,941: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:58:51,313: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:58:56,978: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:59:23,350: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:59:29,014: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 13:59:55,384: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:00:01,050: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:00:27,420: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:00:33,086: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:00:59,457: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:01:05,122: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:01:31,492: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:01:37,157: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:02:03,527: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:02:09,191: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:02:35,562: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:02:41,226: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:03:07,596: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:03:13,262: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:03:39,631: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:03:45,298: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:04:11,670: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:04:17,333: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:04:43,706: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:04:49,367: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:05:15,743: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:05:21,402: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:05:47,776: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:05:53,437: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:06:19,810: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:06:25,474: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:06:51,844: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:06:57,509: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:07:23,879: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:07:29,545: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:07:55,914: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:08:01,576: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:08:27,950: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:08:44,036: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 2.00 seconds... (1/100)
+
+[2022-09-15 14:08:46,041: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 4.00 seconds... (2/100)
+
+[2022-09-15 14:08:50,048: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 6.00 seconds... (3/100)
+
+[2022-09-15 14:08:56,055: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 8.00 seconds... (4/100)
+
+[2022-09-15 14:08:59,982: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:09:04,064: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 10.00 seconds... (5/100)
+
+[2022-09-15 14:09:14,078: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 12.00 seconds... (6/100)
+
+[2022-09-15 14:09:26,093: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 14.00 seconds... (7/100)
+
+[2022-09-15 14:09:32,018: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:09:40,110: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 16.00 seconds... (8/100)
+
+[2022-09-15 14:09:56,129: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 18.00 seconds... (9/100)
+
+[2022-09-15 14:10:04,052: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:10:14,149: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 20.00 seconds... (10/100)
+
+[2022-09-15 14:10:34,173: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 22.00 seconds... (11/100)
+
+[2022-09-15 14:10:36,087: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:10:56,197: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 24.00 seconds... (12/100)
+
+[2022-09-15 14:11:08,125: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:11:20,224: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 26.00 seconds... (13/100)
+
+[2022-09-15 14:11:40,161: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:11:46,253: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 28.00 seconds... (14/100)
+
+[2022-09-15 14:12:12,195: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:12:14,283: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 30.00 seconds... (15/100)
+
+[2022-09-15 14:12:44,228: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:12:44,314: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:13:16,262: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:13:16,347: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:13:48,297: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:13:48,384: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:14:20,333: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:14:20,419: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:14:52,367: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:14:52,453: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:15:24,401: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:15:24,487: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:15:56,435: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:15:56,519: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:16:28,469: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:16:28,556: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:17:00,506: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:17:00,589: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:17:32,543: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:17:32,625: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:18:04,578: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:18:04,661: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:18:36,612: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:18:36,694: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:19:08,648: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:19:08,728: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:19:40,681: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:19:40,762: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:20:12,716: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:20:12,796: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:20:44,750: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:20:44,831: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:21:16,785: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:21:16,866: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:21:48,817: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:21:48,899: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:22:20,853: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:22:20,934: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:22:52,887: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:22:52,967: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:23:24,921: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:23:25,003: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 111 connecting to localhost:6379. Connection refused..
+Trying again in 32.00 seconds... (16/100)
+
+[2022-09-15 14:23:56,964: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-09-15 14:23:56,970: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-15 14:23:57,044: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-09-15 14:23:57,056: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-15 14:23:57,989: INFO/MainProcess] mingle: all alone
+[2022-09-15 14:23:58,000: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-09-15 14:23:58,000: INFO/MainProcess] celery@Asteria ready.
+[2022-09-15 14:23:58,072: INFO/MainProcess] mingle: all alone
+[2022-09-15 14:23:58,087: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-09-15 14:23:58,087: INFO/MainProcess] celery@Asteria ready.
+[2022-09-15 14:26:12,778: ERROR/MainProcess] Received unregistered task of type 'services.tasks.start_web_scraping_linkedin'.
+The message has been ignored and discarded.
+
+Did you remember to import the module containing this task?
+Or maybe you're using relative imports?
+
+Please see
+http://docs.celeryq.org/en/latest/internals/protocol.html
+for more information.
+
+The full contents of the message body was:
+b'[[], {}, {"callbacks": null, "errbacks": null, "chain": null, "chord": null}]' (77b)
+
+Thw full contents of the message headers:
+{'lang': 'py', 'task': 'services.tasks.start_web_scraping_linkedin', 'id': '727023b3-c643-4235-800d-943eba29ddee', 'shadow': None, 'eta': None, 'expires': None, 'group': None, 'group_index': None, 'retries': 0, 'timelimit': [None, None], 'root_id': '727023b3-c643-4235-800d-943eba29ddee', 'parent_id': None, 'argsrepr': '()', 'kwargsrepr': '{}', 'origin': 'gen109188@Asteria', 'ignore_result': False}
+
+The delivery info for this task is:
+{'exchange': '', 'routing_key': 'celery'}
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/consumer/consumer.py", line 591, in on_task_received
+    strategy = strategies[type_]
+KeyError: 'services.tasks.start_web_scraping_linkedin'
+[2022-09-15 20:06:57,810: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-09-15 20:06:57,813: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-15 20:06:58,824: INFO/MainProcess] mingle: all alone
+[2022-09-15 20:06:58,853: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-09-15 20:06:58,853: INFO/MainProcess] celery@Asteria ready.
+[2022-09-15 20:08:15,249: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[a02a0635-f6a3-42c5-a555-43db87d940ca] received
+[2022-09-15 20:08:15,888: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[a02a0635-f6a3-42c5-a555-43db87d940ca] succeeded in 0.6375989770021988s: None
+[2022-09-15 20:13:17,690: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[35be3ee6-3777-48ee-9c12-63f1752e6ea8] received
+[2022-09-15 20:13:27,721: ERROR/ForkPoolWorker-7] Error in getting link Job() got an unexpected keyword argument 'requirement'
+[2022-09-15 20:13:27,722: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[35be3ee6-3777-48ee-9c12-63f1752e6ea8] succeeded in 10.027993876003165s: None
+
+
+[2022-09-15 20:22:17,378: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-09-15 20:22:17,381: INFO/MainProcess] mingle: searching for neighbors
+[2022-09-15 20:22:18,392: INFO/MainProcess] mingle: all alone
+[2022-09-15 20:22:18,424: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-09-15 20:22:18,424: INFO/MainProcess] celery@Asteria ready.
+[2022-09-15 20:22:18,429: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[c9b365d1-97b8-435b-b183-bacce770faec] received
+[2022-09-15 20:22:26,401: INFO/ForkPoolWorker-7] 21 Data Analyst has been added to the database
+[2022-09-15 20:22:27,035: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[36c17bfc-fb07-4afa-8858-17b6afe1562e] received
+[2022-09-15 20:22:28,770: INFO/ForkPoolWorker-7] 22 Business Presentation Specialist (Trainee) has been added to the database
+[2022-09-15 20:22:31,555: INFO/ForkPoolWorker-8] 23 Data Analyst has been added to the database
+[2022-09-15 20:22:31,694: INFO/ForkPoolWorker-7] 24 Junior Solution Delivery Analyst - Ignite has been added to the database
+[2022-09-15 20:22:34,355: INFO/ForkPoolWorker-8] 25 Business Presentation Specialist (Trainee) has been added to the database
+[2022-09-15 20:22:34,834: INFO/ForkPoolWorker-7] 26 Data Analyst - Orpheus has been added to the database
+[2022-09-15 20:22:36,375: INFO/ForkPoolWorker-7] 27 Business Presentation Specialist (Trainee) has been added to the database
+[2022-09-15 20:22:37,904: INFO/ForkPoolWorker-7] 28 Knowledge Analyst - Private Equity & Principal Investors has been added to the database
+[2022-09-15 20:22:38,961: INFO/ForkPoolWorker-8] 29 Executive Assistant has been added to the database
+[2022-09-15 20:22:39,431: INFO/ForkPoolWorker-7] 30 Executive Assistant has been added to the database
+[2022-09-15 20:22:41,169: INFO/ForkPoolWorker-8] 31 Business Presentation Specialist (Trainee) has been added to the database
+[2022-09-15 20:22:41,396: INFO/ForkPoolWorker-7] 32 Junior Capabilities and Insights Analyst - People and Organizational Performance has been added to the database
+[2022-09-15 20:22:43,662: INFO/ForkPoolWorker-8] 33 Office Services Coordinator has been added to the database
+[2022-09-15 20:22:43,859: INFO/ForkPoolWorker-7] 34 Office Services Coordinator has been added to the database
+[2022-09-15 20:22:45,399: INFO/ForkPoolWorker-8] 35 Data Analyst - Orpheus has been added to the database
+[2022-09-15 20:22:45,540: INFO/ForkPoolWorker-7] 36 Project Finance Controller has been added to the database
+[2022-09-15 20:22:48,434: INFO/ForkPoolWorker-7] 37 Analyst – OrgSolutions has been added to the database
+[2022-09-15 20:22:48,611: INFO/ForkPoolWorker-8] 38 Project Finance Controller has been added to the database
+[2022-09-15 20:22:49,908: INFO/ForkPoolWorker-7] 39 Capabilities and Insights Analyst_Corporate and Invest Banking_Gurugram has been added to the database
+[2022-09-15 20:22:50,148: INFO/ForkPoolWorker-8] 40 Junior Capabilities and Insights Analyst - People and Organizational Performance has been added to the database
+[2022-09-15 20:22:51,348: INFO/ForkPoolWorker-7] 41 Research Science Analyst_Global Payments Map_Gurugram has been added to the database
+[2022-09-15 20:22:52,602: INFO/ForkPoolWorker-8] 42 Junior Solution Delivery Analyst - Ignite has been added to the database
+[2022-09-15 20:22:55,451: INFO/ForkPoolWorker-8] 43 Receptionist has been added to the database
+[2022-09-15 20:22:55,614: INFO/ForkPoolWorker-7] 44 Investment Operations Manager and Trust Associate has been added to the database
+[2022-09-15 20:22:56,933: INFO/ForkPoolWorker-8] 45 Knowledge Analyst - Private Equity & Principal Investors has been added to the database
+[2022-09-15 20:22:58,441: INFO/ForkPoolWorker-7] 46 Solution Delivery Analyst has been added to the database
+[2022-09-15 20:22:58,540: INFO/ForkPoolWorker-8] 47 Engagement Manager - Procurement has been added to the database
+[2022-09-15 20:22:59,937: INFO/ForkPoolWorker-7] 48 Capabilities & Insights Analyst - People and Organizational Performance has been added to the database
+[2022-09-15 20:23:00,290: INFO/ForkPoolWorker-8] 49 Analyst – OrgSolutions has been added to the database
+[2022-09-15 20:23:00,845: ERROR/ForkPoolWorker-7] Error in getting link 'NoneType' object has no attribute 'text'
+[2022-09-15 20:23:00,846: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[c9b365d1-97b8-435b-b183-bacce770faec] succeeded in 42.41545893699731s: None
+[2022-09-15 20:23:02,555: INFO/ForkPoolWorker-8] 50 Research Science Analyst - Panorama Financial Institutions Center has been added to the database
+[2022-09-15 20:23:04,039: INFO/ForkPoolWorker-8] 51 Investment Operations Manager and Trust Associate has been added to the database
+[2022-09-15 20:23:07,488: INFO/ForkPoolWorker-8] 52 Capabilities & Insights Analyst - People and Organizational Performance has been added to the database
+[2022-09-15 20:23:09,247: INFO/ForkPoolWorker-8] 53 Professional Development Manager – McKinsey Digital (Build Hub) has been added to the database
+[2022-09-15 20:23:10,175: ERROR/ForkPoolWorker-8] Error in getting link 'NoneType' object has no attribute 'text'
+[2022-09-15 20:23:10,180: INFO/ForkPoolWorker-8] Task services.tasks.start_web_scraping_linkedin[36c17bfc-fb07-4afa-8858-17b6afe1562e] succeeded in 43.1425727379974s: None

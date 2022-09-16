@@ -70,7 +70,7 @@ def start_web_scraping_indeed():
         else:
             logging.info(f"{link.url_link} is not active")
 
-
+@shared_task
 def start_web_scraping_linkedin():
     '''
     function to use to start webscraping tasks
@@ -105,7 +105,7 @@ def start_web_scraping_linkedin():
                             company=job_company,
                             location=job_location,
                             duties=duties,
-                            requirement=qualifications,
+                            requirements=qualifications,
                             category=category,
                             contract_type=contract_type,
                             url_link=job_link,
