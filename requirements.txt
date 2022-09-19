@@ -3,3 +3,6 @@ redis
 django
 django-celery
 django-celery-beat
+selenium
+webdriver_manager
+bs4
