@@ -16,6 +16,7 @@ class Job(models.Model):
     contract_type = models.CharField(max_length=100, null= True, blank=True)
     url_link = models.CharField(max_length=500, null=True, blank=True) 
     source = models.CharField(max_length=100, null=True, blank=True)
+    logo =  models.URLField(max_length=200, null=True, blank=True)
     def __str__(self):
        return f'{self.company} {self.title} {self.location}'
     
