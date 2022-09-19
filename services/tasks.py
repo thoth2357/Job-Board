@@ -41,10 +41,10 @@ def start_web_scraping_indeed():
                 jobs_card = soup.find_all(
                     "div", class_="job_seen_beacon"
                 )  # get all jobs cards
+                company_logo = soup.find('div', class_='univsrch-ci-logo-small').find('img')['src']
                 for card in jobs_card:
                     # v = card.find_all("span")
                     job_title = card.find("a", id=re.compile("^job_")).find("span").text
-                    company_logo = card.find
                     company_name = card.find("span", class_="companyName").text
                     company_location = card.find("div", class_="companyLocation").text
                     job_rating = card.find("span", class_="ratingNumber")["aria-label"]
@@ -59,6 +59,7 @@ def start_web_scraping_indeed():
                     url_link = add + url_link
                     job_entry = Job.objects.create(
                         title=job_title,
+                        logo=company_logo
                         company=company_name,
                         location=company_location,
                         rating=job_rating,
@@ -89,6 +90,8 @@ def start_web_scraping_linkedin():
                         job_company = job.find('h4', class_='base-search-card__subtitle').text.strip()
                         job_location = job.find('span', class_='job-search-card__location').text.strip()
                         job_link = job.find('a', class_='base-card__full-link')['href']
+                        job_company_logo = job.find('div', class_='search-entity-media').find('img')['data-delayed-url']
+
 
                         response2 = requests.get(job_link) 
                         soup2 = beauty(response2.content,'html.parser')
@@ -101,9 +104,10 @@ def start_web_scraping_linkedin():
                         duties = requirement[duties_index:pager_index].strip()
                         category = soup2.find_all('span',class_='description__job-criteria-text description__job-criteria-text--criteria')[2].text.strip()
                         contract_type = soup2.find_all('span',class_='description__job-criteria-text description__job-criteria-text--criteria')[1].text.strip()
-
+                        
                         job_entry = Job.objects.create(
                             title=job_title,
+                            logo=job_company_logo,
                             company=job_company,
                             location=job_location,
                             duties=duties,
