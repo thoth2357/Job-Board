@@ -1,6 +1,6 @@
 #starting celery beat and worker process
 celery -A jobWebsite beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler 
-celery -A jobWebsite worker -l -E info --logfile=celery.log --detach
+celery -A jobWebsite worker -E -l info --logfile=celery.log --detach
 
 #starting redis
 redis-server --daemonize yes  
