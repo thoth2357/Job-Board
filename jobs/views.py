@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator
 from .models import Job
 
 
@@ -6,7 +7,8 @@ from .models import Job
 def home(request):
     job_list = Job.objects.all()  # import jobs from models and push it to front end
     job_list = job_list[:4]  # will display 4 jobs
-    return render(request, "home.html", {"jobs": job_list})
+    jobs_count = Job.objects.count()
+    return render(request, "home.html", {"jobs": job_list, "jobs_count": jobs_count})
 
 
 def job_list(request):

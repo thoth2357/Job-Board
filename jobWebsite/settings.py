@@ -25,7 +25,7 @@ SECRET_KEY = 'acb3b90q9abm@z3c*a8r&#5d7kk2pf-5imrw!oh460fh@1(n_7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -143,6 +143,5 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'  
 CELERY_RESULT_SERIALIZER = 'json'  
 # CELERY_TIMEZONE = "Asia/New_York"
-
 
 
