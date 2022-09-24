@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.template.defaultfilters import slugify
 import uuid
 
 
@@ -22,10 +23,10 @@ class Job(models.Model):
     logo = models.URLField(max_length=200, null=True, blank=True)
     slug = models.SlugField(max_length=200, null=True,blank=True) #TODO Change here back to unique True, null False
     def __str__(self):
-        return f"{self.company} {self.title} {self.location}"
+        return f"{self.title}"
 
     def get_absolute_url(self):
-        return reverse("job-detail", kwargs={"slug": f"{str(uuid.uuid4()).split('-')}-{self.slug}"})
+        return reverse("job_detail", kwargs={"slug": self.slug})
 
     def save(self, *args, **kwargs):
         if self.uniqueId is None:
@@ -34,4 +35,6 @@ class Job(models.Model):
             self.contract_type = "Remote"
         else:
             self.contract_type = "Onsite"
+        if not self.slug:
+            self.slug = f"{slugify(self.title)}{self.uniqueId.split('-')[1]}"
         super(Job, self).save(*args, **kwargs)
