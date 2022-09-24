@@ -35,9 +35,11 @@
         {% endblock pageloader %}
         
         {% block pagestart %}
-            {% block top-bar %}{% endblock top-bar %}
-            {% block nav-bar %}{% endblock nav-bar %}
-            {% block signup-modal %}{% endblock signup-modal %}
+            <div>
+                {% block top-bar %}{% endblock top-bar %}
+                {% block nav-bar %}{% endblock nav-bar %}
+                {% block signup-modal %}{% endblock signup-modal %}
+            </div>
         {% endblock pagestart %}
     </body>
         {% block script %}

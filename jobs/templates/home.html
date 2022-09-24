@@ -10,7 +10,6 @@
       {% block top-bar %}
         {% include "top_bar.html" %}
       {% endblock top-bar %}
-
       {% block nav-bar %}
         {% include "nav_bar.html" %}
       {% endblock nav-bar %}
@@ -19,6 +18,13 @@
         {% include "signup_modal.html" %}
       {% endblock signup-modal %}
 
+      <div class="main-content">
+        <div class="page-content">
+          {% include 'sections/Home/home.html' %}
+          {% include 'sections/Home/shape.html' %}
+          {% include 'sections/Home/category.html' %}
+        </div>
+      </div>
 {% endblock pagestart %}
 
 {% block script %} 
