@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup as beauty
 import re
 import requests
 import logging
+import time
 
 from jobs.models import Job
 from .models import Scraping_Service
@@ -34,6 +35,7 @@ def start_web_scraping_indeed():
             if link.url_link.split(".")[1] == "indeed":
                 try:
                     driver.get(link.url_link)
+                    time.sleep(20)
                     page_source = driver.page_source
                 except Exception:
                     logging.error("Error in getting link")
