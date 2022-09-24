@@ -114,46 +114,52 @@ url2 = 'https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=1027
 #     break
 
 # -----------------------------------------------------------------------------------indeed
-# from selenium import webdriver
-# from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.chrome.options import Options
-# from webdriver_manager.chrome import ChromeDriverManager
-# from fake_useragent import UserAgent
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+from fake_useragent import UserAgent
+from time import sleep
 
-# from bs4 import BeautifulSoup as beauty
-# import re
+from bs4 import BeautifulSoup as beauty
+import re
 
-# chrome_options = Options()
-# chrome_options.headless = False
-# # ua = UserAgent(use_cache_server=False, verify_ssl=False)
-# # chrome_options.add_argument(f'user-agent={ua.chrome}')
+chrome_options = Options()
+# chrome_options.add_argument('--remote-debugging-port=9222')
+chrome_options.headless = False
+chrome_options.add_argument("--incognito")
+# ua = UserAgent(use_cache_server=False, verify_ssl=False)
+# chrome_options.add_argument(f'user-agent={ua.chrome}')
 
-# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-# driver.get(url)
-# page_source = driver.page_source
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+driver.get(url)
+sleep(20)
+page_source = driver.page_source
 
-# soup = beauty(page_source, 'html.parser')
-# # print(soup)
 
-# # scraping for indeed link given for companies
-# jobs_card = soup.find_all('div', class_='job_seen_beacon') #get all jobs cards
-# company_logo = soup.find('div', class_='univsrch-ci-logo-small').find('img')['src']
-# print(company_logo)
-# # get all job spans
-# jobs_card_span = soup.find_all('span', class_='jobtitle')
-# for card in jobs_card:
-#             v=card.find_all('span')
-#             # print(v)
-#             #univsrch-ci > div.univsrch-ci-block > div.univsrch-ci-logo-small > a > img
-#             print(card.find("a",id=re.compile("^job_")).find('span').text)
-#             print("\n")
-#             print(card.find('span',class_ = "companyName").text)
-#             print("\n")
-#             print(card.find('div',class_="companyLocation").text)
-#             print("\n")
-#             print(card.find('span', class_="ratingNumber")['aria-label'])
-#             print("\n")
-#             print(card.find('div', class_="job-snippet").find('li').text)
-#             print("\n")
-#             print(card.find('h2', class_=re.compile("^jobTitle")).find('a')['href'])
-#             break
+soup = beauty(page_source, 'html.parser')
+# print(soup)
+
+# scraping for indeed link given for companies
+jobs_card = soup.find_all('div', class_='job_seen_beacon') #get all jobs cards
+company_logo = soup.find('div', class_='univsrch-ci-logo-small')
+print(company_logo)
+# get all job spans
+jobs_card_span = soup.find_all('span', class_='jobtitle')
+for card in jobs_card:
+            v=card.find_all('span')
+            # print(v)
+            #univsrch-ci > div.univsrch-ci-block > div.univsrch-ci-logo-small > a > img
+            print(card.find("a",id=re.compile("^job_")).find('span').text)
+            print("\n")
+            print(card.find('span',class_ = "companyName").text)
+            print("\n")
+            print(card.find('div',class_="companyLocation").text)
+            print("\n")
+            print(card.find('span', class_="ratingNumber")['aria-label'])
+            print("\n")
+            print(card.find('div', class_="job-snippet").find('li').text)
+            print("\n")
+            print(card.find('h2', class_=re.compile("^jobTitle")).find('a')['href'])
+            break
+# driver.close()
