@@ -14,7 +14,7 @@
 
         {% block styles %}
             <!-- App favicon -->
-            <link rel="shortcut icon" href="assets/images/favicon.ico">
+            <link rel="shortcut icon" href="{% static 'assets/images/favicon.ico' %}">
             <!-- Choise Css -->
             <link rel="stylesheet" href="{% static 'assets/libs/choices.js/public/assets/styles/choices.min.css' %}">
             <!-- Swiper Css -->
@@ -30,19 +30,24 @@
     </head>
 
     <body>
-        {% block pageloader %}
+        {% comment %} {% include "page_loader.html" %} {% endcomment %}
+        
+        <div> <!-- START layout-wrapper -->
+            {% include "nav_bar.html" %}
+            {% include "signup_modal.html" %}
+                <div class="main-content">
+                    <div class="page-content">
+                        {% block page-content %}
+                        {% endblock page-content %}
+                    </div>
+                    {% block other-content %}
+                    {% endblock other-content %}
+                    
+                </div>
+        </div> <!-- END layout-wrapper -->
 
-        {% endblock pageloader %}
-        
-        {% block pagestart %}
-            <div>
-                {% block top-bar %}{% endblock top-bar %}
-                {% block nav-bar %}{% endblock nav-bar %}
-                {% block signup-modal %}{% endblock signup-modal %}
-            </div>
-        {% endblock pagestart %}
-    </body>
         {% block script %}
-        
         {% endblock script %}
+    </body>
+        
 </html>
