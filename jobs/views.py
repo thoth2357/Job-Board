@@ -8,6 +8,7 @@ from .utils import get_user_location
 # Create your views here. #It tells django what html file to display
 def home(request):
     user_country = get_user_location(request) #get user country based on ip-address
+    print('country',user_country)
     job_list = Job.objects.all()  # import jobs from models and push it to front end
     job_list = job_list[:4]  # will display 4 jobs
     jobs_count = Job.objects.count()
@@ -26,9 +27,7 @@ def job_list(request):
     return render(request, "job-list.html", {"jobs": job_list})  # make job-list.html
 
 
-def job_detail(
-    request, slug
-):  # will take request and slug(to identify which job which it is)
+def job_detail(request, slug):  # will take request and slug(to identify which job which it is)
     the_job = Job.objects.get(slug=slug)  # getting job with that slug
     return render(request, "job-detail.html", {"object": the_job})
 
