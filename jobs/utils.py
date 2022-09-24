@@ -6,7 +6,7 @@ def get_user_location(request) -> str:
     args: Request
     return: str
     '''
-    ip = request.meta.get("REMOTE_ADDR")
+    ip = request.POST.get("REMOTE_ADDR")
     if ip:
         try:
             response = requests.get(f'https://ipapi.co/{ip}/json/')
