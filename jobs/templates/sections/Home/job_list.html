@@ -24,7 +24,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-2">
                                         <div class="text-center mb-4 mb-md-0">
-                                            <a href=""><img src="{{job.logo}}" alt="{{job.logo}}" class="img-fluid rounded-3" width="70" height="50"></a> 
+                                            <a href="{% url 'job_detail' slug=job.slug %}"><img src="{{job.logo}}" alt="{{job.logo}}" class="img-fluid rounded-3" width="70" height="50"></a> 
                                         </div>
                                     </div>
                                     <!--end col-->
