@@ -2,35 +2,25 @@
 {% load static %}
 {% block title %} Home {% endblock title %} 
 
-{% comment %} {% block pageloader %}
-  {% include "page_loader.html" %}
-{% endblock pageloader %} {% endcomment %}
 
-{% block pagestart %}
-      {% block top-bar %}
-        {% include "top_bar.html" %}
-      {% endblock top-bar %}
-      {% block nav-bar %}
-        {% include "nav_bar.html" %}
-      {% endblock nav-bar %}
+{% block page-content %}
+      {% include 'sections/Home/home.html' %}
+      {% include 'sections/Home/shape.html' %}
+      {% include 'sections/Home/category.html' %}
+      {% include 'sections/Home/job_list.html' %}
 
-      {% block signup-modal %}
-        {% include "signup_modal.html" %}
-      {% endblock signup-modal %}
-
-      <div class="main-content">
-        <div class="page-content">
-          {% include 'sections/Home/home.html' %}
-          {% include 'sections/Home/shape.html' %}
-          {% include 'sections/Home/category.html' %}
-        </div>
-      </div>
-{% endblock pagestart %}
-
+      {% include 'sections/Home/start_process.html' %}
+      {% include 'sections/Home/cta.html' %} 
+{% endblock page-content %}
+{% block other-content %}
+    {% include 'sections/Home/client.html' %}
+    {% include 'sections/Home/subscriber.html' %}
+    {% include 'sections/Home/footer.html' %}
+{% endblock other-content %}
 {% block script %} 
     <!-- JAVASCRIPT -->
     <script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"</script>
-    <script src="../../../unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
+    <script src="unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js"></script>
     <!-- Choice Js -->
     <script src="{% static 'assets/libs/choices.js/public/assets/scripts/choices.min.js' %}"</script>
     <!-- Swiper Js -->
