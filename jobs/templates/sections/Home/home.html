@@ -1,11 +1,11 @@
-
+{% load static %}
         <!-- START HOME -->
         <section class="bg-home2" id="home">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-7">
                         <div class="mb-4 pb-3 me-lg-5">
-                            <h6 class="sub-title">We have 150,000+ live jobs</h6>
+                            <h6 class="sub-title">We have {{jobs_count}}+ live jobs</h6>
                             <h1 class="display-5 fw-semibold mb-3">Find your dream jobs with <span class="text-primary fw-bold">Jobcy</span></h1>
                             <p class="lead text-muted mb-0">Find jobs, create trackable resumes and enrich your applications.Carefully crafted after analyzing the needs of different industries.</p>
                         </div>
@@ -283,7 +283,7 @@
                     <!--end col-->
                     <div class="col-lg-5">
                         <div class="mt-5 mt-md-0">
-                            <img src="assets/images/process-02.png" alt="" class="home-img" /> 
+                            <img src="{% static 'assets/images/process-02.png' %}" alt="" class="home-img" /> 
                         </div>
                     </div><!--end col-->
                 </div>
