@@ -28,6 +28,8 @@ def job_list(request):
 
 
 def job_detail(request, slug):  # will take request and slug(to identify which job which it is)
-    the_job = Job.objects.get(slug=slug)  # getting job with that slug
-    return render(request, "job-detail.html", {"object": the_job})
+    user_country = get_user_location(request) #get user country based on ip-address
+    job = Job.objects.get(slug=slug)  # getting job with that slug
+    return render(request, "job/job_detail.html", {"job": job, "user_country":user_country})
+
 
