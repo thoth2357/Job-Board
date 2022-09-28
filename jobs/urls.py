@@ -6,5 +6,8 @@ urlpatterns = [
     path('contact',jobs_views.contact, name='contact'),
     path('jobs/', jobs_views.job_list, name='job-list'),
     path('jobs/<slug:slug>', jobs_views.job_detail, name='job_detail'), #slug will help us identify the specific instance of job
+
+    path('jobs-search/', jobs_views.job_search, name='job_search'),
+
 ]
 
