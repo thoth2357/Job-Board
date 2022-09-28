@@ -44,3 +44,6 @@ def job_detail(request, slug:str):  # will take request and slug(to identify whi
 
 def job_search(request):
     return render(request, "sections/Home/job_whole_list.html", {})
+
+def job_search_concise(request, country:str, query:str):
+    return render(request, "sections/Home/job_whole_list.html", {})
