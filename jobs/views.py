@@ -1,18 +1,20 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator
 from .models import Job
-
+from services.models import Filter_tag
+from .filters import JobsFilter 
 from .utils import get_user_location
 
 
 # Create your views here. #It tells django what html file to display
 def home(request):
     user_country = get_user_location(request) #get user country based on ip-address
-    print('country',user_country)
     job_list = Job.objects.all()  # import jobs from models and push it to front end
     job_list = job_list[:4]  # will display 4 jobs
     jobs_count = Job.objects.count()
-    return render(request, "home.html", {"jobs": job_list, "jobs_count": jobs_count, "user_country": user_country})
+    listing_filter = JobsFilter(request.GET, queryset=job_list)
+    
+    return render(request, "home.html", {"jobs": job_list, "jobs_count": jobs_count, "user_country": user_country, "listing_filter": listing_filter})
 
 def contact(request):
     '''
@@ -20,7 +22,8 @@ def contact(request):
     args: request
     returns: Rendered contact page
     '''
-    context = {}
+    user_country = get_user_location(request) #get user country based on ip-address
+    context = {"user_country": user_country}
     return render(request, "contact.html", context)
 
 def job_list(request):
@@ -43,7 +46,15 @@ def job_detail(request, slug:str):  # will take request and slug(to identify whi
     return render(request, "job/job_detail.html", {"job": job, "user_country":user_country, "related_jobs":non_duplicate_related_jobs, "keywords":split_title})
 
 def job_search(request):
-    return render(request, "sections/Home/job_whole_list.html", {})
+    filter_tags = Filter_tag.objects.all()
+    jobs_listing = Job.objects.all()
+    listing_filter = JobsFilter(request.GET, queryset=jobs_listing)
+    paginated_listing_filter = Paginator(listing_filter.qs, 4)
+    job_per_page = paginated_listing_filter.get_page(request.GET.get('page'))
+    
+    context = {"filter_tags":filter_tags, "listing_filter":listing_filter, 'job_per_page':job_per_page}
+    return render(request, "sections/Home/job_whole_list.html", context)
 
 def job_search_concise(request, country:str, query:str):
     return render(request, "sections/Home/job_whole_list.html", {})
+
