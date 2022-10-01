@@ -1,4 +1,5 @@
 {% load static %}
+{% load widget_tweaks %}
         <!-- START HOME -->
         <section class="bg-home2" id="home">
             <div class="container">
@@ -15,13 +16,15 @@
                                     <div class="col-md-4">
                                         <div class="filter-search-form filter-border mt-3 mt-md-0">
                                             <i class="uil uil-briefcase-alt"></i>
-                                            <input type="search" id="job-title" class="form-control filter-input-box" placeholder="Job, Company name...">
+                                            {% render_field listing_filter.form.job_company class+="form-control filter-input-box" placeholder="Job, Company"%}
+                                            
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-md-4">
                                         <div class="filter-search-form mt-3 mt-md-0">
                                             <i class="uil uil-map-marker"></i>
-                                            {% include 'sections/countries.html' %}
+                                            {% render_field listing_filter.form.location class+="form-control filter-input-box" placeholder="Location"%}
+                                            {% comment %} {% include 'sections/countries.html' %} {% endcomment %}
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-md-4">
