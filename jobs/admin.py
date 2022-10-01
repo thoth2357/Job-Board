@@ -1,8 +1,8 @@
-from sre_constants import CATEGORY
 from django.contrib import admin
 from .models import Job
 
-# Register your models here.
-admin.site.register(Job)  # creates model in the admin
-# admin.site.register(Company)
-# admin.site.register(Category)
+@admin.register(Job)
+class JobAdmin(admin.ModelAdmin):
+    list_display =  ("title", "company", "location", "category", "date_posted") 
+    list_filter =  ("company", "category", "date_posted") 
+    search_fields = ("title", "company", "location", "category", "date_posted") 
