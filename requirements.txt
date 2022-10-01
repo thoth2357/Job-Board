@@ -6,3 +6,5 @@ django-celery-beat
 selenium
 webdriver_manager
 bs4
+django-filter
+django-widget-tweaks
