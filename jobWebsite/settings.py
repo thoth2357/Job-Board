@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_celery_beat',
     'django_extensions',
+    'django_filters',
+    'widget_tweaks',
     'jobs',
     'users',
     'services'
@@ -68,6 +70,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {
+                'filter_tags': 'jobs.template_tags.filter_tags',
+            }
         },
     },
 ]
