@@ -28,11 +28,15 @@ class FilterTagAdmin(admin.ModelAdmin):
     list_filter = ("tag_name",)
     search_fields = ("tag_name", "tag_description", "tag_search_company", "tag_search_category")
     ordering = ("tag_name",)
+    
+    readonly_fields = ['search_url']
+    
 
     def render_change_form(self, request, context, *args, **kwargs):
         form_instance = context['adminform'].form
         form_instance.fields['tag_name'].widget.attrs['placeholder'] = 'E.g. GMStrat'
         form_instance.fields['tag_description'].widget.attrs['placeholder'] = 'E.g. Tag For Finding Strategy Jobs in Google and Microsoft'
-        form_instance.fields['tag_search_company'].widget.attrs['placeholder'] = 'E.g. google and Microsoft'
+        form_instance.fields['tag_search_company'].widget.attrs['placeholder'] = 'E.g. google, Microsoft'
         form_instance.fields['tag_search_category'].widget.attrs['placeholder'] = 'E.g. Strategy'
+        # form_instance.fields['search_url'].widget.attrs['placeholder'] = 'Please Leave Blank. It is auto generated.'
         return super().render_change_form(request, context, *args, **kwargs)
