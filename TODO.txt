@@ -1,2 +1,1 @@
-#TODO  uncomment job whole list side bar and finish it functionality. Lazy boy
-#FIXME 
+#TODO  uncomment job whole list side bar and finish it functionality. Lazy boy  #FIXED ALREADY
