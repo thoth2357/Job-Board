@@ -1,4 +1,6 @@
 {% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load filter_tags %}
 {% load static %}
 {% block title %} Job Search {% endblock title %}
 
@@ -41,33 +43,31 @@
                 <div class="col-lg-9">
                     <div class="me-lg-5">
                         <div class="job-list-header">
-                            <form action="#">
+                            <form action="">
                                 <div class="row g-2">
-                                    <div class="col-lg-3 col-md-6">
+                                    <div class="col-lg-5 col-md-6">
                                         <div class="filler-job-form">
                                             <i class="uil uil-briefcase-alt"></i>
-                                            <input type="search" class="form-control filter-job-input-box" id="exampleFormControlInput1" placeholder="Job, company... ">
+                                            {% render_field listing_filter.form.job_company class+="form-control filter-job-input-box" placeholder="Job, Company"%}
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-lg-3 col-md-6">
                                         <div class="filler-job-form">
                                             <i class="uil uil-location-point"></i>
-                                            {% include 'sections/countries.html' %}
+                                            {% render_field listing_filter.form.location class+="form-control" placeholder="Location"%}
+                                            {% comment %} {% include 'sections/countries.html' %} {% endcomment %}
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-lg-3 col-md-6">
                                         <div class="filler-job-form">
                                             <i class="uil uil-clipboard-notes"></i>
-                                            <select class="form-select " data-trigger name="choices-single-categories" id="choices-single-categories" aria-label="Default select example">
-                                                <option value="4">Accounting</option>
-                                                <option value="1">IT & Software</option>
-                                                <option value="3">Marketing</option>
-                                                <option value="5">Banking</option>
-                                            </select>
+                                            {% render_field listing_filter.form.category class+="form-control" placeholder="Category"%}
                                         </div>
                                     </div><!--end col-->
-                                    <div class="col-lg-3 col-md-6">
-                                        <a href="javascript:void(0)" class="btn btn-primary w-100"><i class="uil uil-filter"></i> Fliter</a>
+                                    <div class="col-lg-11 col-md-6">
+                                        <button class="btn btn-primary w-100">
+                                            <i class="uil uil-search"></i> Search
+                                        </button>
                                     </div><!--end col-->
                                 </div><!--end row-->
                             </form>
@@ -75,693 +75,140 @@
                         <div class="wedget-popular-title mt-4">
                             <!-- <h6>Popular</h6> -->
                             <div class="col-lg-12">
-                                <h6 class="fs-16 mb-3">Custom Set Filter Tag</h6>
+                                <h6 class="fs-16 mb-3">Custom Filter Tags</h6>
                             </div>
                             <ul class="list-inline">
+                                {% for custom_tag in filter_tags %}
                                 <li class="list-inline-item">
-                                    <div class="popular-box d-flex align-items-center">
+                                    <div class="number popular-box d-flex align-items-center">
                                         <div class="number flex-shrink-0 me-2">
-                                            20  
+
                                         </div>
-                                        <a href="javascript:void(0)" class="primary-link stretched-link"><h6 class="fs-14 mb-0">UI/UX designer</h6></a>
+                                        <a href="{{custom_tag.search_url}}" class="primary-link stretched-link"><h6 class="fs-14 mb-0">{{custom_tag.tag_name}}</h6></a>
                                     </div>
                                 </li>
-                                <li class="list-inline-item">
-                                    <div class="popular-box d-flex align-items-center">
-                                        <div class="number flex-shrink-0 me-2">
-                                            18  
-                                        </div>
-                                        <a href="javascript:void(0)" class="primary-link stretched-link"><h6 class="fs-14 mb-0">HR manager</h6></a>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item">
-                                    <div class="popular-box d-flex align-items-center">
-                                        <div class="number flex-shrink-0 me-2">
-                                            10  
-                                        </div>
-                                        <a href="javascript:void(0)" class="primary-link stretched-link"><h6 class="fs-14 mb-0">Product manager</h6></a>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item">
-                                    <div class="popular-box d-flex align-items-center">
-                                        <div class="number flex-shrink-0 me-2">
-                                            15  
-                                        </div>
-                                        <a href="javascript:void(0)" class="primary-link stretched-link"><h6 class="fs-14 mb-0">Sales manager</h6></a>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item">
-                                    <div class="popular-box d-flex align-items-center">
-                                        <div class="number flex-shrink-0 me-2">
-                                            28  
-                                        </div>
-                                        <a href="javascript:void(0)" class="primary-link stretched-link"><h6 class="fs-14 mb-0">Developer</h6></a>
-                                    </div>
-                                </li>
+                                {% endfor %}
                             </ul>
                         </div>
     
                         <!-- Job-list -->
                         <div>
-                            <div class="job-box bookmark-post card mt-5">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col-lg-1">
-                                            <a href="company-details.html"><img src="assets/images/featured-job/img-01.png" alt="" class="img-fluid rounded-3"></a>
-                                        </div><!--end col-->
-                                        <div class="col-lg-10">
-                                            <div class="mt-3 mt-lg-0">
-                                                <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark">HTML Developer</a> <small class="text-muted fw-normal">(0-2 Yrs Exp.)</small></h5>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i> $250 - $800 / month</p>
-                                                    </li>
-                                                </ul>
-                                                <div class="mt-2">
-                                                    <span class="badge bg-soft-success mt-1">Full Time</span>
-                                                    <span class="badge bg-soft-warning mt-1">Urgent</span>
-                                                    <span class="badge bg-soft-info mt-1">Private</span>
+                            {% comment %} show search results here {% endcomment %}
+                            {% for job in job_per_page %}
+                                <div class="job-box bookmark-post card mt-5">
+                                    <div class="p-4">
+                                        <div class="row">
+                                            <div class="col-lg-1">
+                                                <a href="{% url 'job_detail' slug=job.slug %}"><img src="{{job.logo}}" alt="" class="img-fluid rounded-3"></a>
+                                            </div><!--end col-->
+                                            <div class="col-lg-10">
+                                                <div class="mt-3 mt-lg-0">
+                                                    <h5 class="fs-17 mb-1"><a href="{% url 'job_detail' slug=job.slug %}" class="text-dark">{{job.title}}</a> <small class="text-muted fw-normal">{{job.rating|default_if_none:"&#11088; NA"}}</small></h5>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0">{{job.company}}</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> {{job.location}}</p>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i>{{job.salary|default_if_none:"NA"}}</p>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="mt-2">
+                                                        <span class="badge bg-soft-success mt-1">{{job.contract_type|default_if_none:"NA"}}</span>
+                                                    </div>
+                                                </div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                        {% comment %} <div class="favorite-icon">
+                                            <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                        </div> {% endcomment %}
+                                    </div>
+                                    <div class="p-3 bg-light">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-8">
+                                                <div>
+                                                    <ul class="list-inline mb-0">
+                                                        <li class="list-inline-item"><i class="uil uil-tag"></i> <b>Keywords :</b></li>
+                                                        {% with job.title|split:" " as keywords %}
+                                                            {% for keyword in keywords %}
+                                                                <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted"></a>{{keyword}},</li>
+                                                            {% endfor %}
+                                                        {% endwith %}
+                                                        
+                                                    </ul>
                                                 </div>
                                             </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                    <div class="favorite-icon">
-                                        <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
-                                    </div>
-                                </div>
-                                <div class="p-3 bg-light">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-8">
-                                            <div>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item"><i class="uil uil-tag"></i> Keywords :</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="#applyNow" data-bs-toggle="modal" class="primary-link">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                            </div>
-                            <!--end job-box-->
-    
-                            <div class="job-box card mt-4">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col-lg-1">
-                                            <a href="company-details.html"><img src="assets/images/featured-job/img-02.png" alt="" class="img-fluid rounded-3"></a>
-                                        </div><!--end col-->
-                                        <div class="col-lg-10">
-                                            <div class="mt-3 mt-lg-0">
-                                                <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark">Marketing Director</a> <small class="text-muted fw-normal">(2-4 Yrs Exp.)</small></h5>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0">Creative Agency</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> New York</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i> $250 - $800 / month</p>
-                                                    </li>
-                                                </ul>
-                                                <div class="mt-2">
-                                                    <span class="badge bg-soft-danger mt-1">Part Time</span>
-                                                    <span class="badge bg-soft-info mt-1">Private</span>
+                                            <!--end col-->
+                                            <div class="col-md-3">
+                                                <div class="text-md-end">
+                                                    <a href="{{job.url_link}}" class="primary-link" target="_blank">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
                                                 </div>
                                             </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                    <div class="favorite-icon">
-                                        <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
+                                            <!--end col-->
+                                        </div>
+                                        <!--end row-->
                                     </div>
                                 </div>
-                                <div class="p-3 bg-light">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-8">
-                                            <div>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item"><i class="uil uil-tag"></i> Keywords :</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Marketing</a>,</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">business</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="#applyNow" data-bs-toggle="modal" class="primary-link">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                            </div>
-                            <!--end job-box-->
-    
-                            <div class="job-box bookmark-post card mt-4">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col-lg-1">
-                                            <a href="company-details.html"><img src="assets/images/featured-job/img-03.png" alt="" class="img-fluid rounded-3"></a>
-                                        </div><!--end col-->
-                                        <div class="col-lg-10">
-                                            <div class="mt-3 mt-lg-0">
-                                                <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark">HTML Developer</a> <small class="text-muted fw-normal">(2-4 Yrs Exp.)</small></h5>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i> $250 - $800 / month</p>
-                                                    </li>
-                                                </ul>
-                                                <div class="mt-2">
-                                                    <span class="badge bg-soft-purple mt-1">Freelance</span>
-                                                    <span class="badge bg-soft-blue mt-1">Internship</span>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                    <div class="favorite-icon">
-                                        <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
-                                    </div>
-                                </div>
-                                <div class="p-3 bg-light">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-8">
-                                            <div>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item"><i class="uil uil-tag"></i> Keywords :</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="#applyNow" data-bs-toggle="modal" class="primary-link">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                            </div>
-                            <!--end job-box-->
-    
-                            <div class="job-box card mt-4">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col-lg-1">
-                                            <a href="company-details.html"><img src="assets/images/featured-job/img-04.png" alt="" class="img-fluid rounded-3"></a>
-                                        </div><!--end col-->
-                                        <div class="col-lg-10">
-                                            <div class="mt-3 mt-lg-0">
-                                                <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark">Product Sales Specialist</a> <small class="text-muted fw-normal">(5+ Yrs Exp.)</small></h5>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i> $250 - $800 / month</p>
-                                                    </li>
-                                                </ul>
-                                                <div class="mt-2">
-                                                    <span class="badge bg-soft-success mt-1">Full Time</span>
-                                                    <span class="badge bg-soft-info mt-1">Private</span>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                    <div class="favorite-icon">
-                                        <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
-                                    </div>
-                                </div>
-                                <div class="p-3 bg-light">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-8">
-                                            <div>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item"><i class="uil uil-tag"></i> Keywords :</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="#applyNow" data-bs-toggle="modal" class="primary-link">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                            </div>
-                            <!--end job-box-->
-    
-                            <div class="job-box card mt-4">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col-lg-1">
-                                            <a href="company-details.html"><img src="assets/images/featured-job/img-05.png" alt="" class="img-fluid rounded-3"></a>
-                                        </div><!--end col-->
-                                        <div class="col-lg-10">
-                                            <div class="mt-3 mt-lg-0">
-                                                <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark">Product Designer</a> <small class="text-muted fw-normal">(0-5 Yrs Exp.)</small></h5>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0">Creative Agency</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i> $250 - $800 / month</p>
-                                                    </li>
-                                                </ul>
-                                                <div class="mt-2">
-                                                    <span class="badge bg-soft-blue mt-1">Internship</span>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                    <div class="favorite-icon">
-                                        <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
-                                    </div>
-                                </div>
-                                <div class="p-3 bg-light">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-8">
-                                            <div>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item"><i class="uil uil-tag"></i> Keywords :</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">developer</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="#applyNow" data-bs-toggle="modal" class="primary-link">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                            </div>
-                            <!--end job-box-->
-    
-                            <div class="job-box card mt-4">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col-lg-1">
-                                            <a href="company-details.html"><img src="assets/images/featured-job/img-06.png" alt="" class="img-fluid rounded-3"></a>
-                                        </div><!--end col-->
-                                        <div class="col-lg-10">
-                                            <div class="mt-3 mt-lg-0">
-                                                <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark">Project Manager</a> <small class="text-muted fw-normal">(0-2 Yrs Exp.)</small></h5>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i> $250 - $800 / month</p>
-                                                    </li>
-                                                </ul>
-                                                <div class="mt-2">
-                                                    <span class="badge bg-soft-success mt-1">Full Time</span>
-                                                    <span class="badge bg-soft-warning mt-1">Urgent</span>
-                                                    <span class="badge bg-soft-info mt-1">Private</span>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                    <div class="favorite-icon">
-                                        <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
-                                    </div>
-                                </div>
-                                <div class="p-3 bg-light">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-8">
-                                            <div>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item"><i class="uil uil-tag"></i> Keywords :</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Manager</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="#applyNow" data-bs-toggle="modal" class="primary-link">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                            </div>
-                            <!--end job-box-->
-    
-                            <div class="job-box card mt-4">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col-lg-1">
-                                            <a href="company-details.html"><img src="assets/images/featured-job/img-07.png" alt="" class="img-fluid rounded-3"></a>
-                                        </div><!--end col-->
-                                        <div class="col-lg-10">
-                                            <div class="mt-3 mt-lg-0">
-                                                <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark">HTML Developer</a></h5>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i> $250 - $800 / month</p>
-                                                    </li>
-                                                </ul>
-                                                <div class="mt-2">
-                                                    <span class="badge bg-soft-purple mt-1">Freelance</span>
-                                                    <span class="badge bg-soft-warning mt-1">Urgent</span>
-                                                    <span class="badge bg-soft-info mt-1">Private</span>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                    <div class="favorite-icon">
-                                        <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
-                                    </div>
-                                </div>
-                                <div class="p-3 bg-light">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-8">
-                                            <div>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item"><i class="uil uil-tag"></i> Keywords :</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Manager</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="#applyNow" data-bs-toggle="modal" class="primary-link">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                            </div>
-                            <!--end job-box-->
-    
-                            <div class="job-box card mt-4">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col-lg-1">
-                                            <a href="company-details.html"><img src="assets/images/featured-job/img-08.png" alt="" class="img-fluid rounded-3"></a>
-                                        </div><!--end col-->
-                                        <div class="col-lg-10">
-                                            <div class="mt-3 mt-lg-0">
-                                                <h5 class="fs-17 mb-1"><a href="job-details.html" class="text-dark">Business Associate</a></h5>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0">Jobcy Technology Pvt.Ltd</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i> California</p>
-                                                    </li>
-                                                    <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i> $250 - $800 / month</p>
-                                                    </li>
-                                                </ul>
-                                                <div class="mt-2">
-                                                    <span class="badge bg-soft-danger mt-1">Part Time</span>
-                                                    <span class="badge bg-soft-warning mt-1">Urgent</span>
-                                                </div>
-                                            </div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                    <div class="favorite-icon">
-                                        <a href="javascript:void(0)"><i class="uil uil-heart-alt fs-18"></i></a>
-                                    </div>
-                                </div>
-                                <div class="p-3 bg-light">
-                                    <div class="row justify-content-between">
-                                        <div class="col-md-8">
-                                            <div>
-                                                <ul class="list-inline mb-0">
-                                                    <li class="list-inline-item"><i class="uil uil-tag"></i> Keywords :</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Ui designer</a>,</li>
-                                                    <li class="list-inline-item"><a href="javascript:void(0)" class="primary-link text-muted">Manager</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                        <div class="col-md-3">
-                                            <div class="text-md-end">
-                                                <a href="#applyNow" data-bs-toggle="modal" class="primary-link">Apply Now <i class="mdi mdi-chevron-double-right"></i></a>
-                                            </div>
-                                        </div>
-                                        <!--end col-->
-                                    </div>
-                                    <!--end row-->
-                                </div>
-                            </div>
-                            <!--end job-box-->
+                                <!--end job-box-->
+                            {% endfor %}
     
                         </div>
                         <!-- End Job-list -->
-    
+                        
+                        <!-- pagination start-->
                         <div class="row">
                             <div class="col-lg-12 mt-4 pt-2">
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination job-pagination mb-0 justify-content-center">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="javascript:void(0)" tabindex="-1">
-                                                <i class="mdi mdi-chevron-double-left fs-15"></i>
-                                            </a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
-                                        <li class="page-item">
+                                        {% if job_per_page.has_previous %}
+                                            <li class="page-item">
+                                                <a href="?page={{job_per_page.previous_page_number}}" class="page-link" href="javascript:void(0)" tabindex="-1">
+                                                    <i class="mdi mdi-chevron-double-left fs-15"></i>
+                                                </a>
+                                            </li>
+                                        {% else %}
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                                    <i class="mdi mdi-chevron-double-left fs-15"></i>
+                                                </a>
+                                            </li>
+                                        {% endif %}
+                                        
+                                        <li class="page-item active">
                                             <a class="page-link" href="javascript:void(0)">
-                                                <i class="mdi mdi-chevron-double-right fs-15"></i>
+                                                {{job_per_page.number}}
                                             </a>
                                         </li>
+                                        
+                                        {% comment %} <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="?page=4">4</a></li> {% endcomment %}
+
+                                        {% if job_per_page.has_next %}
+                                            <li class="page-item">
+                                                <a class="page-link" href="?page={{job_per_page.next_page_number}}">
+                                                    <i class="mdi mdi-chevron-double-right fs-15"></i>
+                                                </a>
+                                            </li>
+                                        {% else %}
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="job_per_page.next_page_number">
+                                                    <i class="mdi mdi-chevron-double-right fs-15"></i>
+                                                </a>
+                                            </li>
+                                        {% endif %}
                                     </ul>
                                 </nav>
+                                <h6>Page {{job_per_page.number}} of {{job_per_page.paginator.num_pages}}</h6>
                             </div><!--end col-->
                         </div><!-- end row -->
                     </div>
 
                 </div>
-                <!-- START SIDE-BAR -->
-                <div class="col-lg-3">
-                    <div class="side-bar mt-5 mt-lg-0">
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="locationOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#location" aria-expanded="true" aria-controls="location">
-                                    Location
-                                </button>
-                                </h2>
-                                <div id="location" class="accordion-collapse collapse show" aria-labelledby="locationOne">
-                                    <div class="accordion-body">
-                                        <div class="side-title">
-                                            <div class="mb-3">
-                                                <form class="position-relative">
-                                                    <input class="form-control" type="search" placeholder="Search...">
-                                                    <button class="bg-transparent border-0 position-absolute top-50 end-0 translate-middle-y me-2" type="submit"><span class="mdi mdi-magnify text-muted"></span></button>
-                                                </form>
-                                            </div>
-                                            <div class="area-range">
-                                                <div class="form-label mb-3">Area Range: <span class="example-val mt-2" id="slider1-span">0</span> miles</div>
-                                                <div id="slider1"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- end accordion-item -->
-                    
-                            <div class="accordion-item mt-4">   
-                            <h2 class="accordion-header" id="experienceOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#experience" aria-expanded="true" aria-controls="experience">
-                                    Work experience
-                                </button>
-                            </h2>
-                            <div id="experience" class="accordion-collapse collapse show" aria-labelledby="experienceOne">
-                                <div class="accordion-body">
-                                    <div class="side-title">
-                                        <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" />
-                                            <label class="form-check-label ms-2 text-muted" for="flexCheckChecked1">No experience</label>
-                                        </div>
-                                        <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked />
-                                            <label class="form-check-label ms-2 text-muted" for="flexCheckChecked2">0-3 years</label>
-                                        </div>
-                                        <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" />
-                                            <label class="form-check-label ms-2 text-muted" for="flexCheckChecked3">3-6 years</label>
-                                        </div>
-                                        <div class="form-check mt-2">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" />
-                                            <label class="form-check-label ms-2 text-muted" for="flexCheckChecked4">More than 6 years</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div><!-- end accordion-item -->
-                    
-                            <div class="accordion-item mt-3">
-                                <h2 class="accordion-header" id="jobType">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#jobtype" aria-expanded="false" aria-controls="jobtype">
-                                        Type of employment
-                                    </button>
-                                </h2>
-                                <div id="jobtype" class="accordion-collapse collapse show" aria-labelledby="jobType">
-                                    <div class="accordion-body">
-                                        <div class="side-title">
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
-                                                <label class="form-check-label ms-2 text-muted" for="flexRadioDefault6">
-                                                    Freelance
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                                <label class="form-check-label ms-2 text-muted" for="flexRadioDefault2">
-                                                    Full Time
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                                                <label class="form-check-label ms-2 text-muted" for="flexRadioDefault3">
-                                                    Internship
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                                                <label class="form-check-label ms-2 text-muted" for="flexRadioDefault4">
-                                                    Part Time
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- end accordion-item -->
-                    
-                            <div class="accordion-item mt-3">
-                                <h2 class="accordion-header" id="datePosted">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dateposted" aria-expanded="false" aria-controls="dateposted">
-                                        Date Posted
-                                    </button>
-                                </h2>
-                                <div id="dateposted" class="accordion-collapse collapse show" aria-labelledby="datePosted">
-                                    <div class="accordion-body">
-                                        <div class="side-title form-check-all">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="checkAll" value="" />
-                                                <label class="form-check-label ms-2 text-muted" for="checkAll">
-                                                    All
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox"  name="datePosted"  value="last" id="flexCheckChecked5" checked />
-                                                <label class="form-check-label ms-2 text-muted" for="flexCheckChecked5">
-                                                    Last Hour
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" name="datePosted" value="last" id="flexCheckChecked6" />
-                                                <label class="form-check-label ms-2 text-muted" for="flexCheckChecked6">
-                                                    Last 24 hours
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" name="datePosted" value="last" id="flexCheckChecked7" />
-                                                <label class="form-check-label ms-2 text-muted" for="flexCheckChecked7">
-                                                    Last 7 days
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" name="datePosted" value="last" id="flexCheckChecked8" />
-                                                <label class="form-check-label ms-2 text-muted" for="flexCheckChecked8">
-                                                    Last 14 days
-                                                </label>
-                                            </div>
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" name="datePosted" value="last" id="flexCheckChecked9" />
-                                                <label class="form-check-label ms-2 text-muted" for="flexCheckChecked9">
-                                                    Last 30 days
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- end accordion-item -->
-                    
-                            <div class="accordion-item mt-3">
-                                <h2 class="accordion-header" id="tagCloud">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tagcloud" aria-expanded="false" aria-controls="tagcloud">
-                                        Tags Cloud
-                                    </button>
-                                </h2>
-                                <div id="tagcloud" class="accordion-collapse collapse show" aria-labelledby="tagCloud">
-                                    <div class="accordion-body">
-                                        <div class="side-title">
-                                            <a href="javascript:void(0)" class="badge tag-cloud fs-13 mt-2">design</a>
-                                            <a href="javascript:void(0)" class="badge tag-cloud fs-13 mt-2">marketing</a>
-                                            <a href="javascript:void(0)" class="badge tag-cloud fs-13 mt-2">business</a>
-                                            <a href="javascript:void(0)" class="badge tag-cloud fs-13 mt-2">developer</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- end accordion-item -->
-                    
-                        </div><!--end accordion-->
-                        
-                    </div><!--end side-bar-->
-                </div>
-                <!-- END SIDE-BAR -->
+                {% comment %} {% include 'sections/job_whole_list_side_bar.html' %} {% endcomment %}
+                
             </div>
         </div>
     </section>
@@ -792,6 +239,8 @@
 <script src="{% static 'assets/js/pages/switcher.init.js' %}"</script>
 <!-- App Js -->
 <script src="{% static 'assets/js/app.js' %}"</script>
+<!--Paginator JS-->
+{% comment %} <script src="{% static 'assets/js/paginator.js' %}"</script> {% endcomment %}
 {% endblock script %}
 
 
