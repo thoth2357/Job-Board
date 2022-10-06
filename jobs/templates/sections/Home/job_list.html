@@ -47,13 +47,13 @@
                                     <!--end col-->
                                     <div class="col-md-2">
                                         <div>
-                                            <p class="text-muted mb-2"><span class="text-primary"></span>{{job.salary|default_if_none:"NA"}}</p>
+                                            <p class="text-muted mb-2"><span class="text-primary"></span>{{job.salary|default_if_none:""}}</p>
                                         </div>
                                     </div>
                                     <!--end col-->
                                     <div class="col-md-2">
                                         <div>
-                                            <span class="badge bg-soft-success fs-13 mt-1">{{job.contract_type|default_if_none:"NA"}}</span>
+                                            <span class="badge bg-soft-success fs-13 mt-1">{{job.contract_type|default_if_none:""}}</span>
                                             {% comment %} <span class="badge bg-soft-info fs-13 mt-1">Private</span> {% endcomment %}
                                         </div>
                                     </div>

@@ -149,11 +149,11 @@
                                                         <p class="text-muted fs-14 mb-0"><i class="mdi mdi-map-marker"></i>{{job.location}}</p>
                                                     </li>
                                                     <li class="list-inline-item">
-                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i>{{job.salary|default_if_none:"NA"}}</p>
+                                                        <p class="text-muted fs-14 mb-0"><i class="uil uil-wallet"></i>{{job.salary|default_if_none:""}}</p>
                                                     </li>
                                                 </ul>
                                                 <div class="mt-2">
-                                                    <span class="badge bg-soft-success mt-1">{{job.contract_type|default_if_none:"NA"}}</span>
+                                                    <span class="badge bg-soft-success mt-1">{{job.contract_type|default_if_none:""}}</span>
                                                 </div>
                                             </div>
                                         </div><!--end col-->
@@ -325,7 +325,7 @@
                                     </li>
                                 </ul>
                                 <div class="mt-4">
-                                    <a href="company-details.html" class="btn btn-primary btn-hover w-100 rounded"><i class="mdi mdi-eye"></i> View Profile</a>
+                                    <a href="" class="btn btn-primary btn-hover w-100 rounded"><i class="mdi mdi-eye"></i> View Profile</a>
                                 </div>
                             </div>
                         </div>
