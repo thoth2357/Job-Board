@@ -26,10 +26,10 @@ def contact(request):
     context = {"user_country": user_country}
     return render(request, "contact.html", context)
 
-def job_list(request):
-    job_list = Job.objects.all()  # import jobs from models and push it to front end
-    job_list = job_list[:20]  # will display 4 jobs
-    return render(request, "job-list.html", {"jobs": job_list})  # make job-list.html
+# def job_list(request):
+#     job_list = Job.objects.all()  # import jobs from models and push it to front end
+#     job_list = job_list[:20]  # will display 4 jobs
+#     return render(request, "job-list.html", {"jobs": job_list})  # make job-list.html
 
 
 def job_detail(request, slug:str):  # will take request and slug(to identify which job which it is)
@@ -48,11 +48,12 @@ def job_detail(request, slug:str):  # will take request and slug(to identify whi
 def job_search(request):
     filter_tags = Filter_tag.objects.all()
     jobs_listing = Job.objects.all()
+    contract_types = Job.objects.values_list('contract_type', flat=True).distinct()
     listing_filter = JobsFilter(request.GET, queryset=jobs_listing)
     paginated_listing_filter = Paginator(listing_filter.qs, 4)
     job_per_page = paginated_listing_filter.get_page(request.GET.get('page'))
     
-    context = {"filter_tags":filter_tags, "listing_filter":listing_filter, 'job_per_page':job_per_page}
+    context = {"filter_tags":filter_tags, "listing_filter":listing_filter, 'job_per_page':job_per_page, "contract_types":contract_types}
     return render(request, "sections/Home/job_whole_list.html", context)
 
 def job_search_concise(request, country:str, query:str):
