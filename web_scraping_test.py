@@ -1,4 +1,5 @@
 # from pprint import pprint
+from datetime import datetime, timedelta
 import requests
 # import cloudscraper
 # import re
@@ -6,7 +7,7 @@ from bs4 import BeautifulSoup as beauty
 
 url = 'https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=9346afd4052633e7'
 url2 = 'https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true'
-
+url3 = 'https://in.indeed.com/viewjob?jk=e65622a1d40c94ee&from=serp&vjs=3'
 # # response = requests.get(url)
   
 # # print(response)
@@ -118,6 +119,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
 from fake_useragent import UserAgent
 from time import sleep
 
@@ -142,8 +144,8 @@ soup = beauty(page_source, 'html.parser')
 
 # scraping for indeed link given for companies
 jobs_card = soup.find_all('div', class_='job_seen_beacon') #get all jobs cards
-company_logo = soup.find('div', class_='univsrch-ci-logo-small')
-print(company_logo)
+# company_logo = soup.find('div', class_='univsrch-ci-logo-small')
+# print(company_logo)
 # get all job spans
 jobs_card_span = soup.find_all('span', class_='jobtitle')
 for card in jobs_card:
@@ -161,5 +163,22 @@ for card in jobs_card:
             print(card.find('div', class_="job-snippet").find('li').text)
             print("\n")
             print(card.find('h2', class_=re.compile("^jobTitle")).find('a')['href'])
+            
+            driver.get(url3)
+            sleep(20)
+            qualifications = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[3]/div/div')
+            duties = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[2]')
+            date_job_posted = driver.find_element(By.XPATH, '//*[@id="hiringInsightsSectionRoot"]/p/span[2]').text
+            date_number = re.findall('[0-9]+', date_job_posted)
+            date_job_posted_datetime = datetime.now() - timedelta(days=int(date_number[0]))
+            print(duties.text, qualifications.text)
+            
+            company_profile = driver.find_element(By.XPATH, '//*[@id="viewJobSSRRoot"]/div[2]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/a').get_attribute('href')
+            driver.get(company_profile)
+            sleep(10)
+            company_logo = driver.find_element(By.XPATH, '//*[@id="cmp-container"]/div/div[1]/header/div[2]/div[3]/div/div/div/div[1]/div[1]/div[1]/div/div/img').get_attribute('src')
+            print('comapany logo',company_logo)
+            print('job date',date_job_posted_datetime)
             break
+        
 # driver.close()
