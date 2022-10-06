@@ -4,12 +4,14 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
 
 from bs4 import BeautifulSoup as beauty
 import re
 import requests
 import logging
 import time
+from datetime import datetime, timedelta
 
 from jobs.models import Job
 from .models import Scraping_Service
@@ -44,9 +46,7 @@ def start_web_scraping_indeed():
                 jobs_card = soup.find_all(
                     "div", class_="job_seen_beacon"
                 )  # get all jobs cards
-                company_logo = soup.find("div", class_="univsrch-ci-logo-small").find(
-                    "img"
-                )["src"]
+                
                 for card in jobs_card:
                     # v = card.find_all("span")
                     job_title = card.find("a", id=re.compile("^job_")).find("span").text
@@ -61,7 +61,24 @@ def start_web_scraping_indeed():
                     url_link = card.find("h2", class_=re.compile("^jobTitle")).find(
                         "a"
                     )["href"]
-                    url_link = add + url_link
+                    
+                    url_link_new = add + url_link
+                    
+                    print(url_link_new)
+                    driver.get(url_link_new)
+                    time.sleep(10)
+                    qualifications = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[3]/div/div').text
+                    job_duties = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[2]').text
+                    date_job_posted = driver.find_element(By.XPATH, '//*[@id="hiringInsightsSectionRoot"]/p/span[2]').text
+                    date_number = re.findall('[0-9]+', date_job_posted)
+                    if date_number and len(date_number) >= 1:
+                        date_job_posted_datetime = datetime.now() - timedelta(days=int(date_number[0]))
+                    else:
+                        date_job_posted_datetime = datetime.now()
+                    company_profile = driver.find_element(By.XPATH, '//*[@id="viewJobSSRRoot"]/div[2]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/a').get_attribute('href')
+                    driver.get(company_profile)
+                    time.sleep(10)
+                    company_logo = driver.find_element(By.XPATH, '//*[@id="cmp-container"]/div/div[1]/header/div[2]/div[3]/div/div/div/div[1]/div[1]/div[1]/div/div/img').get_attribute('src')
                     job_entry = Job.objects.create(
                         title=job_title,
                         logo=company_logo,
@@ -69,10 +86,11 @@ def start_web_scraping_indeed():
                         location=company_location,
                         rating=job_rating,
                         duties=job_duties,
+                        requirements = qualifications,
                         contract_type=job_type,
                         url_link=url_link,
                         source="Indeed",
-                        slug=job_title
+                        date_posted = date_job_posted_datetime,
                     )
                     job_entry.save()
                     logging.info(
@@ -143,7 +161,6 @@ def start_web_scraping_linkedin():
                             contract_type=contract_type,
                             url_link=job_link,
                             source="LinkedIn",
-                            slug=job_title
                         )
                         job_entry.save()
                         logging.info(
