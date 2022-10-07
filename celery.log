@@ -1507,3 +1507,5 @@ IndexError: list index out of range
 [2022-10-06 18:15:46,711: INFO/ForkPoolWorker-7] 90 Associate - Sustainability has been added to the database
 [2022-10-06 18:15:46,711: INFO/ForkPoolWorker-7] None is not active
 [2022-10-06 18:15:46,774: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[eed5ac35-33b4-483f-997e-0dce4b7c64f2] succeeded in 424.1614704120002s: None
+[2022-10-07 04:00:00,011: INFO/MainProcess] Task celery.backend_cleanup[460eaa31-1b38-4979-abf2-f59b1beb9180] received
+[2022-10-07 04:00:00,017: INFO/ForkPoolWorker-7] Task celery.backend_cleanup[460eaa31-1b38-4979-abf2-f59b1beb9180] succeeded in 0.002323245003935881s: None
