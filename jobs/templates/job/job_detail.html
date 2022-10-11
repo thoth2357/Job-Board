@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% load filter_tags %}
 {% block title %}{{job.slug}}{% endblock title %}
 
 {% block page-content %}
@@ -94,6 +94,15 @@
                                     <h5 class="mb-3">Job Description</h5>
                                     <div class="job-detail-desc">
                                         <p class="text-muted mb-0">{{job.duties}}</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <h5 class="mb-3">Requirements</h5>
+                                    <div class="job-detail-desc mt-2">
+                                            {% for line in requirement %}
+                                                <p class="text-muted mb-0">{{line}}</p>
+                                            {% endfor %}
                                     </div>
                                 </div>
 
