@@ -44,7 +44,7 @@
                     <div class="me-lg-5">
                         <div class="job-list-header">
                             <form action="">
-                                <div class="row g-2">
+                                <div class="row g-2 flex-nowrap">
                                     <div class="col-lg-5 col-md-6">
                                         <div class="filler-job-form">
                                             <i class="uil uil-briefcase-alt"></i>
@@ -54,22 +54,35 @@
                                     <div class="col-lg-3 col-md-6">
                                         <div class="filler-job-form">
                                             <i class="uil uil-location-point"></i>
-                                            {% render_field listing_filter.form.location class+="form-control" placeholder="Location"%}
+                                            {% render_field listing_filter.form.location class+="form-control filter-job-input-box" placeholder="Location"%}
                                             {% comment %} {% include 'sections/countries.html' %} {% endcomment %}
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-lg-3 col-md-6">
                                         <div class="filler-job-form">
-                                            <i class="uil uil-clipboard-notes"></i>
-                                            {% render_field listing_filter.form.category class+="form-control" placeholder="Category"%}
+                                            <i class="uil uil-angle-down"></i>
+                                            {% render_field listing_filter.form.experience_level class+="form-control filter-job-input-box" placeholder="Category"%}
                                         </div>
                                     </div><!--end col-->
-                                    <div class="col-lg-11 col-md-6">
-                                        <button class="btn btn-primary w-100">
-                                            <i class="uil uil-search"></i> Search
-                                        </button>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="filler-job-form">
+                                            {% render_field listing_filter.form.contract_type class+="form-control filter-job-input-box" placeholder="Contract Type"%}
+                                            <i class="uil uil-angle-down"></i>
+                                            
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="filler-job-form">
+                                            <i class="uil uil-angle-down"></i>
+                                            {% render_field listing_filter.form.degree class+="form-control multiple filter-job-input-box" placeholder="Category"%}
+                                        </div>
                                     </div><!--end col-->
                                 </div><!--end row-->
+                                <div class="col-lg-11 col-md-6  p-2">
+                                    <button class="btn btn-primary w-100">
+                                        <i class="uil uil-search"></i> Search / Filter
+                                    </button>
+                                </div><!--end col-->
                             </form>
                         </div><!--end job-list-header-->
                         <div class="wedget-popular-title mt-4">
@@ -82,7 +95,7 @@
                                 <li class="list-inline-item">
                                     <div class="number popular-box d-flex align-items-center">
                                         <div class="number flex-shrink-0 me-2">
-
+                                            
                                         </div>
                                         <a href="{{custom_tag.search_url}}" class="primary-link stretched-link"><h6 class="fs-14 mb-0">{{custom_tag.tag_name}}</h6></a>
                                     </div>
@@ -164,9 +177,15 @@
                                     <ul class="pagination job-pagination mb-0 justify-content-center">
                                         {% if job_per_page.has_previous %}
                                             <li class="page-item">
-                                                <a href="?page={{job_per_page.previous_page_number}}" class="page-link" href="javascript:void(0)" tabindex="-1">
-                                                    <i class="mdi mdi-chevron-double-left fs-15"></i>
-                                                </a>
+                                                {% if '?job_company' in request.get_full_path %}
+                                                    <a class="page-link" href="{{request.get_full_path}}&page={{job_per_page.previous_page_number}}">
+                                                        <i class="mdi mdi-chevron-double-left fs-15"></i>
+                                                    </a> 
+                                                {% else %}
+                                                    <a class="page-link" href="?page={{job_per_page.previous_page_number}}">
+                                                        <i class="mdi mdi-chevron-double-left fs-15"></i>
+                                                    </a> 
+                                                {% endif %}
                                             </li>
                                         {% else %}
                                             <li class="page-item disabled">
@@ -188,9 +207,15 @@
 
                                         {% if job_per_page.has_next %}
                                             <li class="page-item">
-                                                <a class="page-link" href="?page={{job_per_page.next_page_number}}">
-                                                    <i class="mdi mdi-chevron-double-right fs-15"></i>
-                                                </a>
+                                                {% if '?job_company' in request.get_full_path %}
+                                                    <a class="page-link" href="{{request.get_full_path}}&page={{job_per_page.next_page_number}}">
+                                                        <i class="mdi mdi-chevron-double-right fs-15"></i>
+                                                    </a> 
+                                                {% else %}
+                                                    <a class="page-link" href="?page={{job_per_page.next_page_number}}">
+                                                        <i class="mdi mdi-chevron-double-right fs-15"></i>
+                                                    </a> 
+                                                {% endif %}
                                             </li>
                                         {% else %}
                                             <li class="page-item disabled">
@@ -207,7 +232,7 @@
                     </div>
 
                 </div>
-                {% include 'sections/job_whole_list_side_bar.html' %}
+                {% comment %} {% include 'sections/job_whole_list_side_bar.html' %} {% endcomment %}
                 
             </div>
         </div>
