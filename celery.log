@@ -1509,3 +1509,338 @@ IndexError: list index out of range
 [2022-10-06 18:15:46,774: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[eed5ac35-33b4-483f-997e-0dce4b7c64f2] succeeded in 424.1614704120002s: None
 [2022-10-07 04:00:00,011: INFO/MainProcess] Task celery.backend_cleanup[460eaa31-1b38-4979-abf2-f59b1beb9180] received
 [2022-10-07 04:00:00,017: INFO/ForkPoolWorker-7] Task celery.backend_cleanup[460eaa31-1b38-4979-abf2-f59b1beb9180] succeeded in 0.002323245003935881s: None
+[2022-10-07 10:55:08,379: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[45091da9-a9c8-4fc4-ab2e-39fc5b0b723c] received
+[2022-10-07 10:55:08,381: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-07 10:55:08,668: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-07 10:55:14,679: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
+[2022-10-07 10:55:15,391: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-10-07 10:55:15,568: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:23, 280kB/s]
+[2022-10-07 10:55:15,673: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|1         | 80.0k/6.35M [00:00<00:22, 294kB/s]
+[2022-10-07 10:55:15,776: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|2         | 136k/6.35M [00:00<00:16, 396kB/s] 
+[2022-10-07 10:55:15,879: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   3%|2         | 184k/6.35M [00:00<00:15, 426kB/s]
+[2022-10-07 10:55:15,981: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|4         | 264k/6.35M [00:00<00:11, 552kB/s]
+[2022-10-07 10:55:16,082: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   5%|5         | 344k/6.35M [00:00<00:09, 637kB/s]
+[2022-10-07 10:55:16,186: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   8%|8         | 552k/6.35M [00:00<00:05, 1.09MB/s]
+[2022-10-07 10:55:16,288: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  10%|#         | 664k/6.35M [00:00<00:05, 1.10MB/s]
+[2022-10-07 10:55:16,496: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  13%|#2        | 816k/6.35M [00:01<00:06, 934kB/s] 
+[2022-10-07 10:55:16,842: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  20%|#9        | 1.26M/6.35M [00:01<00:04, 1.18MB/s]
+[2022-10-07 10:55:16,943: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  39%|###8      | 2.46M/6.35M [00:01<00:01, 3.23MB/s]
+[2022-10-07 10:55:17,046: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  50%|#####     | 3.20M/6.35M [00:01<00:00, 4.11MB/s]
+[2022-10-07 10:55:17,147: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  63%|######2   | 3.99M/6.35M [00:01<00:00, 5.05MB/s]
+[2022-10-07 10:55:17,248: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  72%|#######2  | 4.60M/6.35M [00:01<00:00, 5.36MB/s]
+[2022-10-07 10:55:17,393: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  82%|########2 | 5.21M/6.35M [00:02<00:00, 5.05MB/s]
+[2022-10-07 10:55:17,518: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  91%|######### | 5.77M/6.35M [00:02<00:00, 4.93MB/s]
+[2022-10-07 10:55:17,696: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  99%|#########9| 6.29M/6.35M [00:02<00:00, 4.24MB/s]
+[2022-10-07 10:55:17,720: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:02<00:00, 2.86MB/s]
+[2022-10-07 10:55:17,901: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
+[2022-10-07 10:55:59,317: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 10:56:33,516: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 10:56:15.963764) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 10:56:33,595: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[45091da9-a9c8-4fc4-ab2e-39fc5b0b723c] raised unexpected: OperationalError('table jobs_job has no column named contract_type')
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: table jobs_job has no column named contract_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 82, in start_web_scraping_indeed
+    driver.get(company_profile)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 40, in save
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: table jobs_job has no column named contract_type
+[2022-10-07 12:23:35,761: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[98fcf7d4-85b4-4cbb-9e98-baa61aadf484] received
+[2022-10-07 12:23:35,763: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-07 12:23:35,837: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-07 12:23:41,407: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-07 12:24:17,359: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:24:51,654: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 12:24:33.992917) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:24:51,660: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[98fcf7d4-85b4-4cbb-9e98-baa61aadf484] raised unexpected: OperationalError('table jobs_job has no column named contract_type')
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: table jobs_job has no column named contract_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 82, in start_web_scraping_indeed
+    driver.get(company_profile)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 40, in save
+    self.uniqueId = str(uuid.uuid4())
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: table jobs_job has no column named contract_type
+[2022-10-07 12:26:18,214: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-07 12:26:18,217: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-07 12:26:19,226: INFO/MainProcess] mingle: all alone
+[2022-10-07 12:26:19,278: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-07 12:26:19,278: INFO/MainProcess] celery@Asteria ready.
+[2022-10-07 12:27:37,705: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[2b952ea8-46d3-4484-8a8d-1099fbd91f97] received
+[2022-10-07 12:27:37,707: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-07 12:27:37,751: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-07 12:27:43,895: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-07 12:28:15,159: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:28:50,594: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 12:28:32.229736) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:28:51,804: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[2b952ea8-46d3-4484-8a8d-1099fbd91f97] raised unexpected: MultipleObjectsReturned('get() returned more than one Contract_Type -- it returned 2!')
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 98, in start_web_scraping_indeed
+    job_entry.save()
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 50, in save
+    contract_model_object = Contract_Type.objects.get(contract_type=self.contract_type1)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 499, in get
+    raise self.model.MultipleObjectsReturned(
+jobs.models.Contract_Type.MultipleObjectsReturned: get() returned more than one Contract_Type -- it returned 2!
+[2022-10-07 12:34:59,526: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[51f13162-0aa7-4aec-bfa8-a69b93827cdb] received
+[2022-10-07 12:34:59,530: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-07 12:34:59,616: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-07 12:35:05,252: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-07 12:35:45,448: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:36:20,685: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 12:36:02.720330) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:36:21,357: INFO/ForkPoolWorker-7] 2 Business Analyst - McKinsey Digital has been added to the database
+[2022-10-07 12:36:21,360: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=680dfaf98c9d7db0&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:36:46,809: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-07 12:36:33.057188) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:36:47,086: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[51f13162-0aa7-4aec-bfa8-a69b93827cdb] raised unexpected: MultipleObjectsReturned('get() returned more than one Contract_Type -- it returned 2!')
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 98, in start_web_scraping_indeed
+    job_entry.save()
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 50, in save
+    contract_model_object = Contract_Type.objects.create(contract_type=self.contract_type1)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 499, in get
+    raise self.model.MultipleObjectsReturned(
+jobs.models.Contract_Type.MultipleObjectsReturned: get() returned more than one Contract_Type -- it returned 2!
+[2022-10-07 12:47:48,311: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[6050f6f9-8d6c-4b8b-9575-719060d3c93a] received
+[2022-10-07 12:47:48,315: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-07 12:47:48,381: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-07 12:47:54,278: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-07 12:48:25,641: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:49:01,456: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 12:48:42.536538) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:49:01,980: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[6050f6f9-8d6c-4b8b-9575-719060d3c93a] raised unexpected: MultipleObjectsReturned('get() returned more than one Contract_Type -- it returned 3!')
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 98, in start_web_scraping_indeed
+    job_entry.save()
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 50, in save
+    contract_model_object = Contract_Type.objects.create(contract_type=self.contract_type1)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 499, in get
+    raise self.model.MultipleObjectsReturned(
+jobs.models.Contract_Type.MultipleObjectsReturned: get() returned more than one Contract_Type -- it returned 3!
+[2022-10-07 12:51:50,552: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-07 12:51:50,555: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-07 12:51:51,563: INFO/MainProcess] mingle: all alone
+[2022-10-07 12:51:51,573: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-07 12:51:51,573: INFO/MainProcess] celery@Asteria ready.
+[2022-10-07 12:53:18,622: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[12a75336-7da9-4894-8f3b-b0ac90ac3779] received
+[2022-10-07 12:53:18,624: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-07 12:53:18,664: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-07 12:53:25,275: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-07 12:54:01,660: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:54:38,980: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 12:54:20.064910) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:54:39,508: INFO/ForkPoolWorker-7] 5 Business Analyst - McKinsey Digital has been added to the database
+[2022-10-07 12:54:39,510: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=680dfaf98c9d7db0&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:55:04,786: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-07 12:54:52.120304) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:55:05,402: INFO/ForkPoolWorker-7] 6 Finance Associate - Timesheet & Expense Reimbursement has been added to the database
+[2022-10-07 12:55:05,403: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e371e9c75190de1d&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:55:30,146: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-18 12:55:17.084386) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:55:30,420: INFO/ForkPoolWorker-7] 7 Executive Assistant has been added to the database
+[2022-10-07 12:55:30,421: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=5898d84e836ca54a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:55:55,148: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-07 12:55:41.955041) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:55:55,565: INFO/ForkPoolWorker-7] 8 Senior Finance Associate - Timesheet & Expense Reimbursement has been added to the database
+[2022-10-07 12:55:55,568: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=299d47822ca40531&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:56:21,431: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-21 12:56:07.423864) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:56:21,717: INFO/ForkPoolWorker-7] 9 Process Excellence Manager has been added to the database
+[2022-10-07 12:56:21,718: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=c4e10414c959e7fc&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:56:49,919: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-07 12:56:37.367674) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:56:50,193: INFO/ForkPoolWorker-7] 10 Knowledge Specialist - Software Procurement - McKinsey Digit... has been added to the database
+[2022-10-07 12:56:50,194: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=606910015e7c5e93&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:57:15,740: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-06 12:57:02.752459) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:57:16,696: INFO/ForkPoolWorker-7] 11 Junior Capabilities & Insights Analyst - Automotive & Assemb... has been added to the database
+[2022-10-07 12:57:16,700: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=9879f392ad8514cd&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:57:42,177: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-07 12:57:29.007172) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:57:43,804: INFO/ForkPoolWorker-7] 12 Research Science Analyst - Panorama Financial Institutions C... has been added to the database
+[2022-10-07 12:57:43,806: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=2941417f477420e7&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:58:09,268: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-29 12:57:56.014348) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:58:09,730: INFO/ForkPoolWorker-7] 13 Data Scientist - QuantumBlack has been added to the database
+[2022-10-07 12:58:09,733: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=a8aef4deb231583a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:58:34,503: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-07 12:58:21.779590) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:58:34,766: INFO/ForkPoolWorker-7] 14 Capabilities and Insights Analyst_Payments Asia Hub_Gurugram has been added to the database
+[2022-10-07 12:58:34,769: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=83996f0771385526&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:59:00,268: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-30 12:58:47.468350) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:59:00,697: INFO/ForkPoolWorker-7] 15 Proposal Specialist has been added to the database
+[2022-10-07 12:59:00,699: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=5dd47a07270edfa5&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:59:26,051: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-21 12:59:13.062237) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:59:26,313: INFO/ForkPoolWorker-7] 16 Office Services Administrator has been added to the database
+[2022-10-07 12:59:26,315: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e45bf89d0e713aca&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 12:59:51,883: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-21 12:59:38.539810) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 12:59:52,168: INFO/ForkPoolWorker-7] 17 Capabilities & Insights Team Leader - Client Capabilities Ne... has been added to the database
+[2022-10-07 12:59:52,171: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=df1d031a09d62afb&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 13:00:17,721: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-04 13:00:04.624204) while time zone support is active.
+  warnings.warn(
+
+[2022-10-07 13:00:17,984: INFO/ForkPoolWorker-7] 18 Human Resources Generalist (Benefits) - INO has been added to the database
+[2022-10-07 13:00:17,985: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=54624aff233cb1cb&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-07 13:00:43,334: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[12a75336-7da9-4894-8f3b-b0ac90ac3779] raised unexpected: TypeError("'NoneType' object is not callable")
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 85, in start_web_scraping_indeed
+    job_entry = Job.objects.create(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 42, in save
+    if not Contract_Type.objects.filter(contract_type=self.contract_type1).exists():
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1386, in build_filter
+    value = self.resolve_lookup_value(value, can_reuse, allow_joins)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1158, in resolve_lookup_value
+    value = value.resolve_expression(
+TypeError: 'NoneType' object is not callable
