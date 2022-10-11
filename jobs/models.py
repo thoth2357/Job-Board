@@ -3,6 +3,12 @@ from django.urls import reverse
 from django.template.defaultfilters import slugify
 import uuid
 
+class Contract_Type(models.Model):
+    contract_type = models.CharField(max_length=50, null=True, blank=True)
+    
+    def __str__(self) -> str:
+        return f"{self.contract_type}"
+    
 
 class Job(models.Model):
     title = models.CharField(max_length=200, null=True, blank=True)
@@ -17,7 +23,8 @@ class Job(models.Model):
     duties = models.TextField(null=True, blank=True)
     applications = models.TextField(null=True, blank=True)
     date_posted = models.DateTimeField(null=True, blank=True)
-    contract_type = models.CharField(max_length=100, null=True, blank=True)
+    contract_type = models.ForeignKey(Contract_Type, on_delete=models.CASCADE, null=True, blank=True)
+    contract_type1 = models.CharField(max_length=200, null=True, blank=True)
     url_link = models.CharField(max_length=500, null=True, blank=True)
     source = models.CharField(max_length=100, null=True, blank=True)
     logo = models.URLField(max_length=200, null=True, blank=True)
@@ -31,10 +38,22 @@ class Job(models.Model):
     def save(self, *args, **kwargs):
         if self.uniqueId is None:
             self.uniqueId = str(uuid.uuid4())
-        if "remote" in self.location.lower():
-            self.contract_type = "Remote"
+        if self.contract_type1:  
+            if not Contract_Type.objects.filter(contract_type=self.contract_type1).exists():
+                contract_model_object = Contract_Type.objects.create(contract_type=self.contract_type1)
+                self.contract_type = contract_model_object
+            else:
+                contract_model_object = Contract_Type.objects.filter(contract_type=self.contract_type1)[0]
+                self.contract_type = contract_model_object
         else:
-            self.contract_type = "Onsite"
+            self.contract_type1 = "Onsite"
+            if not Contract_Type.objects.filter(contract_type=self.contract_type1).exists():
+                contract_model_object = Contract_Type.objects.create(contract_type=self.contract_type1)
+                self.contract_type = contract_model_object
+            else:
+                contract_model_object = Contract_Type.objects.filter(contract_type=self.contract_type1)[0]
+                self.contract_type = contract_model_object
+                
         if not self.slug:
             self.slug = f"{slugify(self.title)}{self.uniqueId.split('-')[1]}"
         super(Job, self).save(*args, **kwargs)
