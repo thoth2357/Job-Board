@@ -54,7 +54,10 @@ def start_web_scraping_indeed():
                     company_location = card.find("div", class_="companyLocation").text
                     job_rating = card.find("span", class_="ratingNumber")["aria-label"]
                     job_duties = card.find("div", class_="job-snippet").find("li").text
-                    job_type = card.find("div", class_="attribute_snippet")
+                    try:
+                        job_type = card.find("div", class_="attribute_snippet")
+                    except Exception:
+                        job_type = None
                     add = (
                         link.url_link.split("/")[0] + "//" + link.url_link.split("/")[2]
                     )
@@ -87,7 +90,7 @@ def start_web_scraping_indeed():
                         rating=job_rating,
                         duties=job_duties,
                         requirements = qualifications,
-                        contract_type=job_type,
+                        contract_type1=job_type,
                         url_link=url_link,
                         source="Indeed",
                         date_posted = date_job_posted_datetime,
