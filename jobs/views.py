@@ -40,10 +40,11 @@ def job_detail(request, slug:str):  # will take request and slug(to identify whi
     '''
     user_country = get_user_location(request) #get user country based on ip-address
     job = Job.objects.get(slug=slug)  # getting job with that slug
+    requirement = job.requirements.split("\n")
     split_title = job.title.split(' ')
     related_jobs = [Job.objects.all().filter(title__icontains = i) for i in split_title]
     non_duplicate_related_jobs = set([job for i in related_jobs for job in i])
-    return render(request, "job/job_detail.html", {"job": job, "user_country":user_country, "related_jobs":non_duplicate_related_jobs, "keywords":split_title})
+    return render(request, "job/job_detail.html", {"job": job, "user_country":user_country, "related_jobs":non_duplicate_related_jobs, "keywords":split_title, "requirement":requirement})
 
 def job_search(request):
     filter_tags = Filter_tag.objects.all()
