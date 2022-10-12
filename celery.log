@@ -1844,3 +1844,612 @@ Traceback (most recent call last):
   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1158, in resolve_lookup_value
     value = value.resolve_expression(
 TypeError: 'NoneType' object is not callable
+[2022-10-12 13:40:06,420: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-12 13:40:06,425: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-12 13:40:07,438: INFO/MainProcess] mingle: all alone
+[2022-10-12 13:40:07,554: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-12 13:40:07,555: INFO/MainProcess] celery@Asteria ready.
+[2022-10-12 13:40:07,560: INFO/MainProcess] Task celery.backend_cleanup[4fb340df-82bd-42ca-a970-805129af8de9] received
+[2022-10-12 13:40:07,564: INFO/ForkPoolWorker-7] Task celery.backend_cleanup[4fb340df-82bd-42ca-a970-805129af8de9] succeeded in 0.00245065099443309s: None
+[2022-10-12 13:50:02,295: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[e0219460-4089-41dc-b1e5-481354c4de9d] received
+[2022-10-12 13:50:02,300: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-12 13:50:02,828: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-12 13:50:09,832: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
+[2022-10-12 13:50:10,578: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-10-12 13:50:10,696: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 24.0k/6.35M [00:00<00:31, 210kB/s]
+[2022-10-12 13:50:10,905: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:45, 144kB/s]
+[2022-10-12 13:50:11,008: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|1         | 80.0k/6.35M [00:00<00:32, 202kB/s]
+[2022-10-12 13:50:11,310: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|1         | 104k/6.35M [00:00<00:49, 132kB/s] 
+[2022-10-12 13:50:11,515: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   3%|2         | 184k/6.35M [00:00<00:28, 229kB/s]
+[2022-10-12 13:50:11,637: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|4         | 264k/6.35M [00:01<00:19, 333kB/s]
+[2022-10-12 13:50:11,741: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   5%|4         | 304k/6.35M [00:01<00:18, 347kB/s]
+[2022-10-12 13:50:11,871: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   7%|7         | 472k/6.35M [00:01<00:09, 625kB/s]
+[2022-10-12 13:50:11,971: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  11%|#         | 704k/6.35M [00:01<00:05, 1.04MB/s]
+[2022-10-12 13:50:12,079: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  16%|#5        | 1.00M/6.35M [00:01<00:03, 1.57MB/s]
+[2022-10-12 13:50:12,180: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  23%|##3       | 1.48M/6.35M [00:01<00:02, 2.47MB/s]
+[2022-10-12 13:50:12,280: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  35%|###4      | 2.21M/6.35M [00:01<00:01, 3.89MB/s]
+[2022-10-12 13:50:12,383: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  45%|####5     | 2.87M/6.35M [00:01<00:00, 4.69MB/s]
+[2022-10-12 13:50:12,490: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  57%|#####7    | 3.63M/6.35M [00:01<00:00, 5.53MB/s]
+[2022-10-12 13:50:12,591: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  71%|#######1  | 4.52M/6.35M [00:02<00:00, 6.60MB/s]
+[2022-10-12 13:50:12,693: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  82%|########1 | 5.18M/6.35M [00:02<00:00, 6.65MB/s]
+[2022-10-12 13:50:12,837: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  92%|#########1| 5.83M/6.35M [00:02<00:00, 5.92MB/s]
+[2022-10-12 13:50:12,926: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:02<00:00, 2.84MB/s]
+[2022-10-12 13:50:13,328: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
+[2022-10-12 13:55:14,410: ERROR/ForkPoolWorker-7] Error in getting link
+[2022-10-12 13:55:14,472: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[e0219460-4089-41dc-b1e5-481354c4de9d] succeeded in 312.17205901502166s: None
+[2022-10-12 14:23:53,412: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[92dcccd6-262a-4863-9102-2d446f76fd0e] received
+[2022-10-12 14:23:53,417: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-12 14:23:53,536: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-12 14:23:59,422: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-12 14:24:39,654: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:25:15,655: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 14:24:57.412827) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:25:16,214: INFO/ForkPoolWorker-7] 19 Business Analyst - McKinsey Digital has been added to the database
+[2022-10-12 14:25:16,218: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=680dfaf98c9d7db0&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:25:41,131: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-07 14:25:28.528144) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:25:43,020: INFO/ForkPoolWorker-7] 20 Finance Associate - Timesheet & Expense Reimbursement has been added to the database
+[2022-10-12 14:25:43,021: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=a2d2d2148a15c87a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:26:08,712: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-11 14:25:54.844054) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:26:09,776: INFO/ForkPoolWorker-7] 21 Senior Implementation Facilitator - McKinsey Implementation has been added to the database
+[2022-10-12 14:26:09,780: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=36f1e2544584b75f&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:26:34,942: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-12 14:26:21.993787) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:26:36,338: INFO/ForkPoolWorker-7] 22 Associate - Global Energy & Materials has been added to the database
+[2022-10-12 14:26:36,340: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=83996f0771385526&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:27:01,314: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-30 14:26:48.444779) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:27:02,423: INFO/ForkPoolWorker-7] 23 Proposal Specialist has been added to the database
+[2022-10-12 14:27:02,427: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=22750efc458c6d6c&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:27:26,954: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-12 14:27:14.380443) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:27:29,817: INFO/ForkPoolWorker-7] 24 Product Manager - McKinsey Digital has been added to the database
+[2022-10-12 14:27:29,819: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=d9ba61579a3d5f0a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:27:54,247: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-12 14:27:41.773528) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:27:55,208: INFO/ForkPoolWorker-7] 25 Implementation Coach - McKinsey Implementation has been added to the database
+[2022-10-12 14:27:55,209: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=82d1d6b2a2400ac5&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:28:19,593: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-21 14:28:07.102175) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:28:21,364: INFO/ForkPoolWorker-7] 26 Learning Coordinator has been added to the database
+[2022-10-12 14:28:21,369: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=5898d84e836ca54a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:28:46,000: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-07 14:28:33.519464) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:28:46,645: INFO/ForkPoolWorker-7] 27 Senior Finance Associate - Timesheet & Expense Reimbursement has been added to the database
+[2022-10-12 14:28:46,647: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=df1d031a09d62afb&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:29:11,735: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-04 14:28:59.060234) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:29:14,320: INFO/ForkPoolWorker-7] 28 Human Resources Generalist (Benefits) - INO has been added to the database
+[2022-10-12 14:29:14,324: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=1e37040a63e2f78a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:29:39,665: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-20 14:29:26.582445) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:29:40,425: INFO/ForkPoolWorker-7] 29 Full Stack Engineer - Build by McKinsey has been added to the database
+[2022-10-12 14:29:40,429: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e1bdaee4a8c2f604&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:30:05,256: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-12 14:29:52.453569) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:30:08,098: INFO/ForkPoolWorker-7] 30 Solution Manager - Power Solutions has been added to the database
+[2022-10-12 14:30:08,101: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e371e9c75190de1d&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:30:32,419: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-18 14:30:19.963819) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:30:34,255: INFO/ForkPoolWorker-7] 31 Executive Assistant has been added to the database
+[2022-10-12 14:30:34,258: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=94dbca432744bab1&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:31:00,083: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-11 14:30:46.378717) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:31:02,312: INFO/ForkPoolWorker-7] 32 Engagement Manager - Global Energy & Materials has been added to the database
+[2022-10-12 14:31:02,316: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=da739be117e59b04&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 14:31:27,325: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-12 14:31:14.399451) while time zone support is active.
+  warnings.warn(
+
+[2022-10-12 14:31:29,117: INFO/ForkPoolWorker-7] 33 Professional Development Specialist – McKinsey Digital (Buil... has been added to the database
+[2022-10-12 14:31:29,117: INFO/ForkPoolWorker-7] None is not active
+[2022-10-12 14:31:29,174: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[92dcccd6-262a-4863-9102-2d446f76fd0e] succeeded in 455.75790177099407s: None
+[2022-10-12 15:23:40,713: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[ec1d7028-d78e-48d5-b58c-f6d67102a85b] received
+[2022-10-12 15:23:50,680: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-12 15:23:50,681: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[ec1d7028-d78e-48d5-b58c-f6d67102a85b] succeeded in 9.605980993015692s: None
+[2022-10-12 17:01:40,160: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-12 17:01:40,163: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-12 17:01:41,173: INFO/MainProcess] mingle: all alone
+[2022-10-12 17:01:41,229: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-12 17:01:41,229: INFO/MainProcess] celery@Asteria ready.
+[2022-10-12 17:02:38,181: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[8d4e2516-dabb-4c8f-a869-b37e3300f333] received
+[2022-10-12 17:02:49,022: INFO/ForkPoolWorker-7] 34 Executive Assistant has been added to the database
+[2022-10-12 17:02:51,949: INFO/ForkPoolWorker-7] 35 Business Presentation Specialist (Trainee) has been added to the database
+[2022-10-12 17:02:53,840: INFO/ForkPoolWorker-7] 36 Analyst – OrgSolutions has been added to the database
+[2022-10-12 17:02:55,578: INFO/ForkPoolWorker-7] 37 Research Science Analyst - Panorama Financial Institutions Center has been added to the database
+[2022-10-12 17:02:57,239: INFO/ForkPoolWorker-7] 38 Research Science Analyst - Global Payments Map - Gurugram has been added to the database
+[2022-10-12 17:02:58,691: INFO/ForkPoolWorker-7] 39 Knowledge Analyst - Private Equity & Principal Investors has been added to the database
+[2022-10-12 17:03:00,138: INFO/ForkPoolWorker-7] 40 Project Finance Controller has been added to the database
+[2022-10-12 17:03:01,699: INFO/ForkPoolWorker-7] 41 Human Resources Generalist (Benefits) - INO has been added to the database
+[2022-10-12 17:03:03,229: INFO/ForkPoolWorker-7] 42 Learning Coordinator has been added to the database
+[2022-10-12 17:03:06,110: INFO/ForkPoolWorker-7] 43 Receptionist has been added to the database
+[2022-10-12 17:03:07,957: INFO/ForkPoolWorker-7] 44 SQL Developer - Ignite has been added to the database
+[2022-10-12 17:03:09,630: INFO/ForkPoolWorker-7] 45 Office Services Administrator has been added to the database
+[2022-10-12 17:03:11,456: INFO/ForkPoolWorker-7] 46 Proposal Specialist has been added to the database
+[2022-10-12 17:03:13,095: INFO/ForkPoolWorker-7] 47 Professional Development Manager – McKinsey Digital (Build Hub) has been added to the database
+[2022-10-12 17:03:14,656: INFO/ForkPoolWorker-7] 48 Knowledge Analyst - Life Sciences has been added to the database
+[2022-10-12 17:03:16,153: INFO/ForkPoolWorker-7] 49 Senior Finance Associate - US Payroll has been added to the database
+[2022-10-12 17:03:17,599: INFO/ForkPoolWorker-7] 50 Capabilities and Insights Analyst_Payments Asia Hub_Gurugram has been added to the database
+[2022-10-12 17:03:20,723: INFO/ForkPoolWorker-7] 51 Engineer - Ignite has been added to the database
+[2022-10-12 17:03:22,427: INFO/ForkPoolWorker-7] 52 Augmentation Analyst - Sustainability Data Warehousing has been added to the database
+[2022-10-12 17:03:24,979: INFO/ForkPoolWorker-7] 53 Senior Implementation Facilitator - Pharmaceuticals & Medical Products - Operations has been added to the database
+[2022-10-12 17:03:26,881: INFO/ForkPoolWorker-7] 54 Solution Manager - Power Solutions has been added to the database
+[2022-10-12 17:03:28,422: INFO/ForkPoolWorker-7] 55 Associate Design Director - UX has been added to the database
+[2022-10-12 17:03:29,896: INFO/ForkPoolWorker-7] 56 Full Stack Web Developer has been added to the database
+[2022-10-12 17:03:31,501: INFO/ForkPoolWorker-7] 57 Frontloading Analyst - Sustainability Data Warehousing has been added to the database
+[2022-10-12 17:03:34,284: INFO/ForkPoolWorker-7] 58 Senior Implementation Facilitator - McKinsey Implementation has been added to the database
+[2022-10-12 17:03:34,290: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[8d4e2516-dabb-4c8f-a869-b37e3300f333] succeeded in 56.10764094800106s: None
+[2022-10-12 17:27:17,267: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-12 17:27:17,270: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-12 17:27:18,280: INFO/MainProcess] mingle: all alone
+[2022-10-12 17:27:18,311: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-12 17:27:18,311: INFO/MainProcess] celery@Asteria ready.
+[2022-10-12 17:28:13,755: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[746d521e-f6da-4487-a9fa-265f89cfe32a] received
+[2022-10-12 17:28:13,758: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-12 17:28:13,902: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-12 17:28:19,647: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-12 17:33:20,882: WARNING/ForkPoolWorker-7] --- Logging error ---
+[2022-10-12 17:33:21,330: WARNING/ForkPoolWorker-7] Traceback (most recent call last):
+[2022-10-12 17:33:21,331: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 39, in start_web_scraping_indeed
+    driver.get(link.url_link)
+[2022-10-12 17:33:21,331: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in get
+    self.execute(Command.GET, {'url': url})
+[2022-10-12 17:33:21,332: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+[2022-10-12 17:33:21,332: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+[2022-10-12 17:33:21,333: WARNING/ForkPoolWorker-7] selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 293.799
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+#0 0x560bd18a42c3 <unknown>
+#1 0x560bd16ad83a <unknown>
+#2 0x560bd1699fb5 <unknown>
+#3 0x560bd1699cc0 <unknown>
+#4 0x560bd16989bb <unknown>
+#5 0x560bd1698eec <unknown>
+#6 0x560bd16a56d2 <unknown>
+#7 0x560bd16a6322 <unknown>
+#8 0x560bd16b5230 <unknown>
+#9 0x560bd16b9144 <unknown>
+#10 0x560bd1699429 <unknown>
+#11 0x560bd16b4f82 <unknown>
+#12 0x560bd171cea0 <unknown>
+#13 0x560bd1704d63 <unknown>
+#14 0x560bd16d97e3 <unknown>
+#15 0x560bd16daa21 <unknown>
+#16 0x560bd18f218e <unknown>
+#17 0x560bd18f5622 <unknown>
+#18 0x560bd18d8aae <unknown>
+#19 0x560bd18f62a3 <unknown>
+#20 0x560bd18ccecf <unknown>
+#21 0x560bd1916588 <unknown>
+#22 0x560bd1916706 <unknown>
+#23 0x560bd19308b2 <unknown>
+#24 0x7f4c2945c74d <unknown>
+[2022-10-12 17:33:21,333: WARNING/ForkPoolWorker-7] 
+During handling of the above exception, another exception occurred:
+[2022-10-12 17:33:21,333: WARNING/ForkPoolWorker-7] Traceback (most recent call last):
+[2022-10-12 17:33:21,334: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 1098, in emit
+    msg = self.format(record)
+[2022-10-12 17:33:21,334: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 942, in format
+    return fmt.format(record)
+[2022-10-12 17:33:21,335: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/utils/log.py", line 146, in format
+    msg = super().format(record)
+[2022-10-12 17:33:21,335: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 678, in format
+    record.message = record.getMessage()
+[2022-10-12 17:33:21,336: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 368, in getMessage
+    msg = msg % self.args
+[2022-10-12 17:33:21,336: WARNING/ForkPoolWorker-7] TypeError: not all arguments converted during string formatting
+[2022-10-12 17:33:21,337: WARNING/ForkPoolWorker-7] Call stack:
+[2022-10-12 17:33:21,447: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/bin/celery", line 8, in <module>
+    sys.exit(main())
+[2022-10-12 17:33:21,448: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/__main__.py", line 15, in main
+    sys.exit(_main())
+[2022-10-12 17:33:21,449: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/celery.py", line 217, in main
+    return celery(auto_envvar_prefix="CELERY")
+[2022-10-12 17:33:21,449: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+[2022-10-12 17:33:21,449: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+[2022-10-12 17:33:21,449: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-10-12 17:33:21,450: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+[2022-10-12 17:33:21,450: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+[2022-10-12 17:33:21,451: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+[2022-10-12 17:33:21,451: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/base.py", line 134, in caller
+    return f(ctx, *args, **kwargs)
+[2022-10-12 17:33:21,451: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/worker.py", line 351, in worker
+    worker.start()
+[2022-10-12 17:33:21,451: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+[2022-10-12 17:33:21,452: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+[2022-10-12 17:33:21,452: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+[2022-10-12 17:33:21,452: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/base.py", line 129, in start
+    self.on_start()
+[2022-10-12 17:33:21,453: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/prefork.py", line 109, in on_start
+    P = self._pool = Pool(processes=self.limit,
+[2022-10-12 17:33:21,453: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/asynpool.py", line 463, in __init__
+    super().__init__(processes, *args, **kwargs)
+[2022-10-12 17:33:21,453: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+[2022-10-12 17:33:21,454: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/asynpool.py", line 480, in _create_worker_process
+    return super()._create_worker_process(i)
+[2022-10-12 17:33:21,454: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+[2022-10-12 17:33:21,454: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 124, in start
+    self._popen = self._Popen(self)
+[2022-10-12 17:33:21,454: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/context.py", line 333, in _Popen
+    return Popen(process_obj)
+[2022-10-12 17:33:21,454: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/popen_fork.py", line 24, in __init__
+    self._launch(process_obj)
+[2022-10-12 17:33:21,455: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/popen_fork.py", line 79, in _launch
+    code = process_obj._bootstrap()
+[2022-10-12 17:33:21,455: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 327, in _bootstrap
+    self.run()
+[2022-10-12 17:33:21,455: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+[2022-10-12 17:33:21,455: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+[2022-10-12 17:33:21,455: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+[2022-10-12 17:33:21,456: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 649, in fast_trace_task
+    R, I, T, Rstr = tasks[task].__trace__(
+[2022-10-12 17:33:21,456: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+[2022-10-12 17:33:21,456: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+[2022-10-12 17:33:21,456: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 43, in start_web_scraping_indeed
+    logging.error("Error in getting link",e)
+[2022-10-12 17:33:21,456: WARNING/ForkPoolWorker-7] Message: 'Error in getting link'
+Arguments: (TimeoutException('timeout: Timed out receiving message from renderer: 293.799\n  (Session info: chrome=106.0.5249.103)', None, ['#0 0x560bd18a42c3 <unknown>', '#1 0x560bd16ad83a <unknown>', '#2 0x560bd1699fb5 <unknown>', '#3 0x560bd1699cc0 <unknown>', '#4 0x560bd16989bb <unknown>', '#5 0x560bd1698eec <unknown>', '#6 0x560bd16a56d2 <unknown>', '#7 0x560bd16a6322 <unknown>', '#8 0x560bd16b5230 <unknown>', '#9 0x560bd16b9144 <unknown>', '#10 0x560bd1699429 <unknown>', '#11 0x560bd16b4f82 <unknown>', '#12 0x560bd171cea0 <unknown>', '#13 0x560bd1704d63 <unknown>', '#14 0x560bd16d97e3 <unknown>', '#15 0x560bd16daa21 <unknown>', '#16 0x560bd18f218e <unknown>', '#17 0x560bd18f5622 <unknown>', '#18 0x560bd18d8aae <unknown>', '#19 0x560bd18f62a3 <unknown>', '#20 0x560bd18ccecf <unknown>', '#21 0x560bd1916588 <unknown>', '#22 0x560bd1916706 <unknown>', '#23 0x560bd19308b2 <unknown>', '#24 0x7f4c2945c74d <unknown>', '']),)
+[2022-10-12 17:33:21,518: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[746d521e-f6da-4487-a9fa-265f89cfe32a] succeeded in 307.7593778669834s: None
+[2022-10-12 17:34:45,513: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[720add98-e396-4339-989f-3c160a49464b] received
+[2022-10-12 17:34:45,517: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-12 17:34:45,611: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-12 17:34:51,175: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-12 17:44:48,590: WARNING/ForkPoolWorker-7] --- Logging error ---
+[2022-10-12 17:44:48,591: WARNING/ForkPoolWorker-7] Traceback (most recent call last):
+[2022-10-12 17:44:48,591: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 41, in start_web_scraping_indeed
+    page_source = driver.page_source
+[2022-10-12 17:44:48,592: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 539, in page_source
+    return self.execute(Command.GET_PAGE_SOURCE)['value']
+[2022-10-12 17:44:48,592: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+[2022-10-12 17:44:48,592: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+[2022-10-12 17:44:48,593: WARNING/ForkPoolWorker-7] selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+#0 0x55c0d914c2c3 <unknown>
+#1 0x55c0d8f5583a <unknown>
+#2 0x55c0d8f41fb5 <unknown>
+#3 0x55c0d8f41cc0 <unknown>
+#4 0x55c0d8f409bb <unknown>
+#5 0x55c0d8f40eec <unknown>
+#6 0x55c0d8f4d6d2 <unknown>
+#7 0x55c0d8f4e322 <unknown>
+#8 0x55c0d8f5d230 <unknown>
+#9 0x55c0d8f61144 <unknown>
+#10 0x55c0d8f41429 <unknown>
+#11 0x55c0d8f5cf82 <unknown>
+#12 0x55c0d8fc4928 <unknown>
+#13 0x55c0d8facd63 <unknown>
+#14 0x55c0d8f817e3 <unknown>
+#15 0x55c0d8f82a21 <unknown>
+#16 0x55c0d919a18e <unknown>
+#17 0x55c0d919d622 <unknown>
+#18 0x55c0d9180aae <unknown>
+#19 0x55c0d919e2a3 <unknown>
+#20 0x55c0d9174ecf <unknown>
+#21 0x55c0d91be588 <unknown>
+#22 0x55c0d91be706 <unknown>
+#23 0x55c0d91d88b2 <unknown>
+#24 0x7efddf0de74d <unknown>
+[2022-10-12 17:44:48,593: WARNING/ForkPoolWorker-7] 
+During handling of the above exception, another exception occurred:
+[2022-10-12 17:44:48,594: WARNING/ForkPoolWorker-7] Traceback (most recent call last):
+[2022-10-12 17:44:48,595: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 1098, in emit
+    msg = self.format(record)
+[2022-10-12 17:44:48,595: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 942, in format
+    return fmt.format(record)
+[2022-10-12 17:44:48,596: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/utils/log.py", line 146, in format
+    msg = super().format(record)
+[2022-10-12 17:44:48,596: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 678, in format
+    record.message = record.getMessage()
+[2022-10-12 17:44:48,596: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 368, in getMessage
+    msg = msg % self.args
+[2022-10-12 17:44:48,597: WARNING/ForkPoolWorker-7] TypeError: not all arguments converted during string formatting
+[2022-10-12 17:44:48,597: WARNING/ForkPoolWorker-7] Call stack:
+[2022-10-12 17:44:48,599: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/bin/celery", line 8, in <module>
+    sys.exit(main())
+[2022-10-12 17:44:48,600: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/__main__.py", line 15, in main
+    sys.exit(_main())
+[2022-10-12 17:44:48,600: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/celery.py", line 217, in main
+    return celery(auto_envvar_prefix="CELERY")
+[2022-10-12 17:44:48,600: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+[2022-10-12 17:44:48,600: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+[2022-10-12 17:44:48,600: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-10-12 17:44:48,600: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+[2022-10-12 17:44:48,601: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+[2022-10-12 17:44:48,601: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+[2022-10-12 17:44:48,601: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/base.py", line 134, in caller
+    return f(ctx, *args, **kwargs)
+[2022-10-12 17:44:48,601: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/worker.py", line 351, in worker
+    worker.start()
+[2022-10-12 17:44:48,601: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+[2022-10-12 17:44:48,602: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+[2022-10-12 17:44:48,602: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+[2022-10-12 17:44:48,602: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/base.py", line 129, in start
+    self.on_start()
+[2022-10-12 17:44:48,602: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/prefork.py", line 109, in on_start
+    P = self._pool = Pool(processes=self.limit,
+[2022-10-12 17:44:48,602: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/asynpool.py", line 463, in __init__
+    super().__init__(processes, *args, **kwargs)
+[2022-10-12 17:44:48,603: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+[2022-10-12 17:44:48,603: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/asynpool.py", line 480, in _create_worker_process
+    return super()._create_worker_process(i)
+[2022-10-12 17:44:48,603: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+[2022-10-12 17:44:48,603: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 124, in start
+    self._popen = self._Popen(self)
+[2022-10-12 17:44:48,603: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/context.py", line 333, in _Popen
+    return Popen(process_obj)
+[2022-10-12 17:44:48,603: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/popen_fork.py", line 24, in __init__
+    self._launch(process_obj)
+[2022-10-12 17:44:48,604: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/popen_fork.py", line 79, in _launch
+    code = process_obj._bootstrap()
+[2022-10-12 17:44:48,604: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 327, in _bootstrap
+    self.run()
+[2022-10-12 17:44:48,604: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+[2022-10-12 17:44:48,604: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+[2022-10-12 17:44:48,604: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+[2022-10-12 17:44:48,605: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 649, in fast_trace_task
+    R, I, T, Rstr = tasks[task].__trace__(
+[2022-10-12 17:44:48,605: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+[2022-10-12 17:44:48,605: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+[2022-10-12 17:44:48,605: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 43, in start_web_scraping_indeed
+    logging.error("Error in getting link",e)
+[2022-10-12 17:44:48,606: WARNING/ForkPoolWorker-7] Message: 'Error in getting link'
+Arguments: (TimeoutException('timeout: Timed out receiving message from renderer: 300.000\n  (Session info: chrome=106.0.5249.103)', None, ['#0 0x55c0d914c2c3 <unknown>', '#1 0x55c0d8f5583a <unknown>', '#2 0x55c0d8f41fb5 <unknown>', '#3 0x55c0d8f41cc0 <unknown>', '#4 0x55c0d8f409bb <unknown>', '#5 0x55c0d8f40eec <unknown>', '#6 0x55c0d8f4d6d2 <unknown>', '#7 0x55c0d8f4e322 <unknown>', '#8 0x55c0d8f5d230 <unknown>', '#9 0x55c0d8f61144 <unknown>', '#10 0x55c0d8f41429 <unknown>', '#11 0x55c0d8f5cf82 <unknown>', '#12 0x55c0d8fc4928 <unknown>', '#13 0x55c0d8facd63 <unknown>', '#14 0x55c0d8f817e3 <unknown>', '#15 0x55c0d8f82a21 <unknown>', '#16 0x55c0d919a18e <unknown>', '#17 0x55c0d919d622 <unknown>', '#18 0x55c0d9180aae <unknown>', '#19 0x55c0d919e2a3 <unknown>', '#20 0x55c0d9174ecf <unknown>', '#21 0x55c0d91be588 <unknown>', '#22 0x55c0d91be706 <unknown>', '#23 0x55c0d91d88b2 <unknown>', '#24 0x7efddf0de74d <unknown>', '']),)
+[2022-10-12 17:44:48,663: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[720add98-e396-4339-989f-3c160a49464b] succeeded in 603.1455675449979s: None
+[2022-10-12 17:58:51,915: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-12 17:58:51,918: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-12 17:58:52,927: INFO/MainProcess] mingle: all alone
+[2022-10-12 17:58:52,950: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-12 17:58:52,951: INFO/MainProcess] celery@Asteria ready.
+[2022-10-12 18:00:28,558: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[a19ead32-a136-4da4-99b4-d4f2d8ae3822] received
+[2022-10-12 18:00:28,560: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-12 18:00:28,627: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-12 18:00:44,249: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-12 18:01:52,634: WARNING/ForkPoolWorker-7] --- Logging error ---
+[2022-10-12 18:01:52,636: WARNING/ForkPoolWorker-7] Traceback (most recent call last):
+[2022-10-12 18:01:52,636: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 39, in start_web_scraping_indeed
+    driver.get(link.url_link)
+[2022-10-12 18:01:52,637: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in get
+    self.execute(Command.GET, {'url': url})
+[2022-10-12 18:01:52,637: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+[2022-10-12 18:01:52,637: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+[2022-10-12 18:01:52,637: WARNING/ForkPoolWorker-7] selenium.common.exceptions.WebDriverException: Message: unknown error: net::ERR_CONNECTION_CLOSED
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+#0 0x560f7dfa42c3 <unknown>
+#1 0x560f7ddad83a <unknown>
+#2 0x560f7dda7213 <unknown>
+#3 0x560f7dd9a82a <unknown>
+#4 0x560f7dd9bb3d <unknown>
+#5 0x560f7dd9ab3a <unknown>
+#6 0x560f7dd99ea5 <unknown>
+#7 0x560f7dd99cc0 <unknown>
+#8 0x560f7dd989bb <unknown>
+#9 0x560f7dd98d92 <unknown>
+#10 0x560f7ddaf52e <unknown>
+#11 0x560f7de1d24f <unknown>
+#12 0x560f7de04f42 <unknown>
+#13 0x560f7de1ca50 <unknown>
+#14 0x560f7de04d63 <unknown>
+#15 0x560f7ddd97e3 <unknown>
+#16 0x560f7dddaa21 <unknown>
+#17 0x560f7dff218e <unknown>
+#18 0x560f7dff5622 <unknown>
+#19 0x560f7dfd8aae <unknown>
+#20 0x560f7dff62a3 <unknown>
+#21 0x560f7dfccecf <unknown>
+#22 0x560f7e016588 <unknown>
+#23 0x560f7e016706 <unknown>
+#24 0x560f7e0308b2 <unknown>
+#25 0x7f95b379974d <unknown>
+[2022-10-12 18:01:52,637: WARNING/ForkPoolWorker-7] 
+During handling of the above exception, another exception occurred:
+[2022-10-12 18:01:52,637: WARNING/ForkPoolWorker-7] Traceback (most recent call last):
+[2022-10-12 18:01:52,637: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 1098, in emit
+    msg = self.format(record)
+[2022-10-12 18:01:52,637: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 942, in format
+    return fmt.format(record)
+[2022-10-12 18:01:52,638: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/utils/log.py", line 146, in format
+    msg = super().format(record)
+[2022-10-12 18:01:52,638: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 678, in format
+    record.message = record.getMessage()
+[2022-10-12 18:01:52,638: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/logging/__init__.py", line 368, in getMessage
+    msg = msg % self.args
+[2022-10-12 18:01:52,638: WARNING/ForkPoolWorker-7] TypeError: not all arguments converted during string formatting
+[2022-10-12 18:01:52,638: WARNING/ForkPoolWorker-7] Call stack:
+[2022-10-12 18:01:52,641: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/bin/celery", line 8, in <module>
+    sys.exit(main())
+[2022-10-12 18:01:52,642: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/__main__.py", line 15, in main
+    sys.exit(_main())
+[2022-10-12 18:01:52,642: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/celery.py", line 217, in main
+    return celery(auto_envvar_prefix="CELERY")
+[2022-10-12 18:01:52,642: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1130, in __call__
+    return self.main(*args, **kwargs)
+[2022-10-12 18:01:52,642: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+[2022-10-12 18:01:52,642: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/base.py", line 134, in caller
+    return f(ctx, *args, **kwargs)
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bin/worker.py", line 351, in worker
+    worker.start()
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+[2022-10-12 18:01:52,643: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/base.py", line 129, in start
+    self.on_start()
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/prefork.py", line 109, in on_start
+    P = self._pool = Pool(processes=self.limit,
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/asynpool.py", line 463, in __init__
+    super().__init__(processes, *args, **kwargs)
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/concurrency/asynpool.py", line 480, in _create_worker_process
+    return super()._create_worker_process(i)
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 124, in start
+    self._popen = self._Popen(self)
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/context.py", line 333, in _Popen
+    return Popen(process_obj)
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/popen_fork.py", line 24, in __init__
+    self._launch(process_obj)
+[2022-10-12 18:01:52,644: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/popen_fork.py", line 79, in _launch
+    code = process_obj._bootstrap()
+[2022-10-12 18:01:52,645: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 327, in _bootstrap
+    self.run()
+[2022-10-12 18:01:52,645: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+[2022-10-12 18:01:52,645: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+[2022-10-12 18:01:52,645: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+[2022-10-12 18:01:52,645: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 649, in fast_trace_task
+    R, I, T, Rstr = tasks[task].__trace__(
+[2022-10-12 18:01:52,645: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+[2022-10-12 18:01:52,645: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+[2022-10-12 18:01:52,645: WARNING/ForkPoolWorker-7]   File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 43, in start_web_scraping_indeed
+    logging.error("Error in getting link",e)
+[2022-10-12 18:01:52,646: WARNING/ForkPoolWorker-7] Message: 'Error in getting link'
+Arguments: (WebDriverException('unknown error: net::ERR_CONNECTION_CLOSED\n  (Session info: chrome=106.0.5249.103)', None, ['#0 0x560f7dfa42c3 <unknown>', '#1 0x560f7ddad83a <unknown>', '#2 0x560f7dda7213 <unknown>', '#3 0x560f7dd9a82a <unknown>', '#4 0x560f7dd9bb3d <unknown>', '#5 0x560f7dd9ab3a <unknown>', '#6 0x560f7dd99ea5 <unknown>', '#7 0x560f7dd99cc0 <unknown>', '#8 0x560f7dd989bb <unknown>', '#9 0x560f7dd98d92 <unknown>', '#10 0x560f7ddaf52e <unknown>', '#11 0x560f7de1d24f <unknown>', '#12 0x560f7de04f42 <unknown>', '#13 0x560f7de1ca50 <unknown>', '#14 0x560f7de04d63 <unknown>', '#15 0x560f7ddd97e3 <unknown>', '#16 0x560f7dddaa21 <unknown>', '#17 0x560f7dff218e <unknown>', '#18 0x560f7dff5622 <unknown>', '#19 0x560f7dfd8aae <unknown>', '#20 0x560f7dff62a3 <unknown>', '#21 0x560f7dfccecf <unknown>', '#22 0x560f7e016588 <unknown>', '#23 0x560f7e016706 <unknown>', '#24 0x560f7e0308b2 <unknown>', '#25 0x7f95b379974d <unknown>', '']),)
+[2022-10-12 18:01:52,705: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[a19ead32-a136-4da4-99b4-d4f2d8ae3822] succeeded in 84.14576932298951s: None
+[2022-10-12 18:05:00,084: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[aa5d659d-ec72-4944-a85a-e955f76d00ad] received
+[2022-10-12 18:05:00,090: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-12 18:05:00,214: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-12 18:05:05,856: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-12 18:08:51,219: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-12 18:12:56,461: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[aa5d659d-ec72-4944-a85a-e955f76d00ad] raised unexpected: ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/http/client.py", line 1368, in getresponse
+    response.begin()
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/http/client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/http/client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 71, in start_web_scraping_indeed
+    time.sleep(10)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in get
+    self.execute(Command.GET, {'url': url})
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 426, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/remote_connection.py", line 344, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/remote_connection.py", line 366, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/request.py", line 78, in request
+    return self.request_encode_body(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/http/client.py", line 1368, in getresponse
+    response.begin()
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/http/client.py", line 317, in begin
+    version, status, reason = self._read_status()
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/http/client.py", line 286, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
