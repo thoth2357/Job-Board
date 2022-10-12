@@ -1,5 +1,5 @@
 {% load static %}
-<!-- START TOP-BAR -->
+{% comment %} <!-- START TOP-BAR -->
 <div class="top-bar">
     <div class="container-fluid custom-container">
         <div class="row g-0 align-items-center">
@@ -40,9 +40,9 @@
     </div>
     <!--end container-->
 </div>
-<!-- END TOP-BAR -->
+<!-- END TOP-BAR --> {% endcomment %}
 <!--Navbar Start-->
-<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+<nav class="navbar navbar-expand-lg fixed-top sticky-top" id="navbar">
     <div class="container-fluid custom-container">
         <a class="navbar-brand text-dark fw-bold me-auto" href="{% url 'home' %}">
             <img src="{% static 'assets/images/logo-dark.png' %}" height="22" alt="" class="logo-dark" />
