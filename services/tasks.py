@@ -15,16 +15,15 @@ from datetime import datetime, timedelta
 
 from jobs.models import Job
 from .models import Scraping_Service
+from fake_useragent import UserAgent
 
-
-logging.basicConfig(
-    filename="scrapping.log",
-    filemode="w",
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-)
 
 chrome_options = Options()
 chrome_options.headless = False
+# chrome_options.add_argument('--remote=debugging-port=9222')
+chrome_options.add_argument("incognito")
+ua = UserAgent(use_cache_server=False, verify_ssl=False)
+chrome_options.add_argument(f"user-agent={ua.chrome}")
 
 
 @shared_task
@@ -39,8 +38,8 @@ def start_web_scraping_indeed():
                     driver.get(link.url_link)
                     time.sleep(20)
                     page_source = driver.page_source
-                except Exception:
-                    logging.error("Error in getting link")
+                except Exception as e: 
+                    logging.error(f"Error in getting link{e}")
                     break
                 soup = beauty(page_source, "html.parser")
                 jobs_card = soup.find_all(
@@ -161,9 +160,11 @@ def start_web_scraping_linkedin():
                             duties=duties,
                             requirements=qualifications,
                             category=category,
-                            contract_type=contract_type,
+                            contract_type1=contract_type,
                             url_link=job_link,
                             source="LinkedIn",
+                            # date_posted = date_job_posted_datetime,
+                            
                         )
                         job_entry.save()
                         logging.info(
