@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup as beauty
 url = 'https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=9346afd4052633e7'
 url2 = 'https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true'
 url3 = 'https://in.indeed.com/viewjob?jk=e65622a1d40c94ee&from=serp&vjs=3'
+url4 = 'https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6'
 # # response = requests.get(url)
   
 # # print(response)
@@ -115,70 +116,70 @@ url3 = 'https://in.indeed.com/viewjob?jk=e65622a1d40c94ee&from=serp&vjs=3'
 #     break
 
 # -----------------------------------------------------------------------------------indeed
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
-from fake_useragent import UserAgent
-from time import sleep
+# from selenium import webdriver
+# from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.chrome.options import Options
+# from webdriver_manager.chrome import ChromeDriverManager
+# from selenium.webdriver.common.by import By
+# from fake_useragent import UserAgent
+# from time import sleep
 
-from bs4 import BeautifulSoup as beauty
-import re
+# from bs4 import BeautifulSoup as beauty
+# import re
 
-chrome_options = Options()
-# chrome_options.add_argument('--remote-debugging-port=9222')
-chrome_options.headless = False
-chrome_options.add_argument("--incognito")
-# ua = UserAgent(use_cache_server=False, verify_ssl=False)
-# chrome_options.add_argument(f'user-agent={ua.chrome}')
+# chrome_options = Options()
+# # chrome_options.add_argument('--remote-debugging-port=9222')
+# chrome_options.headless = False
+# chrome_options.add_argument("--incognito")
+# # ua = UserAgent(use_cache_server=False, verify_ssl=False)
+# # chrome_options.add_argument(f'user-agent={ua.chrome}')
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
-driver.get(url)
-sleep(20)
-page_source = driver.page_source
+# driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+# driver.get(url)
+# sleep(20)
+# page_source = driver.page_source
 
 
-soup = beauty(page_source, 'html.parser')
-# print(soup)
+# soup = beauty(page_source, 'html.parser')
+# # print(soup)
 
-# scraping for indeed link given for companies
-jobs_card = soup.find_all('div', class_='job_seen_beacon') #get all jobs cards
-# company_logo = soup.find('div', class_='univsrch-ci-logo-small')
-# print(company_logo)
-# get all job spans
-jobs_card_span = soup.find_all('span', class_='jobtitle')
-for card in jobs_card:
-            v=card.find_all('span')
-            # print(v)
-            #univsrch-ci > div.univsrch-ci-block > div.univsrch-ci-logo-small > a > img
-            print(card.find("a",id=re.compile("^job_")).find('span').text)
-            print("\n")
-            print(card.find('span',class_ = "companyName").text)
-            print("\n")
-            print(card.find('div',class_="companyLocation").text)
-            print("\n")
-            print(card.find('span', class_="ratingNumber")['aria-label'])
-            print("\n")
-            print(card.find('div', class_="job-snippet").find('li').text)
-            print("\n")
-            print(card.find('h2', class_=re.compile("^jobTitle")).find('a')['href'])
+# # scraping for indeed link given for companies
+# jobs_card = soup.find_all('div', class_='job_seen_beacon') #get all jobs cards
+# # company_logo = soup.find('div', class_='univsrch-ci-logo-small')
+# # print(company_logo)
+# # get all job spans
+# jobs_card_span = soup.find_all('span', class_='jobtitle')
+# for card in jobs_card:
+#             v=card.find_all('span')
+#             # print(v)
+#             #univsrch-ci > div.univsrch-ci-block > div.univsrch-ci-logo-small > a > img
+#             print(card.find("a",id=re.compile("^job_")).find('span').text)
+#             print("\n")
+#             print(card.find('span',class_ = "companyName").text)
+#             print("\n")
+#             print(card.find('div',class_="companyLocation").text)
+#             print("\n")
+#             print(card.find('span', class_="ratingNumber")['aria-label'])
+#             print("\n")
+#             print(card.find('div', class_="job-snippet").find('li').text)
+#             print("\n")
+#             print(card.find('h2', class_=re.compile("^jobTitle")).find('a')['href'])
             
-            driver.get(url3)
-            sleep(20)
-            qualifications = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[3]/div/div')
-            duties = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[2]')
-            date_job_posted = driver.find_element(By.XPATH, '//*[@id="hiringInsightsSectionRoot"]/p/span[2]').text
-            date_number = re.findall('[0-9]+', date_job_posted)
-            date_job_posted_datetime = datetime.now() - timedelta(days=int(date_number[0]))
-            print(duties.text, qualifications.text)
+#             driver.get(url3)
+#             sleep(20)
+#             qualifications = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[3]/div/div')
+#             duties = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[2]')
+#             date_job_posted = driver.find_element(By.XPATH, '//*[@id="hiringInsightsSectionRoot"]/p/span[2]').text
+#             date_number = re.findall('[0-9]+', date_job_posted)
+#             date_job_posted_datetime = datetime.now() - timedelta(days=int(date_number[0]))
+#             print(duties.text, qualifications.text)
             
-            company_profile = driver.find_element(By.XPATH, '//*[@id="viewJobSSRRoot"]/div[2]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/a').get_attribute('href')
-            driver.get(company_profile)
-            sleep(10)
-            company_logo = driver.find_element(By.XPATH, '//*[@id="cmp-container"]/div/div[1]/header/div[2]/div[3]/div/div/div/div[1]/div[1]/div[1]/div/div/img').get_attribute('src')
-            print('comapany logo',company_logo)
-            print('job date',date_job_posted_datetime)
-            break
+#             company_profile = driver.find_element(By.XPATH, '//*[@id="viewJobSSRRoot"]/div[2]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/a').get_attribute('href')
+#             driver.get(company_profile)
+#             sleep(10)
+#             company_logo = driver.find_element(By.XPATH, '//*[@id="cmp-container"]/div/div[1]/header/div[2]/div[3]/div/div/div/div[1]/div[1]/div[1]/div/div/img').get_attribute('src')
+#             print('comapany logo',company_logo)
+#             print('job date',date_job_posted_datetime)
+#             break
         
 # driver.close()
