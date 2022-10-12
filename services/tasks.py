@@ -91,7 +91,7 @@ def start_web_scraping_indeed():
                         duties=job_duties,
                         requirements = qualifications,
                         contract_type1=job_type,
-                        url_link=url_link,
+                        url_link=url_link_new,
                         source="Indeed",
                         date_posted = date_job_posted_datetime,
                     )
