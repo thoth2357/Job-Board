@@ -48,7 +48,7 @@ class Job(models.Model):
         else:
             contract_type1 = "Onsite"
             if Contract_Type.objects.filter(contract_type=contract_type1).exists():
-                contract_model_object = Contract_Type.objects.filter(contract_type=contract_type1)[-1]
+                contract_model_object = Contract_Type.objects.filter(contract_type=contract_type1)[0]
                 self.contract_type = contract_model_object
             else:
                 contract_model_object = Contract_Type.objects.create(contract_type=contract_type1)
