@@ -15,15 +15,15 @@ from datetime import datetime, timedelta
 
 from jobs.models import Job
 from .models import Scraping_Service
-from fake_useragent import UserAgent
+# from fake_useragent import UserAgent
 
 
 chrome_options = Options()
 chrome_options.headless = False
 # chrome_options.add_argument('--remote=debugging-port=9222')
 chrome_options.add_argument("incognito")
-ua = UserAgent(use_cache_server=False, verify_ssl=False)
-chrome_options.add_argument(f"user-agent={ua.chrome}")
+# ua = UserAgent(use_cache_server=False, verify_ssl=False)
+# chrome_options.add_argument(f"user-agent={ua.chrome}")
 
 
 @shared_task
