@@ -2453,3 +2453,239 @@ Traceback (most recent call last):
   File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/http/client.py", line 286, in _read_status
     raise RemoteDisconnected("Remote end closed connection without"
 urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2022-10-13 15:15:41,774: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-13 15:15:41,776: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-13 15:15:42,785: INFO/MainProcess] mingle: all alone
+[2022-10-13 15:15:43,142: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-13 15:15:43,143: INFO/MainProcess] celery@Asteria ready.
+[2022-10-13 15:15:43,368: INFO/MainProcess] Task celery.backend_cleanup[d62c4c58-69b0-4819-9211-f8716bda5df9] received
+[2022-10-13 15:15:43,372: INFO/ForkPoolWorker-7] Task celery.backend_cleanup[d62c4c58-69b0-4819-9211-f8716bda5df9] succeeded in 0.0021651949991792208s: None
+[2022-10-13 15:18:50,152: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[5fa09166-6c21-4b4c-8958-46a57e3411f2] received
+[2022-10-13 15:18:50,156: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-13 15:18:50,516: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-13 15:18:56,549: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
+[2022-10-13 15:18:57,147: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-10-13 15:18:57,272: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:16, 396kB/s]
+[2022-10-13 15:18:57,391: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|1         | 88.0k/6.35M [00:00<00:17, 366kB/s]
+[2022-10-13 15:18:57,498: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|2         | 152k/6.35M [00:00<00:13, 471kB/s] 
+[2022-10-13 15:18:57,601: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|3         | 248k/6.35M [00:00<00:09, 651kB/s]
+[2022-10-13 15:18:58,254: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   5%|5         | 336k/6.35M [00:01<00:24, 256kB/s]
+[2022-10-13 15:19:01,843: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   6%|5         | 384k/6.35M [00:04<02:10, 48.0kB/s]
+[2022-10-13 15:19:02,439: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   7%|6         | 424k/6.35M [00:05<02:00, 51.6kB/s]
+[2022-10-13 15:19:02,659: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   8%|7         | 488k/6.35M [00:05<01:25, 71.7kB/s]
+[2022-10-13 15:19:03,159: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   8%|8         | 544k/6.35M [00:06<01:15, 80.7kB/s]
+[2022-10-13 15:19:03,388: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   9%|8         | 568k/6.35M [00:06<01:12, 84.0kB/s]
+[2022-10-13 15:19:03,628: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   9%|9         | 608k/6.35M [00:06<01:02, 97.2kB/s]
+[2022-10-13 15:19:04,633: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  10%|#         | 656k/6.35M [00:07<01:20, 74.1kB/s]
+[2022-10-13 15:19:04,759: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  16%|#5        | 1.01M/6.35M [00:07<00:18, 309kB/s]
+[2022-10-13 15:19:04,865: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  19%|#8        | 1.18M/6.35M [00:07<00:12, 430kB/s]
+[2022-10-13 15:19:07,541: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  20%|##        | 1.30M/6.35M [00:10<00:38, 139kB/s]
+[2022-10-13 15:19:09,313: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  22%|##1       | 1.38M/6.35M [00:12<00:50, 102kB/s]
+[2022-10-13 15:19:09,723: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  23%|##3       | 1.48M/6.35M [00:12<00:42, 119kB/s]
+[2022-10-13 15:19:09,943: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  24%|##4       | 1.54M/6.35M [00:12<00:37, 134kB/s]
+[2022-10-13 15:19:10,251: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  25%|##5       | 1.60M/6.35M [00:13<00:34, 146kB/s]
+[2022-10-13 15:19:10,636: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  30%|##9       | 1.88M/6.35M [00:13<00:17, 273kB/s]
+[2022-10-13 15:19:10,772: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  31%|###       | 1.94M/6.35M [00:13<00:16, 287kB/s]
+[2022-10-13 15:19:10,921: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  36%|###6      | 2.29M/6.35M [00:13<00:07, 568kB/s]
+[2022-10-13 15:19:13,202: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  38%|###7      | 2.40M/6.35M [00:16<00:22, 186kB/s]
+[2022-10-13 15:19:17,159: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  42%|####2     | 2.68M/6.35M [00:20<00:33, 114kB/s]
+[2022-10-13 15:19:17,308: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  45%|####5     | 2.87M/6.35M [00:20<00:23, 155kB/s]
+[2022-10-13 15:19:17,439: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  51%|#####     | 3.21M/6.35M [00:20<00:12, 260kB/s]
+[2022-10-13 15:19:17,594: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  54%|#####3    | 3.41M/6.35M [00:20<00:09, 328kB/s]
+[2022-10-13 15:19:17,990: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  56%|#####5    | 3.54M/6.35M [00:20<00:08, 332kB/s]
+[2022-10-13 15:19:18,280: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  57%|#####7    | 3.64M/6.35M [00:21<00:08, 338kB/s]
+[2022-10-13 15:19:18,525: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  59%|#####8    | 3.73M/6.35M [00:21<00:08, 343kB/s]
+[2022-10-13 15:19:18,690: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  60%|#####9    | 3.80M/6.35M [00:21<00:07, 357kB/s]
+[2022-10-13 15:19:18,856: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  61%|######    | 3.86M/6.35M [00:21<00:07, 364kB/s]
+[2022-10-13 15:19:19,001: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  62%|######1   | 3.91M/6.35M [00:21<00:06, 369kB/s]
+[2022-10-13 15:19:19,111: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  63%|######2   | 3.97M/6.35M [00:21<00:06, 393kB/s]
+[2022-10-13 15:19:19,256: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  63%|######3   | 4.02M/6.35M [00:22<00:06, 394kB/s]
+[2022-10-13 15:19:19,364: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  64%|######4   | 4.07M/6.35M [00:22<00:05, 406kB/s]
+[2022-10-13 15:19:19,470: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  65%|######4   | 4.12M/6.35M [00:22<00:05, 418kB/s]
+[2022-10-13 15:19:19,576: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  66%|######5   | 4.16M/6.35M [00:22<00:05, 429kB/s]
+[2022-10-13 15:19:19,701: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  67%|######6   | 4.23M/6.35M [00:22<00:04, 456kB/s]
+[2022-10-13 15:19:19,817: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  67%|######7   | 4.27M/6.35M [00:22<00:04, 447kB/s]
+[2022-10-13 15:19:19,917: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  68%|######8   | 4.33M/6.35M [00:22<00:04, 478kB/s]
+[2022-10-13 15:19:20,023: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  69%|######9   | 4.38M/6.35M [00:22<00:04, 496kB/s]
+[2022-10-13 15:19:20,139: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  70%|######9   | 4.44M/6.35M [00:22<00:04, 496kB/s]
+[2022-10-13 15:19:20,257: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  71%|#######   | 4.50M/6.35M [00:23<00:03, 514kB/s]
+[2022-10-13 15:19:20,374: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  72%|#######1  | 4.55M/6.35M [00:23<00:03, 506kB/s]
+[2022-10-13 15:19:20,475: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  73%|#######2  | 4.61M/6.35M [00:23<00:03, 523kB/s]
+[2022-10-13 15:19:20,585: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  73%|#######3  | 4.66M/6.35M [00:23<00:03, 522kB/s]
+[2022-10-13 15:19:20,690: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  75%|#######4  | 4.73M/6.35M [00:23<00:02, 574kB/s]
+[2022-10-13 15:19:20,827: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  76%|#######5  | 4.80M/6.35M [00:23<00:03, 542kB/s]
+[2022-10-13 15:19:21,245: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  76%|#######6  | 4.85M/6.35M [00:24<00:05, 297kB/s]
+[2022-10-13 15:19:21,407: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  77%|#######7  | 4.91M/6.35M [00:24<00:04, 311kB/s]
+[2022-10-13 15:19:21,533: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  78%|#######7  | 4.95M/6.35M [00:24<00:04, 314kB/s]
+[2022-10-13 15:19:22,844: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  79%|#######8  | 4.98M/6.35M [00:25<00:14, 98.1kB/s]
+[2022-10-13 15:19:22,955: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  84%|########3 | 5.30M/6.35M [00:25<00:03, 346kB/s] 
+[2022-10-13 15:19:23,116: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  85%|########5 | 5.41M/6.35M [00:25<00:02, 400kB/s]
+[2022-10-13 15:19:23,273: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  87%|########6 | 5.51M/6.35M [00:26<00:02, 439kB/s]
+[2022-10-13 15:19:23,397: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  88%|########8 | 5.59M/6.35M [00:26<00:01, 486kB/s]
+[2022-10-13 15:19:23,592: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  89%|########9 | 5.68M/6.35M [00:26<00:01, 479kB/s]
+[2022-10-13 15:19:23,698: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  92%|#########1| 5.82M/6.35M [00:26<00:00, 637kB/s]
+[2022-10-13 15:19:23,821: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  93%|#########3| 5.91M/6.35M [00:26<00:00, 672kB/s]
+[2022-10-13 15:19:23,940: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  95%|#########4| 6.00M/6.35M [00:26<00:00, 693kB/s]
+[2022-10-13 15:19:24,063: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  96%|#########5| 6.09M/6.35M [00:26<00:00, 703kB/s]
+[2022-10-13 15:19:24,167: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  97%|#########7| 6.18M/6.35M [00:27<00:00, 760kB/s]
+[2022-10-13 15:19:24,282: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  99%|#########8| 6.27M/6.35M [00:27<00:00, 767kB/s]
+[2022-10-13 15:19:24,470: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:27<00:00, 651kB/s]
+[2022-10-13 15:19:24,471: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:27<00:00, 244kB/s]
+[2022-10-13 15:19:24,745: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
+[2022-10-13 15:20:01,890: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:20:37,594: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 15:20:18.860438) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:20:38,145: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[5fa09166-6c21-4b4c-8958-46a57e3411f2] raised unexpected: ValueError('Negative indexing is not supported.')
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 97, in start_web_scraping_indeed
+    job_entry.save()
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 51, in save
+    contract_model_object = Contract_Type.objects.filter(contract_type=contract_type1)[-1]
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 341, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+[2022-10-13 15:26:09,372: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[022afa32-7529-46b2-9c86-8cb3af94e43c] received
+[2022-10-13 15:26:09,375: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-13 15:26:09,445: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-13 15:26:15,245: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-13 15:26:55,220: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:27:33,549: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 15:27:12.204844) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:27:33,682: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[022afa32-7529-46b2-9c86-8cb3af94e43c] raised unexpected: ValueError('Negative indexing is not supported.')
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 97, in start_web_scraping_indeed
+    job_entry.save()
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 51, in save
+    contract_model_object = Contract_Type.objects.filter(contract_type=contract_type1)[0]
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 341, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+[2022-10-13 15:27:55,234: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-13 15:27:55,237: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-13 15:27:56,245: INFO/MainProcess] mingle: all alone
+[2022-10-13 15:27:56,261: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-13 15:27:56,261: INFO/MainProcess] celery@Asteria ready.
+[2022-10-13 15:29:09,383: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[332d069b-c321-45ae-9fe1-095cea1f43b5] received
+[2022-10-13 15:29:09,386: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-13 15:29:09,449: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-13 15:29:10,927: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-13 15:29:43,717: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:30:18,237: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 15:30:00.652505) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:30:18,519: INFO/ForkPoolWorker-7] 61 Business Analyst - McKinsey Digital has been added to the database
+[2022-10-13 15:30:18,520: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=d9ba61579a3d5f0a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:30:47,592: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-13 15:30:32.835177) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:30:47,853: INFO/ForkPoolWorker-7] 62 Implementation Coach - McKinsey Implementation has been added to the database
+[2022-10-13 15:30:47,854: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=a2d2d2148a15c87a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:31:12,660: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-11 15:31:00.264601) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:31:13,297: INFO/ForkPoolWorker-7] 63 Senior Implementation Facilitator - McKinsey Implementation has been added to the database
+[2022-10-13 15:31:13,298: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=36f1e2544584b75f&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:31:37,286: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-12 15:31:24.707119) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:31:37,639: INFO/ForkPoolWorker-7] 64 Associate - Global Energy & Materials has been added to the database
+[2022-10-13 15:31:37,640: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=22750efc458c6d6c&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:32:01,630: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-13 15:31:49.300506) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:32:01,995: INFO/ForkPoolWorker-7] 65 Product Manager - McKinsey Digital has been added to the database
+[2022-10-13 15:32:01,996: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=b99c179531cd744b&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:32:25,697: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-13 15:32:13.636234) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:32:26,311: INFO/ForkPoolWorker-7] 66 Senior Implementation Facilitator - FIG, McKinsey Implementa... has been added to the database
+[2022-10-13 15:32:26,313: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=c4fc4d67a99c9094&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:32:50,520: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-13 15:32:38.127491) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:32:51,136: INFO/ForkPoolWorker-7] 67 Knowledge Analyst – Manufacturing has been added to the database
+[2022-10-13 15:32:51,137: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e371e9c75190de1d&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:33:14,670: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-18 15:33:02.622373) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:33:15,296: INFO/ForkPoolWorker-7] 68 Executive Assistant has been added to the database
+[2022-10-13 15:33:15,297: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=94dbca432744bab1&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:33:39,393: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-11 15:33:27.164095) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:33:42,277: INFO/ForkPoolWorker-7] 69 Engagement Manager - Global Energy & Materials has been added to the database
+[2022-10-13 15:33:42,279: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=fcc5c71ee9765e73&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:34:06,432: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-13 15:33:54.256724) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:34:07,051: INFO/ForkPoolWorker-7] 70 Business Presentation Specialist (Trainee) has been added to the database
+[2022-10-13 15:34:07,052: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=83996f0771385526&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:34:30,944: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-30 15:34:18.594132) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:34:32,099: INFO/ForkPoolWorker-7] 71 Proposal Specialist has been added to the database
+[2022-10-13 15:34:32,100: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=606910015e7c5e93&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:34:56,092: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-06 15:34:43.819813) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:34:56,600: INFO/ForkPoolWorker-7] 72 Junior Capabilities & Insights Analyst - Automotive & Assemb... has been added to the database
+[2022-10-13 15:34:56,602: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=ac65f9ceeb139d35&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:35:20,554: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-13 15:35:08.149106) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:35:22,408: INFO/ForkPoolWorker-7] 73 Receptionist has been added to the database
+[2022-10-13 15:35:22,411: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=da739be117e59b04&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:35:46,423: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-13 15:35:34.177188) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:35:47,045: INFO/ForkPoolWorker-7] 74 Professional Development Specialist – McKinsey Digital (Buil... has been added to the database
+[2022-10-13 15:35:47,048: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=5dd47a07270edfa5&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-13 15:36:10,960: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-09-21 15:35:58.825051) while time zone support is active.
+  warnings.warn(
+
+[2022-10-13 15:36:12,233: INFO/ForkPoolWorker-7] 75 Office Services Administrator has been added to the database
+[2022-10-13 15:36:12,234: INFO/ForkPoolWorker-7] None is not active
+[2022-10-13 15:36:12,293: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[332d069b-c321-45ae-9fe1-095cea1f43b5] succeeded in 422.9076375550012s: None
+[2022-10-13 15:54:10,853: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[31908998-cc8d-4b40-8d07-4df41087c4eb] received
+[2022-10-13 15:54:15,049: INFO/ForkPoolWorker-7] 76 Executive Assistant has been added to the database
+[2022-10-13 15:54:16,985: INFO/ForkPoolWorker-7] 77 Business Presentation Specialist (Trainee) has been added to the database
+[2022-10-13 15:54:18,416: INFO/ForkPoolWorker-7] 78 Research Science Analyst - Global Payments Map - Gurugram has been added to the database
+[2022-10-13 15:54:19,956: INFO/ForkPoolWorker-7] 79 Research Science Analyst - Panorama Financial Institutions Center has been added to the database
+[2022-10-13 15:54:22,766: INFO/ForkPoolWorker-7] 80 Project Finance Controller has been added to the database
+[2022-10-13 15:54:24,239: INFO/ForkPoolWorker-7] 81 Knowledge Analyst - Private Equity & Principal Investors has been added to the database
+[2022-10-13 15:54:25,900: INFO/ForkPoolWorker-7] 82 Receptionist has been added to the database
+[2022-10-13 15:54:27,517: INFO/ForkPoolWorker-7] 83 Human Resources Generalist (Benefits) - INO has been added to the database
+[2022-10-13 15:54:29,365: INFO/ForkPoolWorker-7] 84 SQL Developer - Ignite has been added to the database
+[2022-10-13 15:54:31,136: INFO/ForkPoolWorker-7] 85 Professional Development Manager – McKinsey Digital (Build Hub) has been added to the database
+[2022-10-13 15:54:32,962: INFO/ForkPoolWorker-7] 86 Senior Finance Associate - US Payroll has been added to the database
+[2022-10-13 15:54:35,888: INFO/ForkPoolWorker-7] 87 Learning Coordinator has been added to the database
+[2022-10-13 15:54:38,721: INFO/ForkPoolWorker-7] 88 Proposal Specialist has been added to the database
+[2022-10-13 15:54:40,523: INFO/ForkPoolWorker-7] 89 Capabilities and Insights Analyst_Payments Asia Hub_Gurugram has been added to the database
+[2022-10-13 15:54:42,273: INFO/ForkPoolWorker-7] 90 Knowledge Analyst - Life Sciences has been added to the database
+[2022-10-13 15:54:44,340: INFO/ForkPoolWorker-7] 91 Solution Delivery Analyst - Manufacturing and Supply Chain has been added to the database
+[2022-10-13 15:54:45,870: INFO/ForkPoolWorker-7] 92 Engineer - Ignite has been added to the database
+[2022-10-13 15:54:47,377: INFO/ForkPoolWorker-7] 93 Solution Manager - Power Solutions has been added to the database
+[2022-10-13 15:54:49,455: INFO/ForkPoolWorker-7] 94 Office Services Administrator has been added to the database
+[2022-10-13 15:54:51,188: INFO/ForkPoolWorker-7] 95 Augmentation Analyst - Sustainability Data Warehousing has been added to the database
+[2022-10-13 15:54:54,016: INFO/ForkPoolWorker-7] 96 Associate Design Director - UX has been added to the database
+[2022-10-13 15:54:55,886: INFO/ForkPoolWorker-7] 97 Frontloading Analyst - Sustainability Data Warehousing has been added to the database
+[2022-10-13 15:54:57,513: INFO/ForkPoolWorker-7] 98 Full Stack Web Developer has been added to the database
+[2022-10-13 15:54:59,107: INFO/ForkPoolWorker-7] 99 Senior Analyst - Growth, Marketing & Sales has been added to the database
+[2022-10-13 15:55:00,581: INFO/ForkPoolWorker-7] 100 Senior Implementation Facilitator - Pharmaceuticals & Medical Products - Operations has been added to the database
+[2022-10-13 15:55:00,583: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[31908998-cc8d-4b40-8d07-4df41087c4eb] succeeded in 49.728618219000055s: None
