@@ -12,17 +12,17 @@ class DateInput(forms.DateInput): #whhat this does is allow us to ask date in a 
     input_type: 'date'
 
 class RegisterForm(UserCreationForm):
-    email = forms.EmailField(max_length=100,help_text='Enter Email Address', required=True,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Email'}))
+    email = forms.EmailField(max_length=100, required=True,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Email'}))
     
-    first_name = forms.CharField(max_length=100,help_text='Enter First Name', required=True,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First Name'}))
+    first_name = forms.CharField(max_length=100, required=True,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First Name'}))
     
-    last_name = forms.CharField(max_length=100,help_text='Enter Last Name', required=True,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last Name'}))
+    last_name = forms.CharField(max_length=100, required=True,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last Name'}))
     
-    username = forms.CharField(max_length=100,help_text='Enter Username', required=True,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Username'}))
+    username = forms.CharField(max_length=100, required=True,widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Username'}))
     
-    password1 = forms.CharField(max_length=200,help_text='Enter Password', required=True,widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'}))
+    password1 = forms.CharField(max_length=200, required=True,widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'}))
     
-    password2 = forms.CharField(max_length=200,help_text='Enter your Password again', required=True,widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'}))  
+    password2 = forms.CharField(max_length=200, required=True,widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Password'}))  
     
     #check = forms.BooleanField(required = True)
     
