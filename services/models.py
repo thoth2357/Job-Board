@@ -16,7 +16,7 @@ class Filter_tag(models.Model):
     tag_name = models.CharField(max_length=25, null=True, blank=True, unique=True, help_text="Tag name to use for filtering. Must be unique.")
     tag_description = models.TextField(max_length=100, null=True, blank=True)
     tag_search_company = models.CharField(max_length=100, null=True, blank=True,default='', help_text="Companies name to search for")
-    tag_search_category = models.CharField(max_length=100, null=True, blank=True,default='',  help_text="Categories to search for, separated by comma (,). Leave blank if interested in Company only.")
+    tag_search_category = models.CharField(max_length=100, null=True, blank=True,default='',  help_text="Categories to search for")
     tag_search_location = models.CharField(max_length=100, null=True, blank=True,default='',  help_text="Locations to search for")
     search_url = models.URLField(max_length=200, null=True, blank=True, help_text="Automatically generated..Readonly Field can't be edited")
     def __str__(self) -> str:
