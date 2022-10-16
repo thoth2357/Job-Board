@@ -9,7 +9,7 @@ from .utils import get_user_location
 # Create your views here. #It tells django what html file to display
 def home(request):
     user_country = get_user_location(request) #get user country based on ip-address
-    job_list = Job.objects.all()  # import jobs from models and push it to front end
+    job_list = Job.objects.all().order_by('-date_posted')  # import jobs from models and push it to front end
     job_list = job_list[:4]  # will display 4 jobs
     jobs_count = Job.objects.count()
     listing_filter = JobsFilter(request.GET, queryset=job_list)
@@ -51,8 +51,9 @@ def job_search(request):
     jobs_listing = Job.objects.all()
     contract_types = Job.objects.values_list('contract_type', flat=True).distinct()
     listing_filter = JobsFilter(request.GET, queryset=jobs_listing)
-    paginated_listing_filter = Paginator(listing_filter.qs, 4)
+    paginated_listing_filter = Paginator(listing_filter.qs.order_by('-date_posted'), 4)
     job_per_page = paginated_listing_filter.get_page(request.GET.get('page'))
+    # .adjusted_elided_pages = paginated_listing_filter.get_elided_page_range(request.GET.get('page'))
     
     context = {"filter_tags":filter_tags, "listing_filter":listing_filter, 'job_per_page':job_per_page, "contract_types":contract_types}
     return render(request, "sections/Home/job_whole_list.html", context)
