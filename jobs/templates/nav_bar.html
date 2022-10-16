@@ -81,22 +81,29 @@
         </div>
         <!--end navabar-collapse-->
         <ul class="header-menu list-inline d-flex align-items-center mb-0">
-            <li class="list-inline-item dropdown">
-                <a href="javascript:void(0)" class="header-item" id="userdropdown" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                        <img src="{% static 'assets/images/male-profile.jpg' %}" alt="mdo" width="50" height="50" class="rounded-circle me-1"> <span class="d-none d-md-inline-block fw-medium">Hi, kavyabhargava</span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
-                    <li><a class="dropdown-item" href="manage-jobs.html">Manage Jobs</a></li>
-                    <li><a class="dropdown-item" href="bookmark-jobs.html">Bookmarks Jobs</a></li>
-                    <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
-                    <li><a class="dropdown-item" href="sign-out.html">Logout</a></li>
-                </ul>
-            </li>
+            {% if user.is_authenticated %}
+                <li class="list-inline-item dropdown">
+                    <a href="javascript:void(0)" class="header-item" id="userdropdown" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                            <img src="{% static 'assets/images/male-profile.jpg' %}" alt="mdo" width="50" height="50" class="rounded-circle me-1"> <span class="d-none d-md-inline-block fw-medium">Hi, {{user.username}}</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown">
+                        {% comment %} <li><a class="dropdown-item" href="manage-jobs.html">Manage Jobs</a></li>
+                        <li><a class="dropdown-item" href="bookmark-jobs.html">Bookmarks Jobs</a></li> {% endcomment %}
+                        <li><a class="dropdown-item" href="{% url 'profile' %}">My Profile</a></li>
+                        <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+                    </ul>
+                </li>
+            {% else %}
             <li class="list-inline-item p py-2 px-2 me-2 align-right">
-                <a href="#signupModal" class="text-dark fw-medium fs-13" data-bs-toggle="modal"><i class="uil uil-lock"></i>
+                <a href="{% url 'signup' %}" class="text-dark fw-medium fs-13"><i class="uil uil-lock"></i>
                     Sign Up</a>
             </li>
+            <li class="list-inline-item p py-2 px-2 me-2 align-right">
+                <a href="{% url 'login' %}" class="text-dark fw-medium fs-13"><i class="uil uil-lock"></i>
+                    Login</a>
+            </li>
+            {% endif %}
         </ul><!--end header-menu-->
     </div>
     <!--end container-->
