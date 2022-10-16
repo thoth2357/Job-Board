@@ -1,0 +1,34 @@
+<!-- pagination start-->
+<div class="row">
+    <div class="col-lg-12 mt-4 pt-2">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination job-pagination mb-0 justify-content-center">
+                {% for page_number in job_per_page.paginator.page_range %}
+                        <li class="page-item {% if page_number == job_per_page.number %}active{% endif %}"><a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a></li>
+                {% endfor %}
+                
+
+                {% comment %} {% if job_per_page.has_next %}
+                    <li class="page-item">
+                        {% if '?job_company' in request.get_full_path %}
+                            <a class="page-link" href="{{request.get_full_path}}&page={{job_per_page.next_page_number}}">
+                                <i class="mdi mdi-chevron-double-right fs-15"></i>
+                            </a> 
+                        {% else %}
+                            <a class="page-link" href="?page={{job_per_page.next_page_number}}">
+                                <i class="mdi mdi-chevron-double-right fs-15"></i>
+                            </a> 
+                        {% endif %}
+                    </li>
+                {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link" href="job_per_page.next_page_number">
+                            <i class="mdi mdi-chevron-double-right fs-15"></i>
+                        </a>
+                    </li>
+                {% endif %} {% endcomment %}
+            </ul>
+        </nav>
+        <h6>Page {{job_per_page.number}} of {{job_per_page.paginator.num_pages}}</h6>
+    </div><!--end col-->
+</div><!-- end row -->
