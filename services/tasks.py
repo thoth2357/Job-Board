@@ -19,7 +19,7 @@ from .models import Scraping_Service
 
 
 chrome_options = Options()
-chrome_options.headless = False
+chrome_options.headless = True
 # chrome_options.add_argument('--remote=debugging-port=9222')
 chrome_options.add_argument("incognito")
 # ua = UserAgent(use_cache_server=False, verify_ssl=False)
