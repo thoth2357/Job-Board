@@ -4,39 +4,70 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import * # * means all forms will get imported same for models below
 from .models import *
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.views.generic import DetailView
 from datetime import datetime
-
+from django.contrib import auth
 
 
 # Create your views here.
+
+def logout(request):
+    auth.logout(request)
+    return render(request, 'auth/sign_out.html', {})
+
 def login(request):
-    pass
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        
+        user = auth.authenticate(username = username, password = password)
+        if user is not None:
+            auth.login(request, user)
+            messages.success(request, 'You are now logged in')
+            return redirect('home')
+        else:
+            messages.error(request, 'Invalid Credentials')
+            return redirect('login')
+    else:
+        return render(request, 'auth/sign_in.html', {})
 
 def register(request):
     if request.method == 'GET': #when you request a form it is in a get request 
         form = RegisterForm()
         context = {'form' : form} #this creates a object which you want to send to the front end
-        return render(request, 'signup-login.html', context) # here we pushing that form to the html page 
+        return render(request, 'auth/sign_up.html', context) # here we pushing that form to the html page 
     
     if request.method == 'POST': #when you submit a form it is POST request
         form = RegisterForm(request.POST)
         if form.is_valid():
-             form.save()
-             user = form.cleaned_data.get('username')
-             messages.success(request, 'Account was created successfully for user:' + user  )
-             return redirect('login')
+            user = form.cleaned_data.get('username')
+            if form.cleaned_data['password1'] == form.cleaned_data['password2']:
+                User.objects.create_user(
+                    username = user, 
+                    password = form.cleaned_data['password1'],
+                    email=form.cleaned_data['email'],
+                    first_name = form.cleaned_data['first_name'],
+                    last_name = form.cleaned_data['last_name']
+                )
+                messages.success(request, 'Account created for ' + user)
+                return redirect('login')
+            else:
+                messages.error(request, 'Passwords do not match')
+                return redirect('signup')
         else:
             messages.error(request, 'Error Processing Your Request')
             context = {'form' : form}
-            return render(request, 'signup-login.html', context)
+            return render(request, 'auth/sign_up.html', context)
 
-    return render(request, 'signup-login.html', {})
+    return render(request, 'auth/sign_up.html', {})
+
 
 @login_required #This makes sure that only people who have logged in can access the profile page
 def profile(request):
-    return render(request, 'profile.html' , {})
+    user = User.objects.get(username = request.user.username)
+    return render(request, 'user/profile.html' , {"user":user})
 
 #@login_required 
 def create_resume(request):
