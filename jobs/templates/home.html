@@ -4,6 +4,7 @@
 
 
 {% block page-content %}
+      {% include "nav_bar.html" %}
       {% include 'sections/Home/home.html' with listing_filter=listing_filter jobs_count=jobs_count only %}
       {% include 'sections/Home/shape.html' %}
       {% include 'sections/Home/category.html' %}
