@@ -40,7 +40,7 @@ class JobsFilter(django_filters.FilterSet):
         fields = ['job_company','location', 'category', 'contract_type']
         
     def custom_filter(self, queryset, title, value):
-        return queryset.filter(Q(title__icontains=value) | Q(company__icontains=value))
+        return queryset.filter(Q(title__icontains=value) | Q(company__icontains=value) | Q(requirements__icontains=value) | Q(duties__icontains=value) | Q(description__icontains=value))
     
     def custom_filter_location(self, queryset, title, value):
         return queryset.filter(Q(location__icontains=value) | Q(location__icontains=value))
