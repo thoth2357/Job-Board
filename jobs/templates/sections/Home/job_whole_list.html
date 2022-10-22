@@ -69,7 +69,6 @@
                                         <div class="filler-job-form">
                                             {% render_field listing_filter.form.contract_type class+="form-control filter-job-input-box" placeholder="Contract Type"%}
                                             <i class="uil uil-angle-down"></i>
-                                            
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-lg-3 col-md-6">
@@ -79,7 +78,21 @@
                                         </div>
                                     </div><!--end col-->
                                 </div><!--end row-->
-                                <div class="col-lg-11 col-md-6  p-2">
+                                <div class="row g-2 flex-nowrap py-2">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="filler-job-form">
+                                            {% render_field listing_filter.form.skills class+="form-control filter-job-input-box" placeholder="Skills"%}
+                                            <i class="uil uil-briefcase-alt"></i> 
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="filler-job-form">
+                                            {% render_field listing_filter.form.date_posted class+="form-control filter-job-input-box" %}
+                                            <i class="uil uil-calendar-alt"></i> 
+                                        </div>
+                                    </div><!--end col-->
+                                </div>
+                                <div class="col-lg-11 col-md-6 p-2">
                                     <button class="btn btn-primary w-100">
                                         <i class="uil uil-search"></i> Search / Filter
                                     </button>
