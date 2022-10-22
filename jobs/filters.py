@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta
 import django_filters
 
 from .models import Contract_Type, Job
@@ -5,6 +6,8 @@ from .models import Contract_Type, Job
 from django.db.models import Q
 
 from django import forms
+
+from django.utils import timezone
 
 EXPERIENCE = (
     ('No Experience', 'No Experience'),
@@ -29,15 +32,27 @@ DEGREE_CHOICES = (
     ('GED', 'GED')
 )
 
+DATE_POSTED = (
+    ('Last 24 Hours', 'Last 24 Hours'),
+    ('Last 3 Days', 'Last 3 Days'),
+    ('Last 7 Days', 'Last 7 Days'),
+    ('Last 14 Days', 'Last 14 Days'),
+    ('Last 30 Days', 'Last 30 Days'),
+    ('Last 60 Days', 'Last 60 Days'),
+    ('Last 90 Days', 'Last 90 Days'),
+)
+
 class JobsFilter(django_filters.FilterSet):
     job_company = django_filters.CharFilter(method='custom_filter')
     location  = django_filters.CharFilter(method='custom_filter_location')
     experience_level = django_filters.ChoiceFilter(method='custom_filter_experience', empty_label="Experience Level", choices=EXPERIENCE)
     degree = django_filters.ChoiceFilter(choices=DEGREE_CHOICES, empty_label="Degree", method='custom_filter_degree')
     contract_type = django_filters.ModelChoiceFilter(queryset=Contract_Type.objects.all(), empty_label="Job Type")
+    skills = django_filters.CharFilter(method='custom_filter_skills')
+    date_posted = django_filters.ChoiceFilter(choices=DATE_POSTED, empty_label="Date Posted", method='custom_filter_date_posted')
     class Meta:
         model = Job
-        fields = ['job_company','location', 'category', 'contract_type']
+        fields = ['job_company','location', 'category', 'contract_type', 'date_posted']
         
     def custom_filter(self, queryset, title, value):
         return queryset.filter(Q(title__icontains=value) | Q(company__icontains=value) | Q(requirements__icontains=value) | Q(duties__icontains=value) | Q(description__icontains=value))
@@ -57,3 +72,33 @@ class JobsFilter(django_filters.FilterSet):
     def custom_filter_degree(self, queryset, title ,value):
         return queryset.filter(Q(requirements__icontains=value) | Q(requirements__icontains=value))
     
+    def custom_filter_date_posted(self, queryset, title, value):
+        if value == 'Last 24 Hours':
+            today = datetime.now()
+            day_end = today - timedelta(days=1)
+            queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
+        elif value == 'Last 3 Days':
+            today = datetime.now(tz=timezone.utc)
+            day_end = today - timedelta(days=3)
+            queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
+        elif value == 'Last 7 Days':
+            today = datetime.now(tz=timezone.utc)
+            day_end = today - timedelta(days=7)
+            queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
+        elif value == 'Last 14 Days':
+            today = datetime.now(tz=timezone.utc)
+            day_end = today - timedelta(days=14)
+            queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
+        elif value == 'Last 30 Days':
+            today = datetime.now(tz=timezone.utc)
+            day_end = today - timedelta(days=1)
+            queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
+        elif value == 'Last 60 Days':
+            today = datetime.now(tz=timezone.utc)
+            day_end = today - timedelta(days=60)
+            queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
+        elif value == 'Last 90 Days':
+            today = datetime.now(tz=timezone.utc)
+            day_end = today - timedelta(days=90)
+            queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
+        return queryset
