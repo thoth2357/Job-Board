@@ -151,7 +151,20 @@ def start_web_scraping_linkedin():
                             "span",
                             class_="description__job-criteria-text description__job-criteria-text--criteria",
                         )[1].text.strip()
-
+                        date_posted = soup2.find('span',class_='posted-time-ago__text topcard__flavor--metadata').text.strip()
+                        if 'day' in date_posted:
+                            timer = 1
+                        elif 'week' in date_posted:
+                            timer = 7
+                        elif 'month' in date_posted:
+                            timer = 30
+                        elif 'year' in date_posted:
+                            timer = 365
+                        else:
+                            timer = 1
+                        count_of_time = int(re.findall(r'[0-9]', date_posted)[0])
+                        total_time_elapsed = count_of_time * timer
+                        date_job_posted_datetime = datetime.now() - timedelta(days=total_time_elapsed)
                         job_entry = Job.objects.create(
                             title=job_title,
                             logo=job_company_logo,
@@ -163,7 +176,7 @@ def start_web_scraping_linkedin():
                             contract_type1=contract_type,
                             url_link=job_link,
                             source="LinkedIn",
-                            # date_posted = date_job_posted_datetime,
+                            date_posted = date_job_posted_datetime,
                             
                         )
                         job_entry.save()
