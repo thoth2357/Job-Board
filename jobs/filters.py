@@ -104,3 +104,7 @@ class JobsFilter(django_filters.FilterSet):
             day_end = today - timedelta(days=90)
             queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
         return queryset
+
+    def custom_filter_skills(self, queryset, title, value):
+        return queryset.filter(Q(requirements__icontains=value) | Q(description__icontains=value) | Q(duties__icontains=value))
+        
