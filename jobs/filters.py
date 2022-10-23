@@ -93,7 +93,7 @@ class JobsFilter(django_filters.FilterSet):
             queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
         elif value == 'Last 30 Days':
             today = datetime.now(tz=timezone.utc)
-            day_end = today - timedelta(days=1)
+            day_end = today - timedelta(days=30)
             queryset = queryset.filter(date_posted__gte=day_end, date_posted__lte=today)
         elif value == 'Last 60 Days':
             today = datetime.now(tz=timezone.utc)
