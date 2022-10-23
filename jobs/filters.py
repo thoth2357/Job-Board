@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import django_filters
 
-from .models import Contract_Type, Job
+from .models import Contract_Type, Job, Role
 
 from django.db.models import Q
 
@@ -50,6 +50,7 @@ class JobsFilter(django_filters.FilterSet):
     contract_type = django_filters.ModelChoiceFilter(queryset=Contract_Type.objects.all(), empty_label="Job Type")
     skills = django_filters.CharFilter(method='custom_filter_skills')
     date_posted = django_filters.ChoiceFilter(choices=DATE_POSTED, empty_label="Date Posted", method='custom_filter_date_posted')
+    roles = django_filters.ModelChoiceFilter(method='custom_filter_roles', empty_label='Role',  queryset=Role.objects.all().order_by('role'))
     class Meta:
         model = Job
         fields = ['job_company','location', 'category', 'contract_type', 'date_posted']
@@ -106,5 +107,7 @@ class JobsFilter(django_filters.FilterSet):
         return queryset
 
     def custom_filter_skills(self, queryset, title, value):
-        return queryset.filter(Q(requirements__icontains=value) | Q(description__icontains=value) | Q(duties__icontains=value))
+        return queryset.filter(Q(requirements__icontains=value) | Q(de1scription__icontains=value) | Q(duties__icontains=value))
         
+    def custom_filter_roles(self, queryset, title, value):
+        return queryset.filter(Q(requirements__icontains=value) | Q(description__icontains=value) | Q(duties__icontains=value) | Q(title__icontains=value))
