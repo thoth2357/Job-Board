@@ -1,3 +1,4 @@
+from pyexpat import model
 from django.db import models
 from django.urls import reverse
 from django.template.defaultfilters import slugify
@@ -57,3 +58,9 @@ class Job(models.Model):
         if not self.slug:
             self.slug = f"{slugify(self.title)}{self.uniqueId.split('-')[1]}"
         super(Job, self).save(*args, **kwargs)
+
+class Role(models.Model):
+    role = models.CharField(max_length=50, null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.role}'
