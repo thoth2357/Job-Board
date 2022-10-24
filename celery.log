@@ -964,29 +964,52 @@ kombu.exceptions.OperationalError: Error 111 connecting to localhost:6379. Conne
 [2022-10-05 13:00:32,981: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
 [2022-10-05 13:00:39,170: INFO/ForkPoolWorker-7] There is no [linux64] chromedriver for browser 106.0.5249 in cache
 [2022-10-05 13:00:39,170: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
-[2022-10-05 13:00:40,249: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
-[2022-10-05 13:00:40,418: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 24.0k/6.35M [00:00<00:45, 146kB/s]
-[2022-10-05 13:00:40,564: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 40.0k/6.35M [00:00<00:52, 127kB/s]
-[2022-10-05 13:00:40,670: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|1         | 72.0k/6.35M [00:00<00:34, 193kB/s]
-[2022-10-05 13:00:40,782: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|1         | 128k/6.35M [00:00<00:21, 307kB/s] 
-[2022-10-05 13:00:40,884: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   3%|2         | 192k/6.35M [00:00<00:15, 413kB/s]
-[2022-10-05 13:00:40,985: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   5%|5         | 344k/6.35M [00:00<00:08, 762kB/s]
-[2022-10-05 13:00:41,085: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   7%|7         | 472k/6.35M [00:00<00:06, 927kB/s]
-[2022-10-05 13:00:41,186: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  12%|#1        | 752k/6.35M [00:00<00:03, 1.51MB/s]
-[2022-10-05 13:00:41,289: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  16%|#6        | 1.02M/6.35M [00:01<00:02, 1.95MB/s]
-[2022-10-05 13:00:41,407: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  20%|##        | 1.27M/6.35M [00:01<00:02, 2.04MB/s]
-[2022-10-05 13:00:41,514: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  25%|##5       | 1.62M/6.35M [00:01<00:02, 2.45MB/s]
-[2022-10-05 13:00:41,617: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  32%|###2      | 2.05M/6.35M [00:01<00:01, 3.04MB/s]
-[2022-10-05 13:00:41,726: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  39%|###8      | 2.45M/6.35M [00:01<00:01, 3.26MB/s]
-[2022-10-05 13:00:41,829: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  47%|####6     | 2.98M/6.35M [00:01<00:00, 3.89MB/s]
-[2022-10-05 13:00:41,929: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  54%|#####3    | 3.41M/6.35M [00:01<00:00, 4.09MB/s]
-[2022-10-05 13:00:42,032: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  60%|######    | 3.84M/6.35M [00:01<00:00, 4.15MB/s]
-[2022-10-05 13:00:42,138: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  67%|######7   | 4.27M/6.35M [00:01<00:00, 4.21MB/s]
-[2022-10-05 13:00:42,242: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  74%|#######3  | 4.68M/6.35M [00:01<00:00, 4.17MB/s]
-[2022-10-05 13:00:42,342: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  81%|########  | 5.13M/6.35M [00:02<00:00, 4.34MB/s]
-[2022-10-05 13:00:42,456: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  87%|########7 | 5.55M/6.35M [00:02<00:00, 4.19MB/s]
-[2022-10-05 13:00:42,568: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  94%|#########3| 5.96M/6.35M [00:02<00:00, 4.07MB/s]
-[2022-10-05 13:00:42,662: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:02<00:00, 2.76MB/s]
+[2022-10-05 13:00:40,249: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-10-05 13:00:40,418: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   0%|          | 24.0k/6.35M [00:00<00:45, 146kB/s]
+[2022-10-05 13:00:40,564: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|          | 40.0k/6.35M [00:00<00:52, 127kB/s]
+[2022-10-05 13:00:40,670: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|1         | 72.0k/6.35M [00:00<00:34, 193kB/s]
+[2022-10-05 13:00:40,782: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   2%|1         | 128k/6.35M [00:00<00:21, 307kB/s] 
+[2022-10-05 13:00:40,884: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   3%|2         | 192k/6.35M [00:00<00:15, 413kB/s]
+[2022-10-05 13:00:40,985: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   5%|5         | 344k/6.35M [00:00<00:08, 762kB/s]
+[2022-10-05 13:00:41,085: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   7%|7         | 472k/6.35M [00:00<00:06, 927kB/s]
+[2022-10-05 13:00:41,186: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  12%|#1        | 752k/6.35M [00:00<00:03, 1.51MB/s]
+[2022-10-05 13:00:41,289: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  16%|#6        | 1.02M/6.35M [00:01<00:02, 1.95MB/s]
+[2022-10-05 13:00:41,407: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  20%|##        | 1.27M/6.35M [00:01<00:02, 2.04MB/s]
+[2022-10-05 13:00:41,514: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  25%|##5       | 1.62M/6.35M [00:01<00:02, 2.45MB/s]
+[2022-10-05 13:00:41,617: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  32%|###2      | 2.05M/6.35M [00:01<00:01, 3.04MB/s]
+[2022-10-05 13:00:41,726: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  39%|###8      | 2.45M/6.35M [00:01<00:01, 3.26MB/s]
+[2022-10-05 13:00:41,829: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  47%|####6     | 2.98M/6.35M [00:01<00:00, 3.89MB/s]
+[2022-10-05 13:00:41,929: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  54%|#####3    | 3.41M/6.35M [00:01<00:00, 4.09MB/s]
+[2022-10-05 13:00:42,032: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  60%|######    | 3.84M/6.35M [00:01<00:00, 4.15MB/s]
+[2022-10-05 13:00:42,138: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  67%|######7   | 4.27M/6.35M [00:01<00:00, 4.21MB/s]
+[2022-10-05 13:00:42,242: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  74%|#######3  | 4.68M/6.35M [00:01<00:00, 4.17MB/s]
+[2022-10-05 13:00:42,342: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  81%|########  | 5.13M/6.35M [00:02<00:00, 4.34MB/s]
+[2022-10-05 13:00:42,456: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  87%|########7 | 5.55M/6.35M [00:02<00:00, 4.19MB/s]
+[2022-10-05 13:00:42,568: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  94%|#########3| 5.96M/6.35M [00:02<00:00, 4.07MB/s]
+[2022-10-05 13:00:42,662: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:02<00:00, 2.76MB/s]
 [2022-10-05 13:00:42,932: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
 [2022-10-05 13:01:24,333: INFO/ForkPoolWorker-7] 54 Business Analyst - McKinsey Digital has been added to the database
 [2022-10-05 13:01:24,598: INFO/ForkPoolWorker-7] 55 Executive Assistant has been added to the database
@@ -1513,25 +1536,44 @@ IndexError: list index out of range
 [2022-10-07 10:55:08,381: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
 [2022-10-07 10:55:08,668: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
 [2022-10-07 10:55:14,679: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
-[2022-10-07 10:55:15,391: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
-[2022-10-07 10:55:15,568: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:23, 280kB/s]
-[2022-10-07 10:55:15,673: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|1         | 80.0k/6.35M [00:00<00:22, 294kB/s]
-[2022-10-07 10:55:15,776: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|2         | 136k/6.35M [00:00<00:16, 396kB/s] 
-[2022-10-07 10:55:15,879: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   3%|2         | 184k/6.35M [00:00<00:15, 426kB/s]
-[2022-10-07 10:55:15,981: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|4         | 264k/6.35M [00:00<00:11, 552kB/s]
-[2022-10-07 10:55:16,082: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   5%|5         | 344k/6.35M [00:00<00:09, 637kB/s]
-[2022-10-07 10:55:16,186: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   8%|8         | 552k/6.35M [00:00<00:05, 1.09MB/s]
-[2022-10-07 10:55:16,288: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  10%|#         | 664k/6.35M [00:00<00:05, 1.10MB/s]
-[2022-10-07 10:55:16,496: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  13%|#2        | 816k/6.35M [00:01<00:06, 934kB/s] 
-[2022-10-07 10:55:16,842: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  20%|#9        | 1.26M/6.35M [00:01<00:04, 1.18MB/s]
-[2022-10-07 10:55:16,943: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  39%|###8      | 2.46M/6.35M [00:01<00:01, 3.23MB/s]
-[2022-10-07 10:55:17,046: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  50%|#####     | 3.20M/6.35M [00:01<00:00, 4.11MB/s]
-[2022-10-07 10:55:17,147: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  63%|######2   | 3.99M/6.35M [00:01<00:00, 5.05MB/s]
-[2022-10-07 10:55:17,248: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  72%|#######2  | 4.60M/6.35M [00:01<00:00, 5.36MB/s]
-[2022-10-07 10:55:17,393: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  82%|########2 | 5.21M/6.35M [00:02<00:00, 5.05MB/s]
-[2022-10-07 10:55:17,518: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  91%|######### | 5.77M/6.35M [00:02<00:00, 4.93MB/s]
-[2022-10-07 10:55:17,696: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  99%|#########9| 6.29M/6.35M [00:02<00:00, 4.24MB/s]
-[2022-10-07 10:55:17,720: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:02<00:00, 2.86MB/s]
+[2022-10-07 10:55:15,391: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-10-07 10:55:15,568: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:23, 280kB/s]
+[2022-10-07 10:55:15,673: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|1         | 80.0k/6.35M [00:00<00:22, 294kB/s]
+[2022-10-07 10:55:15,776: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   2%|2         | 136k/6.35M [00:00<00:16, 396kB/s] 
+[2022-10-07 10:55:15,879: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   3%|2         | 184k/6.35M [00:00<00:15, 426kB/s]
+[2022-10-07 10:55:15,981: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   4%|4         | 264k/6.35M [00:00<00:11, 552kB/s]
+[2022-10-07 10:55:16,082: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   5%|5         | 344k/6.35M [00:00<00:09, 637kB/s]
+[2022-10-07 10:55:16,186: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   8%|8         | 552k/6.35M [00:00<00:05, 1.09MB/s]
+[2022-10-07 10:55:16,288: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  10%|#         | 664k/6.35M [00:00<00:05, 1.10MB/s]
+[2022-10-07 10:55:16,496: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  13%|#2        | 816k/6.35M [00:01<00:06, 934kB/s] 
+[2022-10-07 10:55:16,842: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  20%|#9        | 1.26M/6.35M [00:01<00:04, 1.18MB/s]
+[2022-10-07 10:55:16,943: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  39%|###8      | 2.46M/6.35M [00:01<00:01, 3.23MB/s]
+[2022-10-07 10:55:17,046: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  50%|#####     | 3.20M/6.35M [00:01<00:00, 4.11MB/s]
+[2022-10-07 10:55:17,147: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  63%|######2   | 3.99M/6.35M [00:01<00:00, 5.05MB/s]
+[2022-10-07 10:55:17,248: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  72%|#######2  | 4.60M/6.35M [00:01<00:00, 5.36MB/s]
+[2022-10-07 10:55:17,393: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  82%|########2 | 5.21M/6.35M [00:02<00:00, 5.05MB/s]
+[2022-10-07 10:55:17,518: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  91%|######### | 5.77M/6.35M [00:02<00:00, 4.93MB/s]
+[2022-10-07 10:55:17,696: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  99%|#########9| 6.29M/6.35M [00:02<00:00, 4.24MB/s]
+[2022-10-07 10:55:17,720: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:02<00:00, 2.86MB/s]
 [2022-10-07 10:55:17,901: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
 [2022-10-07 10:55:59,317: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
 [2022-10-07 10:56:33,516: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 10:56:15.963764) while time zone support is active.
@@ -1858,25 +1900,44 @@ TypeError: 'NoneType' object is not callable
 [2022-10-12 13:50:02,300: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
 [2022-10-12 13:50:02,828: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
 [2022-10-12 13:50:09,832: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
-[2022-10-12 13:50:10,578: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
-[2022-10-12 13:50:10,696: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 24.0k/6.35M [00:00<00:31, 210kB/s]
-[2022-10-12 13:50:10,905: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:45, 144kB/s]
-[2022-10-12 13:50:11,008: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|1         | 80.0k/6.35M [00:00<00:32, 202kB/s]
-[2022-10-12 13:50:11,310: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|1         | 104k/6.35M [00:00<00:49, 132kB/s] 
-[2022-10-12 13:50:11,515: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   3%|2         | 184k/6.35M [00:00<00:28, 229kB/s]
-[2022-10-12 13:50:11,637: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|4         | 264k/6.35M [00:01<00:19, 333kB/s]
-[2022-10-12 13:50:11,741: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   5%|4         | 304k/6.35M [00:01<00:18, 347kB/s]
-[2022-10-12 13:50:11,871: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   7%|7         | 472k/6.35M [00:01<00:09, 625kB/s]
-[2022-10-12 13:50:11,971: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  11%|#         | 704k/6.35M [00:01<00:05, 1.04MB/s]
-[2022-10-12 13:50:12,079: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  16%|#5        | 1.00M/6.35M [00:01<00:03, 1.57MB/s]
-[2022-10-12 13:50:12,180: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  23%|##3       | 1.48M/6.35M [00:01<00:02, 2.47MB/s]
-[2022-10-12 13:50:12,280: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  35%|###4      | 2.21M/6.35M [00:01<00:01, 3.89MB/s]
-[2022-10-12 13:50:12,383: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  45%|####5     | 2.87M/6.35M [00:01<00:00, 4.69MB/s]
-[2022-10-12 13:50:12,490: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  57%|#####7    | 3.63M/6.35M [00:01<00:00, 5.53MB/s]
-[2022-10-12 13:50:12,591: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  71%|#######1  | 4.52M/6.35M [00:02<00:00, 6.60MB/s]
-[2022-10-12 13:50:12,693: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  82%|########1 | 5.18M/6.35M [00:02<00:00, 6.65MB/s]
-[2022-10-12 13:50:12,837: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  92%|#########1| 5.83M/6.35M [00:02<00:00, 5.92MB/s]
-[2022-10-12 13:50:12,926: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:02<00:00, 2.84MB/s]
+[2022-10-12 13:50:10,578: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-10-12 13:50:10,696: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   0%|          | 24.0k/6.35M [00:00<00:31, 210kB/s]
+[2022-10-12 13:50:10,905: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:45, 144kB/s]
+[2022-10-12 13:50:11,008: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|1         | 80.0k/6.35M [00:00<00:32, 202kB/s]
+[2022-10-12 13:50:11,310: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   2%|1         | 104k/6.35M [00:00<00:49, 132kB/s] 
+[2022-10-12 13:50:11,515: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   3%|2         | 184k/6.35M [00:00<00:28, 229kB/s]
+[2022-10-12 13:50:11,637: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   4%|4         | 264k/6.35M [00:01<00:19, 333kB/s]
+[2022-10-12 13:50:11,741: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   5%|4         | 304k/6.35M [00:01<00:18, 347kB/s]
+[2022-10-12 13:50:11,871: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   7%|7         | 472k/6.35M [00:01<00:09, 625kB/s]
+[2022-10-12 13:50:11,971: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  11%|#         | 704k/6.35M [00:01<00:05, 1.04MB/s]
+[2022-10-12 13:50:12,079: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  16%|#5        | 1.00M/6.35M [00:01<00:03, 1.57MB/s]
+[2022-10-12 13:50:12,180: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  23%|##3       | 1.48M/6.35M [00:01<00:02, 2.47MB/s]
+[2022-10-12 13:50:12,280: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  35%|###4      | 2.21M/6.35M [00:01<00:01, 3.89MB/s]
+[2022-10-12 13:50:12,383: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  45%|####5     | 2.87M/6.35M [00:01<00:00, 4.69MB/s]
+[2022-10-12 13:50:12,490: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  57%|#####7    | 3.63M/6.35M [00:01<00:00, 5.53MB/s]
+[2022-10-12 13:50:12,591: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  71%|#######1  | 4.52M/6.35M [00:02<00:00, 6.60MB/s]
+[2022-10-12 13:50:12,693: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  82%|########1 | 5.18M/6.35M [00:02<00:00, 6.65MB/s]
+[2022-10-12 13:50:12,837: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  92%|#########1| 5.83M/6.35M [00:02<00:00, 5.92MB/s]
+[2022-10-12 13:50:12,926: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:02<00:00, 2.84MB/s]
 [2022-10-12 13:50:13,328: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
 [2022-10-12 13:55:14,410: ERROR/ForkPoolWorker-7] Error in getting link
 [2022-10-12 13:55:14,472: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[e0219460-4089-41dc-b1e5-481354c4de9d] succeeded in 312.17205901502166s: None
@@ -2467,73 +2528,140 @@ urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Re
 [2022-10-13 15:18:50,156: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
 [2022-10-13 15:18:50,516: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
 [2022-10-13 15:18:56,549: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
-[2022-10-13 15:18:57,147: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
-[2022-10-13 15:18:57,272: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:16, 396kB/s]
-[2022-10-13 15:18:57,391: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|1         | 88.0k/6.35M [00:00<00:17, 366kB/s]
-[2022-10-13 15:18:57,498: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|2         | 152k/6.35M [00:00<00:13, 471kB/s] 
-[2022-10-13 15:18:57,601: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|3         | 248k/6.35M [00:00<00:09, 651kB/s]
-[2022-10-13 15:18:58,254: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   5%|5         | 336k/6.35M [00:01<00:24, 256kB/s]
-[2022-10-13 15:19:01,843: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   6%|5         | 384k/6.35M [00:04<02:10, 48.0kB/s]
-[2022-10-13 15:19:02,439: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   7%|6         | 424k/6.35M [00:05<02:00, 51.6kB/s]
-[2022-10-13 15:19:02,659: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   8%|7         | 488k/6.35M [00:05<01:25, 71.7kB/s]
-[2022-10-13 15:19:03,159: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   8%|8         | 544k/6.35M [00:06<01:15, 80.7kB/s]
-[2022-10-13 15:19:03,388: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   9%|8         | 568k/6.35M [00:06<01:12, 84.0kB/s]
-[2022-10-13 15:19:03,628: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   9%|9         | 608k/6.35M [00:06<01:02, 97.2kB/s]
-[2022-10-13 15:19:04,633: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  10%|#         | 656k/6.35M [00:07<01:20, 74.1kB/s]
-[2022-10-13 15:19:04,759: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  16%|#5        | 1.01M/6.35M [00:07<00:18, 309kB/s]
-[2022-10-13 15:19:04,865: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  19%|#8        | 1.18M/6.35M [00:07<00:12, 430kB/s]
-[2022-10-13 15:19:07,541: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  20%|##        | 1.30M/6.35M [00:10<00:38, 139kB/s]
-[2022-10-13 15:19:09,313: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  22%|##1       | 1.38M/6.35M [00:12<00:50, 102kB/s]
-[2022-10-13 15:19:09,723: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  23%|##3       | 1.48M/6.35M [00:12<00:42, 119kB/s]
-[2022-10-13 15:19:09,943: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  24%|##4       | 1.54M/6.35M [00:12<00:37, 134kB/s]
-[2022-10-13 15:19:10,251: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  25%|##5       | 1.60M/6.35M [00:13<00:34, 146kB/s]
-[2022-10-13 15:19:10,636: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  30%|##9       | 1.88M/6.35M [00:13<00:17, 273kB/s]
-[2022-10-13 15:19:10,772: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  31%|###       | 1.94M/6.35M [00:13<00:16, 287kB/s]
-[2022-10-13 15:19:10,921: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  36%|###6      | 2.29M/6.35M [00:13<00:07, 568kB/s]
-[2022-10-13 15:19:13,202: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  38%|###7      | 2.40M/6.35M [00:16<00:22, 186kB/s]
-[2022-10-13 15:19:17,159: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  42%|####2     | 2.68M/6.35M [00:20<00:33, 114kB/s]
-[2022-10-13 15:19:17,308: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  45%|####5     | 2.87M/6.35M [00:20<00:23, 155kB/s]
-[2022-10-13 15:19:17,439: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  51%|#####     | 3.21M/6.35M [00:20<00:12, 260kB/s]
-[2022-10-13 15:19:17,594: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  54%|#####3    | 3.41M/6.35M [00:20<00:09, 328kB/s]
-[2022-10-13 15:19:17,990: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  56%|#####5    | 3.54M/6.35M [00:20<00:08, 332kB/s]
-[2022-10-13 15:19:18,280: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  57%|#####7    | 3.64M/6.35M [00:21<00:08, 338kB/s]
-[2022-10-13 15:19:18,525: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  59%|#####8    | 3.73M/6.35M [00:21<00:08, 343kB/s]
-[2022-10-13 15:19:18,690: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  60%|#####9    | 3.80M/6.35M [00:21<00:07, 357kB/s]
-[2022-10-13 15:19:18,856: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  61%|######    | 3.86M/6.35M [00:21<00:07, 364kB/s]
-[2022-10-13 15:19:19,001: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  62%|######1   | 3.91M/6.35M [00:21<00:06, 369kB/s]
-[2022-10-13 15:19:19,111: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  63%|######2   | 3.97M/6.35M [00:21<00:06, 393kB/s]
-[2022-10-13 15:19:19,256: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  63%|######3   | 4.02M/6.35M [00:22<00:06, 394kB/s]
-[2022-10-13 15:19:19,364: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  64%|######4   | 4.07M/6.35M [00:22<00:05, 406kB/s]
-[2022-10-13 15:19:19,470: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  65%|######4   | 4.12M/6.35M [00:22<00:05, 418kB/s]
-[2022-10-13 15:19:19,576: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  66%|######5   | 4.16M/6.35M [00:22<00:05, 429kB/s]
-[2022-10-13 15:19:19,701: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  67%|######6   | 4.23M/6.35M [00:22<00:04, 456kB/s]
-[2022-10-13 15:19:19,817: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  67%|######7   | 4.27M/6.35M [00:22<00:04, 447kB/s]
-[2022-10-13 15:19:19,917: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  68%|######8   | 4.33M/6.35M [00:22<00:04, 478kB/s]
-[2022-10-13 15:19:20,023: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  69%|######9   | 4.38M/6.35M [00:22<00:04, 496kB/s]
-[2022-10-13 15:19:20,139: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  70%|######9   | 4.44M/6.35M [00:22<00:04, 496kB/s]
-[2022-10-13 15:19:20,257: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  71%|#######   | 4.50M/6.35M [00:23<00:03, 514kB/s]
-[2022-10-13 15:19:20,374: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  72%|#######1  | 4.55M/6.35M [00:23<00:03, 506kB/s]
-[2022-10-13 15:19:20,475: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  73%|#######2  | 4.61M/6.35M [00:23<00:03, 523kB/s]
-[2022-10-13 15:19:20,585: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  73%|#######3  | 4.66M/6.35M [00:23<00:03, 522kB/s]
-[2022-10-13 15:19:20,690: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  75%|#######4  | 4.73M/6.35M [00:23<00:02, 574kB/s]
-[2022-10-13 15:19:20,827: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  76%|#######5  | 4.80M/6.35M [00:23<00:03, 542kB/s]
-[2022-10-13 15:19:21,245: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  76%|#######6  | 4.85M/6.35M [00:24<00:05, 297kB/s]
-[2022-10-13 15:19:21,407: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  77%|#######7  | 4.91M/6.35M [00:24<00:04, 311kB/s]
-[2022-10-13 15:19:21,533: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  78%|#######7  | 4.95M/6.35M [00:24<00:04, 314kB/s]
-[2022-10-13 15:19:22,844: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  79%|#######8  | 4.98M/6.35M [00:25<00:14, 98.1kB/s]
-[2022-10-13 15:19:22,955: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  84%|########3 | 5.30M/6.35M [00:25<00:03, 346kB/s] 
-[2022-10-13 15:19:23,116: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  85%|########5 | 5.41M/6.35M [00:25<00:02, 400kB/s]
-[2022-10-13 15:19:23,273: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  87%|########6 | 5.51M/6.35M [00:26<00:02, 439kB/s]
-[2022-10-13 15:19:23,397: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  88%|########8 | 5.59M/6.35M [00:26<00:01, 486kB/s]
-[2022-10-13 15:19:23,592: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  89%|########9 | 5.68M/6.35M [00:26<00:01, 479kB/s]
-[2022-10-13 15:19:23,698: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  92%|#########1| 5.82M/6.35M [00:26<00:00, 637kB/s]
-[2022-10-13 15:19:23,821: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  93%|#########3| 5.91M/6.35M [00:26<00:00, 672kB/s]
-[2022-10-13 15:19:23,940: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  95%|#########4| 6.00M/6.35M [00:26<00:00, 693kB/s]
-[2022-10-13 15:19:24,063: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  96%|#########5| 6.09M/6.35M [00:26<00:00, 703kB/s]
-[2022-10-13 15:19:24,167: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  97%|#########7| 6.18M/6.35M [00:27<00:00, 760kB/s]
-[2022-10-13 15:19:24,282: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  99%|#########8| 6.27M/6.35M [00:27<00:00, 767kB/s]
-[2022-10-13 15:19:24,470: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:27<00:00, 651kB/s]
-[2022-10-13 15:19:24,471: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:27<00:00, 244kB/s]
+[2022-10-13 15:18:57,147: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-10-13 15:18:57,272: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|          | 48.0k/6.35M [00:00<00:16, 396kB/s]
+[2022-10-13 15:18:57,391: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|1         | 88.0k/6.35M [00:00<00:17, 366kB/s]
+[2022-10-13 15:18:57,498: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   2%|2         | 152k/6.35M [00:00<00:13, 471kB/s] 
+[2022-10-13 15:18:57,601: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   4%|3         | 248k/6.35M [00:00<00:09, 651kB/s]
+[2022-10-13 15:18:58,254: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   5%|5         | 336k/6.35M [00:01<00:24, 256kB/s]
+[2022-10-13 15:19:01,843: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   6%|5         | 384k/6.35M [00:04<02:10, 48.0kB/s]
+[2022-10-13 15:19:02,439: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   7%|6         | 424k/6.35M [00:05<02:00, 51.6kB/s]
+[2022-10-13 15:19:02,659: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   8%|7         | 488k/6.35M [00:05<01:25, 71.7kB/s]
+[2022-10-13 15:19:03,159: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   8%|8         | 544k/6.35M [00:06<01:15, 80.7kB/s]
+[2022-10-13 15:19:03,388: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   9%|8         | 568k/6.35M [00:06<01:12, 84.0kB/s]
+[2022-10-13 15:19:03,628: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   9%|9         | 608k/6.35M [00:06<01:02, 97.2kB/s]
+[2022-10-13 15:19:04,633: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  10%|#         | 656k/6.35M [00:07<01:20, 74.1kB/s]
+[2022-10-13 15:19:04,759: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  16%|#5        | 1.01M/6.35M [00:07<00:18, 309kB/s]
+[2022-10-13 15:19:04,865: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  19%|#8        | 1.18M/6.35M [00:07<00:12, 430kB/s]
+[2022-10-13 15:19:07,541: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  20%|##        | 1.30M/6.35M [00:10<00:38, 139kB/s]
+[2022-10-13 15:19:09,313: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  22%|##1       | 1.38M/6.35M [00:12<00:50, 102kB/s]
+[2022-10-13 15:19:09,723: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  23%|##3       | 1.48M/6.35M [00:12<00:42, 119kB/s]
+[2022-10-13 15:19:09,943: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  24%|##4       | 1.54M/6.35M [00:12<00:37, 134kB/s]
+[2022-10-13 15:19:10,251: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  25%|##5       | 1.60M/6.35M [00:13<00:34, 146kB/s]
+[2022-10-13 15:19:10,636: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  30%|##9       | 1.88M/6.35M [00:13<00:17, 273kB/s]
+[2022-10-13 15:19:10,772: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  31%|###       | 1.94M/6.35M [00:13<00:16, 287kB/s]
+[2022-10-13 15:19:10,921: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  36%|###6      | 2.29M/6.35M [00:13<00:07, 568kB/s]
+[2022-10-13 15:19:13,202: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  38%|###7      | 2.40M/6.35M [00:16<00:22, 186kB/s]
+[2022-10-13 15:19:17,159: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  42%|####2     | 2.68M/6.35M [00:20<00:33, 114kB/s]
+[2022-10-13 15:19:17,308: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  45%|####5     | 2.87M/6.35M [00:20<00:23, 155kB/s]
+[2022-10-13 15:19:17,439: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  51%|#####     | 3.21M/6.35M [00:20<00:12, 260kB/s]
+[2022-10-13 15:19:17,594: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  54%|#####3    | 3.41M/6.35M [00:20<00:09, 328kB/s]
+[2022-10-13 15:19:17,990: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  56%|#####5    | 3.54M/6.35M [00:20<00:08, 332kB/s]
+[2022-10-13 15:19:18,280: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  57%|#####7    | 3.64M/6.35M [00:21<00:08, 338kB/s]
+[2022-10-13 15:19:18,525: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  59%|#####8    | 3.73M/6.35M [00:21<00:08, 343kB/s]
+[2022-10-13 15:19:18,690: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  60%|#####9    | 3.80M/6.35M [00:21<00:07, 357kB/s]
+[2022-10-13 15:19:18,856: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  61%|######    | 3.86M/6.35M [00:21<00:07, 364kB/s]
+[2022-10-13 15:19:19,001: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  62%|######1   | 3.91M/6.35M [00:21<00:06, 369kB/s]
+[2022-10-13 15:19:19,111: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  63%|######2   | 3.97M/6.35M [00:21<00:06, 393kB/s]
+[2022-10-13 15:19:19,256: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  63%|######3   | 4.02M/6.35M [00:22<00:06, 394kB/s]
+[2022-10-13 15:19:19,364: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  64%|######4   | 4.07M/6.35M [00:22<00:05, 406kB/s]
+[2022-10-13 15:19:19,470: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  65%|######4   | 4.12M/6.35M [00:22<00:05, 418kB/s]
+[2022-10-13 15:19:19,576: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  66%|######5   | 4.16M/6.35M [00:22<00:05, 429kB/s]
+[2022-10-13 15:19:19,701: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  67%|######6   | 4.23M/6.35M [00:22<00:04, 456kB/s]
+[2022-10-13 15:19:19,817: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  67%|######7   | 4.27M/6.35M [00:22<00:04, 447kB/s]
+[2022-10-13 15:19:19,917: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  68%|######8   | 4.33M/6.35M [00:22<00:04, 478kB/s]
+[2022-10-13 15:19:20,023: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  69%|######9   | 4.38M/6.35M [00:22<00:04, 496kB/s]
+[2022-10-13 15:19:20,139: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  70%|######9   | 4.44M/6.35M [00:22<00:04, 496kB/s]
+[2022-10-13 15:19:20,257: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  71%|#######   | 4.50M/6.35M [00:23<00:03, 514kB/s]
+[2022-10-13 15:19:20,374: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  72%|#######1  | 4.55M/6.35M [00:23<00:03, 506kB/s]
+[2022-10-13 15:19:20,475: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  73%|#######2  | 4.61M/6.35M [00:23<00:03, 523kB/s]
+[2022-10-13 15:19:20,585: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  73%|#######3  | 4.66M/6.35M [00:23<00:03, 522kB/s]
+[2022-10-13 15:19:20,690: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  75%|#######4  | 4.73M/6.35M [00:23<00:02, 574kB/s]
+[2022-10-13 15:19:20,827: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  76%|#######5  | 4.80M/6.35M [00:23<00:03, 542kB/s]
+[2022-10-13 15:19:21,245: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  76%|#######6  | 4.85M/6.35M [00:24<00:05, 297kB/s]
+[2022-10-13 15:19:21,407: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  77%|#######7  | 4.91M/6.35M [00:24<00:04, 311kB/s]
+[2022-10-13 15:19:21,533: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  78%|#######7  | 4.95M/6.35M [00:24<00:04, 314kB/s]
+[2022-10-13 15:19:22,844: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  79%|#######8  | 4.98M/6.35M [00:25<00:14, 98.1kB/s]
+[2022-10-13 15:19:22,955: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  84%|########3 | 5.30M/6.35M [00:25<00:03, 346kB/s] 
+[2022-10-13 15:19:23,116: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  85%|########5 | 5.41M/6.35M [00:25<00:02, 400kB/s]
+[2022-10-13 15:19:23,273: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  87%|########6 | 5.51M/6.35M [00:26<00:02, 439kB/s]
+[2022-10-13 15:19:23,397: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  88%|########8 | 5.59M/6.35M [00:26<00:01, 486kB/s]
+[2022-10-13 15:19:23,592: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  89%|########9 | 5.68M/6.35M [00:26<00:01, 479kB/s]
+[2022-10-13 15:19:23,698: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  92%|#########1| 5.82M/6.35M [00:26<00:00, 637kB/s]
+[2022-10-13 15:19:23,821: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  93%|#########3| 5.91M/6.35M [00:26<00:00, 672kB/s]
+[2022-10-13 15:19:23,940: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  95%|#########4| 6.00M/6.35M [00:26<00:00, 693kB/s]
+[2022-10-13 15:19:24,063: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  96%|#########5| 6.09M/6.35M [00:26<00:00, 703kB/s]
+[2022-10-13 15:19:24,167: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  97%|#########7| 6.18M/6.35M [00:27<00:00, 760kB/s]
+[2022-10-13 15:19:24,282: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  99%|#########8| 6.27M/6.35M [00:27<00:00, 767kB/s]
+[2022-10-13 15:19:24,470: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:27<00:00, 651kB/s]
+[2022-10-13 15:19:24,471: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:27<00:00, 244kB/s]
 [2022-10-13 15:19:24,745: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
 [2022-10-13 15:20:01,890: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
 [2022-10-13 15:20:37,594: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 15:20:18.860438) while time zone support is active.
@@ -2689,3 +2817,371 @@ ValueError: Negative indexing is not supported.
 [2022-10-13 15:54:59,107: INFO/ForkPoolWorker-7] 99 Senior Analyst - Growth, Marketing & Sales has been added to the database
 [2022-10-13 15:55:00,581: INFO/ForkPoolWorker-7] 100 Senior Implementation Facilitator - Pharmaceuticals & Medical Products - Operations has been added to the database
 [2022-10-13 15:55:00,583: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[31908998-cc8d-4b40-8d07-4df41087c4eb] succeeded in 49.728618219000055s: None
+[2022-10-24 08:45:02,851: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-24 08:45:02,854: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-24 08:45:03,869: INFO/MainProcess] mingle: all alone
+[2022-10-24 08:45:03,988: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-24 08:45:03,989: INFO/MainProcess] celery@Asteria ready.
+[2022-10-24 08:45:03,994: INFO/MainProcess] Task celery.backend_cleanup[6ec90a92-7edd-4fe8-9a1d-219fd48f7134] received
+[2022-10-24 08:45:03,999: INFO/ForkPoolWorker-7] Task celery.backend_cleanup[6ec90a92-7edd-4fe8-9a1d-219fd48f7134] succeeded in 0.002649822000421409s: None
+[2022-10-24 08:47:27,650: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[9c953fbf-ab15-4806-943d-edadce6a8db4] received
+[2022-10-24 08:47:38,794: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 08:47:38.752951) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 08:47:40,725: INFO/ForkPoolWorker-7] 101 Service Line Lead - Time sheet and expense reimbursement has been added to the database
+[2022-10-24 08:47:42,246: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 08:47:42.244007) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 08:47:44,201: INFO/ForkPoolWorker-7] 102 Senior Digital Analyst - Full Stack, McKinsey Digital has been added to the database
+[2022-10-24 08:47:45,925: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 08:47:45.924638) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 08:47:48,598: INFO/ForkPoolWorker-7] 103 Senior Software Consultant has been added to the database
+[2022-10-24 08:47:50,157: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 08:47:50.155711) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 08:47:52,733: INFO/ForkPoolWorker-7] 104 Staff Engineer - Periscope has been added to the database
+[2022-10-24 08:47:54,141: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 08:47:54,142: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[9c953fbf-ab15-4806-943d-edadce6a8db4] succeeded in 26.48784136500035s: None
+[2022-10-24 08:49:45,370: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[92c97a1f-e45d-4e04-87ce-147de3d8bc92] received
+[2022-10-24 08:49:45,375: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-24 08:49:45,429: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-24 08:49:51,042: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
+[2022-10-24 08:49:51,540: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-10-24 08:49:51,650: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|          | 40.0k/6.35M [00:00<00:17, 375kB/s]
+[2022-10-24 08:49:51,753: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   1%|1         | 88.0k/6.35M [00:00<00:15, 433kB/s]
+[2022-10-24 08:49:51,876: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   2%|2         | 144k/6.35M [00:00<00:14, 450kB/s] 
+[2022-10-24 08:49:52,020: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   3%|3         | 208k/6.35M [00:00<00:14, 451kB/s]
+[2022-10-24 08:49:52,133: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   4%|4         | 288k/6.35M [00:00<00:11, 543kB/s]
+[2022-10-24 08:49:52,240: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:   8%|7         | 512k/6.35M [00:00<00:05, 1.05MB/s]
+[2022-10-24 08:49:52,345: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  11%|#1        | 728k/6.35M [00:00<00:04, 1.37MB/s]
+[2022-10-24 08:49:52,445: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  14%|#4        | 928k/6.35M [00:00<00:03, 1.57MB/s]
+[2022-10-24 08:49:52,551: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  18%|#7        | 1.12M/6.35M [00:01<00:03, 1.73MB/s]
+[2022-10-24 08:49:52,654: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  21%|##1       | 1.35M/6.35M [00:01<00:02, 1.92MB/s]
+[2022-10-24 08:49:52,759: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  25%|##5       | 1.60M/6.35M [00:01<00:02, 2.10MB/s]
+[2022-10-24 08:49:52,864: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  28%|##8       | 1.80M/6.35M [00:01<00:02, 2.08MB/s]
+[2022-10-24 08:49:52,992: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  32%|###1      | 2.01M/6.35M [00:01<00:02, 1.93MB/s]
+[2022-10-24 08:49:53,127: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  35%|###4      | 2.20M/6.35M [00:01<00:02, 1.77MB/s]
+[2022-10-24 08:49:53,233: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  38%|###8      | 2.41M/6.35M [00:01<00:02, 1.88MB/s]
+[2022-10-24 08:49:53,350: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  41%|####      | 2.60M/6.35M [00:01<00:02, 1.82MB/s]
+[2022-10-24 08:49:53,465: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  44%|####3     | 2.78M/6.35M [00:01<00:02, 1.77MB/s]
+[2022-10-24 08:49:53,571: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  47%|####7     | 3.01M/6.35M [00:02<00:01, 1.90MB/s]
+[2022-10-24 08:49:53,691: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  50%|#####     | 3.20M/6.35M [00:02<00:01, 1.82MB/s]
+[2022-10-24 08:49:53,961: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  53%|#####3    | 3.38M/6.35M [00:02<00:02, 1.26MB/s]
+[2022-10-24 08:49:54,148: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  55%|#####5    | 3.52M/6.35M [00:02<00:02, 1.11MB/s]
+[2022-10-24 08:49:54,251: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  58%|#####8    | 3.70M/6.35M [00:02<00:02, 1.25MB/s]
+[2022-10-24 08:49:54,357: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  61%|######1   | 3.90M/6.35M [00:02<00:01, 1.42MB/s]
+[2022-10-24 08:49:54,464: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  65%|######4   | 4.10M/6.35M [00:02<00:01, 1.57MB/s]
+[2022-10-24 08:49:54,589: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  67%|######7   | 4.27M/6.35M [00:03<00:01, 1.53MB/s]
+[2022-10-24 08:49:54,690: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  70%|#######   | 4.46M/6.35M [00:03<00:01, 1.64MB/s]
+[2022-10-24 08:49:54,793: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  73%|#######2  | 4.63M/6.35M [00:03<00:01, 1.66MB/s]
+[2022-10-24 08:49:54,900: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  76%|#######5  | 4.82M/6.35M [00:03<00:00, 1.72MB/s]
+[2022-10-24 08:49:55,000: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  79%|#######8  | 4.99M/6.35M [00:03<00:00, 1.74MB/s]
+[2022-10-24 08:49:55,111: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  82%|########1 | 5.18M/6.35M [00:03<00:00, 1.75MB/s]
+[2022-10-24 08:49:55,218: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  85%|########4 | 5.37M/6.35M [00:03<00:00, 1.78MB/s]
+[2022-10-24 08:49:55,332: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  88%|########7 | 5.59M/6.35M [00:03<00:00, 1.85MB/s]
+[2022-10-24 08:49:55,437: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  91%|######### | 5.77M/6.35M [00:03<00:00, 1.86MB/s]
+[2022-10-24 08:49:55,539: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  94%|#########4| 5.98M/6.35M [00:03<00:00, 1.92MB/s]
+[2022-10-24 08:49:55,644: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading:  97%|#########7| 6.18M/6.35M [00:04<00:00, 1.95MB/s]
+[2022-10-24 08:49:55,726: WARNING/ForkPoolWorker-7] 
+[WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:04<00:00, 1.59MB/s]
+[2022-10-24 08:49:55,969: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
+[2022-10-24 08:50:23,136: INFO/ForkPoolWorker-7] None is not active
+[2022-10-24 08:50:23,192: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[92c97a1f-e45d-4e04-87ce-147de3d8bc92] succeeded in 37.81789869899967s: None
+[2022-10-24 21:27:45,359: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-24 21:27:45,368: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-24 21:27:46,383: INFO/MainProcess] mingle: all alone
+[2022-10-24 21:27:46,427: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-24 21:27:46,427: INFO/MainProcess] celery@Asteria ready.
+[2022-10-24 21:29:27,255: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[e300b4ab-0865-4dc6-b997-656bba0b67af] received
+[2022-10-24 21:30:07,614: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[e300b4ab-0865-4dc6-b997-656bba0b67af] succeeded in 40.356142012999044s: None
+[2022-10-24 21:34:40,677: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-24 21:34:40,681: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-24 21:34:41,695: INFO/MainProcess] mingle: all alone
+[2022-10-24 21:34:41,723: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-24 21:34:41,723: INFO/MainProcess] celery@Asteria ready.
+[2022-10-24 21:35:52,551: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[351f86a5-f659-4240-9202-c4796f7f11c5] received
+[2022-10-24 21:35:52,553: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-24 21:35:52,901: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-24 21:35:58,970: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-24 21:36:26,700: INFO/ForkPoolWorker-7] None is not active
+[2022-10-24 21:36:26,765: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[351f86a5-f659-4240-9202-c4796f7f11c5] succeeded in 34.21225018700352s: None
+[2022-10-24 21:38:18,884: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-24 21:38:18,890: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-24 21:38:19,908: INFO/MainProcess] mingle: all alone
+[2022-10-24 21:38:19,946: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-24 21:38:19,946: INFO/MainProcess] celery@Asteria ready.
+[2022-10-24 21:40:49,962: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[cef9ddc9-9183-46e3-958d-e917fbe34a6b] received
+[2022-10-24 21:40:49,967: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-24 21:40:50,186: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-24 21:40:51,924: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-24 21:41:29,588: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e78be0bd2d4d8a84&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-24 21:42:05,197: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-05 21:41:46.598800) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:42:05,476: INFO/ForkPoolWorker-7] 105 Business Analyst - McKinsey Digital has been added to the database
+[2022-10-24 21:42:05,478: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=a2d2d2148a15c87a&fccid=6576e7250aa78c3c&vjs=3
+[2022-10-24 21:42:29,521: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[cef9ddc9-9183-46e3-958d-e917fbe34a6b] raised unexpected: NoSuchWindowException('no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=106.0.5249.103)', None, ['#0 0x564f79c132c3 <unknown>', '#1 0x564f79a1c83a <unknown>', '#2 0x564f799fb8e3 <unknown>', '#3 0x564f79a77ebd <unknown>', '#4 0x564f79a8b029 <unknown>', '#5 0x564f79a73d63 <unknown>', '#6 0x564f79a487e3 <unknown>', '#7 0x564f79a49a21 <unknown>', '#8 0x564f79c6118e <unknown>', '#9 0x564f79c64622 <unknown>', '#10 0x564f79c47aae <unknown>', '#11 0x564f79c652a3 <unknown>', '#12 0x564f79c3becf <unknown>', '#13 0x564f79c85588 <unknown>', '#14 0x564f79c85706 <unknown>', '#15 0x564f79c9f8b2 <unknown>', '#16 0x7fbb2139a74d <unknown>', ''])
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 87, in start_web_scraping_indeed
+    company_logo = driver.find_element(By.XPATH, '//*[@id="cmp-container"]/div/div[1]/header/div[2]/div[3]/div/div/div/div[1]/div[1]/div[1]/div/div/img').get_attribute('src')
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 855, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+#0 0x564f79c132c3 <unknown>
+#1 0x564f79a1c83a <unknown>
+#2 0x564f799fb8e3 <unknown>
+#3 0x564f79a77ebd <unknown>
+#4 0x564f79a8b029 <unknown>
+#5 0x564f79a73d63 <unknown>
+#6 0x564f79a487e3 <unknown>
+#7 0x564f79a49a21 <unknown>
+#8 0x564f79c6118e <unknown>
+#9 0x564f79c64622 <unknown>
+#10 0x564f79c47aae <unknown>
+#11 0x564f79c652a3 <unknown>
+#12 0x564f79c3becf <unknown>
+#13 0x564f79c85588 <unknown>
+#14 0x564f79c85706 <unknown>
+#15 0x564f79c9f8b2 <unknown>
+#16 0x7fbb2139a74d <unknown>
+
+[2022-10-24 21:42:55,933: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-24 21:42:55,941: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-24 21:42:56,960: INFO/MainProcess] mingle: all alone
+[2022-10-24 21:42:56,997: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-24 21:42:56,998: INFO/MainProcess] celery@Asteria ready.
+[2022-10-24 21:44:05,790: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[790b6d00-2cc4-48d4-909b-fb2e5b000478] received
+[2022-10-24 21:44:15,458: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 21:44:15.347035) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:16,199: INFO/ForkPoolWorker-7] 106 Business Analyst has been added to the database
+[2022-10-24 21:44:18,001: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-18 21:44:17.997812) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:18,541: INFO/ForkPoolWorker-7] 107 Business Analyst has been added to the database
+[2022-10-24 21:44:20,065: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-18 21:44:20.062047) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:20,356: INFO/ForkPoolWorker-7] 108 Business Analyst has been added to the database
+[2022-10-24 21:44:21,900: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-18 21:44:21.896666) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:22,181: INFO/ForkPoolWorker-7] 109 Business Analyst has been added to the database
+[2022-10-24 21:44:23,731: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-18 21:44:23.729839) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:24,040: INFO/ForkPoolWorker-7] 110 Business Analyst has been added to the database
+[2022-10-24 21:44:25,546: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 21:44:25.541632) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:25,833: INFO/ForkPoolWorker-7] 111 Executive Assistant has been added to the database
+[2022-10-24 21:44:27,629: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 21:44:27.625671) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:28,769: INFO/ForkPoolWorker-7] 112 Business Analyst has been added to the database
+[2022-10-24 21:44:30,676: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:30.674664) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:31,035: INFO/ForkPoolWorker-7] 113 Human Resources Generalist (Benefits) - INO has been added to the database
+[2022-10-24 21:44:32,525: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-20 21:44:32.523282) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:33,554: INFO/ForkPoolWorker-7] 114 Business Presentation Specialist (Trainee) has been added to the database
+[2022-10-24 21:44:35,107: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-03 21:44:35.105109) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:35,396: INFO/ForkPoolWorker-7] 115 Project Finance Controller has been added to the database
+[2022-10-24 21:44:36,957: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:36.953827) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:37,332: INFO/ForkPoolWorker-7] 116 BI Analyst - Orpheus has been added to the database
+[2022-10-24 21:44:38,899: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:38.895792) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:39,180: INFO/ForkPoolWorker-7] 117 Office Services Administrator has been added to the database
+[2022-10-24 21:44:40,692: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:40.689819) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:41,071: INFO/ForkPoolWorker-7] 118 Senior Analyst - Growth, Marketing & Sales has been added to the database
+[2022-10-24 21:44:42,814: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:42.809051) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:43,436: INFO/ForkPoolWorker-7] 119 Knowledge Analyst - Private Equity & Principal Investors has been added to the database
+[2022-10-24 21:44:44,939: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-18 21:44:44.936592) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:46,088: INFO/ForkPoolWorker-7] 120 Research Science Analyst - Global Payments Map - Gurugram has been added to the database
+[2022-10-24 21:44:47,550: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:47.546561) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:47,825: INFO/ForkPoolWorker-7] 121 Proposal Specialist has been added to the database
+[2022-10-24 21:44:49,361: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:49.357618) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:49,666: INFO/ForkPoolWorker-7] 122 Knowledge Analyst - Procurement has been added to the database
+[2022-10-24 21:44:51,191: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 21:44:51.187225) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:51,476: INFO/ForkPoolWorker-7] 123 Full Stack Web Developer has been added to the database
+[2022-10-24 21:44:53,037: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 21:44:53.035272) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:53,377: INFO/ForkPoolWorker-7] 124 Professional Development Manager – McKinsey Digital (Build Hub) has been added to the database
+[2022-10-24 21:44:54,996: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-21 21:44:54.991886) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:55,368: INFO/ForkPoolWorker-7] 125 SQL Developer - Ignite has been added to the database
+[2022-10-24 21:44:57,040: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:57.038569) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:44:57,468: INFO/ForkPoolWorker-7] 126 Solution Delivery Analyst - Manufacturing and Supply Chain has been added to the database
+[2022-10-24 21:44:59,263: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:44:59.256400) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:45:01,132: INFO/ForkPoolWorker-7] 127 Knowledge Specialist - Growth Marketing & Sales has been added to the database
+[2022-10-24 21:45:02,533: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 21:45:02.529496) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:45:03,067: INFO/ForkPoolWorker-7] 128 Senior Implementation Facilitator - McKinsey Implementation has been added to the database
+[2022-10-24 21:45:04,684: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-17 21:45:04.682731) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:45:05,047: INFO/ForkPoolWorker-7] 129 Solution Manager - Power Solutions has been added to the database
+[2022-10-24 21:45:06,848: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 21:45:06.844098) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:45:07,264: INFO/ForkPoolWorker-7] 130 Senior Finance Associate - US Payroll has been added to the database
+[2022-10-24 21:45:07,268: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[790b6d00-2cc4-48d4-909b-fb2e5b000478] succeeded in 61.47659997899609s: None
+[2022-10-24 21:49:37,012: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-24 21:49:37,115: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-24 21:49:38,129: INFO/MainProcess] mingle: all alone
+[2022-10-24 21:49:38,274: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-24 21:49:38,275: INFO/MainProcess] celery@Asteria ready.
+[2022-10-24 21:52:24,380: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[7ae533e1-9406-4c85-96dc-c20b4a4c56ef] received
+[2022-10-24 21:52:34,180: ERROR/ForkPoolWorker-7] Error in getting link 'NoneType' object has no attribute 'text'
+[2022-10-24 21:52:35,684: ERROR/ForkPoolWorker-7] Error in getting link 'NoneType' object has no attribute 'text'
+[2022-10-24 21:52:37,304: ERROR/ForkPoolWorker-7] Error in getting link 'NoneType' object has no attribute 'text'
+[2022-10-24 21:52:39,336: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 21:52:39.323946) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:52:39,620: INFO/ForkPoolWorker-7] 131 Software Architect has been added to the database
+[2022-10-24 21:52:41,166: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 21:52:41.161948) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:52:41,533: INFO/ForkPoolWorker-7] 132 IoT Analyst - Client Capabilities Network has been added to the database
+[2022-10-24 21:52:43,360: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-10 21:52:43.356370) while time zone support is active.
+  warnings.warn(
+
+[2022-10-24 21:52:45,630: INFO/ForkPoolWorker-7] 133 Senior Software Consultant has been added to the database
+[2022-10-24 21:52:48,576: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:52:50,207: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:52:52,086: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:52:54,620: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:52:56,877: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:52:59,994: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:04,625: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:08,574: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:10,328: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:12,759: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:14,362: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:16,174: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:18,008: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:19,509: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:21,815: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:23,632: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:25,995: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:27,931: ERROR/ForkPoolWorker-7] Error in getting link substring not found
+[2022-10-24 21:53:27,934: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[7ae533e1-9406-4c85-96dc-c20b4a4c56ef] succeeded in 63.54946911500156s: None
+
+
+[2022-10-24 22:03:08,455: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-24 22:03:08,462: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-24 22:03:09,471: INFO/MainProcess] mingle: all alone
+[2022-10-24 22:03:09,610: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-24 22:03:09,610: INFO/MainProcess] celery@Asteria ready.
+[2022-10-24 22:05:43,015: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[bb1b61b5-7c70-4b1e-8f59-a8c63faab30d] received
+[2022-10-24 22:06:23,578: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[bb1b61b5-7c70-4b1e-8f59-a8c63faab30d] succeeded in 40.55978801200399s: None
+[2022-10-24 22:12:56,471: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-10-24 22:12:56,478: INFO/MainProcess] mingle: searching for neighbors
+[2022-10-24 22:12:57,496: INFO/MainProcess] mingle: all alone
+[2022-10-24 22:12:57,514: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-10-24 22:12:57,515: INFO/MainProcess] celery@Asteria ready.
+
+[2022-10-24 22:16:10,920: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[709df09f-62b1-4c32-91e0-18945cd26063] received
+[2022-10-24 22:16:10,922: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-10-24 22:16:11,013: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-10-24 22:16:17,030: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-10-24 22:16:50,186: INFO/ForkPoolWorker-7] None is not active
+[2022-10-24 22:16:50,244: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[709df09f-62b1-4c32-91e0-18945cd26063] succeeded in 39.322596677004185s: None
