@@ -34,12 +34,14 @@ def start_web_scraping_indeed():
     for link in Scraping_Service.objects.all():
         if link.is_active:
             if link.url_link.split(".")[1] == "indeed":
+                logging.info(f"{link.url_link} is found and active. Scraping jobs from it")
+            
                 try:
                     driver.get(link.url_link)
                     time.sleep(20)
                     page_source = driver.page_source
                 except Exception as e: 
-                    logging.error(f"Error in getting link{e}")
+                    logging.error(f"warning{e}")
                     break
                 soup = beauty(page_source, "html.parser")
                 jobs_card = soup.find_all(
@@ -47,16 +49,20 @@ def start_web_scraping_indeed():
                 )  # get all jobs cards
                 
                 for card in jobs_card:
-                    # v = card.find_all("span")
-                    job_title = card.find("a", id=re.compile("^job_")).find("span").text
-                    company_name = card.find("span", class_="companyName").text
-                    company_location = card.find("div", class_="companyLocation").text
-                    job_rating = card.find("span", class_="ratingNumber")["aria-label"]
-                    job_duties = card.find("div", class_="job-snippet").find("li").text
                     try:
-                        job_type = card.find("div", class_="attribute_snippet")
-                    except Exception:
-                        job_type = None
+                        # v = card.find_all("span")
+                        job_title = card.find("a", id=re.compile("^job_")).find("span").text
+                        company_name = card.find("span", class_="companyName").text
+                        company_location = card.find("div", class_="companyLocation").text
+                        job_rating = card.find("span", class_="ratingNumber")["aria-label"]
+                        job_duties = card.find("div", class_="job-snippet").find("li").text
+                        try:
+                            job_type = card.find("div", class_="attribute_snippet")
+                        except Exception:
+                            job_type = None
+                    except Exception as e:
+                        logging.error(f"warning {e}")
+                        continue
                     add = (
                         link.url_link.split("/")[0] + "//" + link.url_link.split("/")[2]
                     )
@@ -99,7 +105,7 @@ def start_web_scraping_indeed():
                         f"{job_entry.id} {job_title} has been added to the database"
                     )
         else:
-            logging.info(f"{link.url_link} is not active")
+            logging.info(f"{link.url_link} is not active. Checking Scraping Service in admin page")
 
 
 @shared_task
@@ -110,14 +116,16 @@ def start_web_scraping_linkedin():
     for link in Scraping_Service.objects.all():
         if link.is_active:
             if link.url_link.split(".")[1] == "linkedin":
-                try:
-                    response = requests.get(link.url_link)
-                    soup = beauty(response.content, "html.parser")
-                    jobs = soup.find_all(
-                        "div",
-                        class_="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-search-card base-search-card--link job-search-card",
-                    )
-                    for job in jobs:
+                logging.info(f"{link.url_link} is found and active. Scraping jobs from it")
+                
+                response = requests.get(link.url_link)
+                soup = beauty(response.content, "html.parser")
+                jobs = soup.find_all(
+                    "div",
+                    class_="base-card relative w-full hover:no-underline focus:no-underline base-card--link base-search-card base-search-card--link job-search-card",
+                )
+                for job in jobs:
+                    try:
                         job_title = job.find(
                             "h3", class_="base-search-card__title"
                         ).text.strip()
@@ -131,7 +139,10 @@ def start_web_scraping_linkedin():
                         job_company_logo = job.find(
                             "div", class_="search-entity-media"
                         ).find("img")["data-delayed-url"]
-
+                    except Exception as e:
+                        logging.error(f"warning {e}")
+                        continue                            
+                    try:
                         response2 = requests.get(job_link)
                         soup2 = beauty(response2.content, "html.parser")
 
@@ -152,37 +163,40 @@ def start_web_scraping_linkedin():
                             class_="description__job-criteria-text description__job-criteria-text--criteria",
                         )[1].text.strip()
                         date_posted = soup2.find('span',class_='posted-time-ago__text topcard__flavor--metadata').text.strip()
-                        if 'day' in date_posted:
-                            timer = 1
-                        elif 'week' in date_posted:
-                            timer = 7
-                        elif 'month' in date_posted:
-                            timer = 30
-                        elif 'year' in date_posted:
-                            timer = 365
-                        else:
-                            timer = 1
-                        count_of_time = int(re.findall(r'[0-9]', date_posted)[0])
-                        total_time_elapsed = count_of_time * timer
-                        date_job_posted_datetime = datetime.now() - timedelta(days=total_time_elapsed)
-                        job_entry = Job.objects.create(
-                            title=job_title,
-                            logo=job_company_logo,
-                            company=job_company,
-                            location=job_location,
-                            duties=duties,
-                            requirements=qualifications,
-                            category=category,
-                            contract_type1=contract_type,
-                            url_link=job_link,
-                            source="LinkedIn",
-                            date_posted = date_job_posted_datetime,
-                            
-                        )
-                        job_entry.save()
-                        logging.info(
-                            f"{job_entry.id} {job_title} has been added to the database"
-                        )
-                except Exception as e:
-                    logging.error(f"Error in getting link {e}")
-                    break
+                    except Exception as e:
+                        logging.error(f"warning {e}")
+                        continue
+                    if 'day' in date_posted:
+                        timer = 1
+                    elif 'week' in date_posted:
+                        timer = 7
+                    elif 'month' in date_posted:
+                        timer = 30
+                    elif 'year' in date_posted:
+                        timer = 365
+                    else:
+                        timer = 1
+                    count_of_time = int(re.findall(r'[0-9]', date_posted)[0])
+                    total_time_elapsed = count_of_time * timer
+                    date_job_posted_datetime = datetime.now() - timedelta(days=total_time_elapsed)
+                    job_entry = Job.objects.create(
+                        title=job_title,
+                        logo=job_company_logo,
+                        company=job_company,
+                        location=job_location,
+                        duties=duties,
+                        requirements=qualifications,
+                        category=category,
+                        contract_type1=contract_type,
+                        url_link=job_link,
+                        source="LinkedIn",
+                        date_posted = date_job_posted_datetime,
+                        
+                    )
+                    job_entry.save()
+                    logging.info(
+                        f"{job_entry.id} {job_title} has been added to the database"
+                    )
+        else:
+            logging.info(f"{link.url_link} is not active. Checking Scraping Service in admin page")
+
