@@ -75,18 +75,37 @@ def start_web_scraping_indeed():
                     print(url_link_new)
                     driver.get(url_link_new)
                     time.sleep(10)
-                    qualifications = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[3]/div/div').text
-                    job_duties = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[2]').text
-                    date_job_posted = driver.find_element(By.XPATH, '//*[@id="hiringInsightsSectionRoot"]/p/span[2]').text
-                    date_number = re.findall('[0-9]+', date_job_posted)
-                    if date_number and len(date_number) >= 1:
-                        date_job_posted_datetime = datetime.now() - timedelta(days=int(date_number[0]))
-                    else:
-                        date_job_posted_datetime = datetime.now()
-                    company_profile = driver.find_element(By.XPATH, '//*[@id="viewJobSSRRoot"]/div[2]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/a').get_attribute('href')
-                    driver.get(company_profile)
-                    time.sleep(10)
-                    company_logo = driver.find_element(By.XPATH, '//*[@id="cmp-container"]/div/div[1]/header/div[2]/div[3]/div/div/div/div[1]/div[1]/div[1]/div/div/img').get_attribute('src')
+                    try:
+                        full_job_qualifications_duties = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]').text
+                    except Exception:
+                        full_job_qualifications_duties = None
+                    try:
+                        qualifications = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[3]/div/div').text
+                    except Exception:
+                        qualifications = None
+
+                    try:
+                        job_duties = driver.find_element(By.XPATH, '//*[@id="jobDescriptionText"]/div/div[2]').text
+                    except Exception:
+                        job_duties = None
+                    
+                    try:
+                        date_job_posted = driver.find_element(By.XPATH, '//*[@id="hiringInsightsSectionRoot"]/p/span[2]').text
+                        date_number = re.findall('[0-9]+', date_job_posted)
+                        if date_number and len(date_number) >= 1:
+                            date_job_posted_datetime = datetime.now() - timedelta(days=int(date_number[0]))
+                        else:
+                            date_job_posted_datetime = datetime.now()
+                    except Exception:
+                        date_job_posted_datetime = None
+                    
+                    try:
+                        company_profile = driver.find_element(By.XPATH, '//*[@id="viewJobSSRRoot"]/div[2]/div/div[3]/div/div/div[1]/div[1]/div[2]/div[1]/div[2]/div/div/div/div[1]/div[2]/div/a').get_attribute('href')
+                        driver.get(company_profile)
+                        time.sleep(10)
+                        company_logo = driver.find_element(By.XPATH, '//*[@id="cmp-container"]/div/div[1]/header/div[2]/div[3]/div/div/div/div[1]/div[1]/div[1]/div/div/img').get_attribute('src')
+                    except Exception:
+                        company_logo = None
                     job_entry = Job.objects.create(
                         title=job_title,
                         logo=company_logo,
@@ -99,6 +118,7 @@ def start_web_scraping_indeed():
                         url_link=url_link_new,
                         source="Indeed",
                         date_posted = date_job_posted_datetime,
+                        full_job_qualifications_duties_all = full_job_qualifications_duties 
                     )
                     job_entry.save()
                     logging.info(
