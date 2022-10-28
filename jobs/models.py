@@ -19,6 +19,7 @@ class Job(models.Model):
     rating = models.CharField(max_length=200, null=True, blank=True)
     salary = models.CharField(max_length=100, null=True, blank=True)
     uniqueId = models.CharField(null=True, blank=True, max_length=100)
+    full_job_qualifactions_dutes_all = models.TextField(null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     requirements = models.TextField(null=True, blank=True)
     duties = models.TextField(null=True, blank=True)
