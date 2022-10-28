@@ -90,34 +90,44 @@
                                 </div>
                             </div><!--end Experience-->
                             {% if job.source == 'Indeed' %}
-                                <div class="mt-4">
-                                    <h5 class="mb-3">Job Description</h5>
-                                    <div class="job-detail-desc">
-                                        <p class="text-muted mb-0">{{job.duties}}</p>
+                                {% if job.requirement != None and job.duties == None %}
+                                    <div class="mt-4">
+                                        <h5 class="mb-3">Job Description</h5>
+                                        <div class="job-detail-desc">
+                                            <p class="text-muted mb-0">{{job.duties}}</p>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="mt-4">
-                                    <h5 class="mb-3">Requirements</h5>
-                                    <div class="job-detail-desc mt-2">
-                                            {% for line in requirement %}
-                                                <p class="text-muted mb-0">{{line}}</p>
-                                            {% endfor %}
+                                    <div class="mt-4">
+                                        <h5 class="mb-3">Requirements</h5>
+                                        <div class="job-detail-desc mt-2">
+                                            
+                                                {% for line in requirement %}
+                                                    <p class="text-muted mb-0">{{line}}</p>
+                                                {% endfor %}
+                                        </div>
                                     </div>
-                                </div>
-
+                                {% else %}
+                                    <div class="mt-4">
+                                        <h5 class="mb-3">Job Description</h5>
+                                        <div class="job-detail-desc">
+                                            <p class="text-muted mb-0">{{job.full_job_qualifications_duties_all}}</p>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                
                             {% else %}
                                 <div class="mt-4">
                                     <h5 class="mb-3">Job Description</h5>
                                     <div class="job-detail-desc">
-                                        <p class="text-muted mb-0">{{job.duties}}</p>
+                                        <p class="text-muted mb-0">{{job.duties|default_if_none:" "}}</p>
                                     </div>
                                 </div>
 
                                 <div class="mt-4">
-                                    <h5 class="mb-3">Description</h5>
+                                    <h5 class="mb-3">{% if job.description %}Description{% else %} {% endif %}</h5>
                                     <div class="job-detail-desc mt-2">
-                                        <p class="text-muted">{{job.description}}</p>
+                                        <p class="text-muted">{{job.description|default_if_none:" "}}</p>
                                         {% comment %} <ul class="job-detail-list list-unstyled mb-0 text-muted">
                                             <li><i class="uil uil-circle"></i> Have sound knowledge of commercial activities.</li>
                                             <li><i class="uil uil-circle"></i> Build next-generation web applications with a focus on the client side</li> 
@@ -129,7 +139,7 @@
                                 </div>
 
                                 <div class="mt-4">
-                                    <h5 class="mb-3">Requirements"</h5>
+                                    <h5 class="mb-3">Requirements</h5>
                                     <div class="job-detail-desc mt-2">
                                         <p class="text-muted">{{job.requirements}}</p>
                                     </div>
@@ -244,7 +254,7 @@
                                             <i class="uil uil-usd-circle icon bg-soft-primary"></i>
                                             <div class="ms-3">
                                                 <h6 class="fs-14 mb-2">Offered Salary</h6>
-                                                <p class="text-muted mb-0">$35k - $45k</p> 
+                                                <p class="text-muted mb-0">{{job.salary}}</p> 
                                             </div>
                                         </div>
                                     </li>
