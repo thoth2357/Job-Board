@@ -136,7 +136,7 @@
                                             </div><!--end col-->
                                             <div class="col-lg-10">
                                                 <div class="mt-3 mt-lg-0">
-                                                    <h5 class="fs-17 mb-1"><a href="{% url 'job_detail' slug=job.slug %}" class="text-dark">{{job.title}}</a> <small class="text-muted fw-normal">{{job.rating|default_if_none:"&#11088; "}}</small></h5>
+                                                    <h5 class="fs-17 mb-1"><a href="{% url 'job_detail' slug=job.slug %}" class="text-dark">{{job.title}}</a> <small class="text-muted fw-normal">{% if job.rating %} {{job.rating}}"&#11088;"{% endif %}</small></h5>
                                                     <ul class="list-inline mb-0">
                                                         <li class="list-inline-item">
                                                             <p class="text-muted fs-14 mb-0">{{job.company}}</p>
