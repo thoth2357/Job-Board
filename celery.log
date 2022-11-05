@@ -3185,3 +3185,145 @@ Stacktrace:
 [2022-10-24 22:16:17,030: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
 [2022-10-24 22:16:50,186: INFO/ForkPoolWorker-7] None is not active
 [2022-10-24 22:16:50,244: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[709df09f-62b1-4c32-91e0-18945cd26063] succeeded in 39.322596677004185s: None
+[2022-11-05 16:13:13,391: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-05 16:13:13,396: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-05 16:13:14,404: INFO/MainProcess] mingle: all alone
+[2022-11-05 16:13:14,529: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-05 16:13:14,529: INFO/MainProcess] celery@Asteria ready.
+[2022-11-05 16:13:14,532: INFO/MainProcess] Task celery.backend_cleanup[6683b580-857e-47ce-848d-cad07d4b6684] received
+[2022-11-05 16:13:14,536: INFO/ForkPoolWorker-7] Task celery.backend_cleanup[6683b580-857e-47ce-848d-cad07d4b6684] succeeded in 0.001618820000658161s: None
+[2022-11-05 16:14:34,881: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[1dbf4638-1c31-409e-be51-382f278915bf] received
+[2022-11-05 16:14:38,019: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is found and active. Scraping jobs from it
+[2022-11-05 16:14:40,633: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:14:40.630011) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:14:43,795: INFO/ForkPoolWorker-7] 134 Business Analyst has been added to the database
+[2022-11-05 16:14:46,623: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:14:45.190158) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:14:49,326: INFO/ForkPoolWorker-7] 135 Business Analyst has been added to the database
+[2022-11-05 16:14:50,703: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:14:50.701310) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:14:53,142: INFO/ForkPoolWorker-7] 136 Business Analyst has been added to the database
+[2022-11-05 16:14:54,472: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:14:54.467795) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:14:57,793: INFO/ForkPoolWorker-7] 137 Business Analyst has been added to the database
+[2022-11-05 16:14:59,097: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-29 16:14:59.095217) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:14:59,455: INFO/ForkPoolWorker-7] 138 Business Analyst has been added to the database
+[2022-11-05 16:15:00,801: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:15:00.799656) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:01,499: INFO/ForkPoolWorker-7] 139 Business Analyst has been added to the database
+[2022-11-05 16:15:02,852: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-30 16:15:02.850095) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:03,952: INFO/ForkPoolWorker-7] 140 Executive Assistant has been added to the database
+[2022-11-05 16:15:05,505: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:15:05.503910) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:06,359: INFO/ForkPoolWorker-7] 141 Business Presentation Specialist (Trainee) has been added to the database
+[2022-11-05 16:15:07,706: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-29 16:15:07.705413) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:08,032: INFO/ForkPoolWorker-7] 142 Project Finance Controller has been added to the database
+[2022-11-05 16:15:09,474: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-03 16:15:09.473051) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:10,094: INFO/ForkPoolWorker-7] 143 Senior Analyst - Growth, Marketing & Sales has been added to the database
+[2022-11-05 16:15:11,482: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-03 16:15:11.480578) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:12,986: INFO/ForkPoolWorker-7] 144 Office Services Administrator has been added to the database
+[2022-11-05 16:15:14,333: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-29 16:15:14.329787) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:15,759: INFO/ForkPoolWorker-7] 145 Capabilities & Insights Analyst - Banking & Financial Services has been added to the database
+[2022-11-05 16:15:17,137: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-03 16:15:17.134938) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:17,937: INFO/ForkPoolWorker-7] 146 Knowledge Analyst - Private Equity & Principal Investors has been added to the database
+[2022-11-05 16:15:19,484: ERROR/ForkPoolWorker-7] warning 'NoneType' object has no attribute 'text'
+[2022-11-05 16:15:20,818: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:15:20.817474) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:21,297: INFO/ForkPoolWorker-7] 147 Research Science Analyst - Global Payments Map - Gurugram has been added to the database
+[2022-11-05 16:15:22,638: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-29 16:15:22.636980) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:23,814: INFO/ForkPoolWorker-7] 148 Full Stack Web Developer has been added to the database
+[2022-11-05 16:15:25,166: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-01 16:15:25.162313) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:25,541: INFO/ForkPoolWorker-7] 149 Senior Implementation Facilitator - McKinsey Implementation has been added to the database
+[2022-11-05 16:15:26,938: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-29 16:15:26.937416) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:27,630: INFO/ForkPoolWorker-7] 150 Professional Development Manager – McKinsey Digital (Build Hub) has been added to the database
+[2022-11-05 16:15:29,035: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:15:29.031208) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:29,401: INFO/ForkPoolWorker-7] 151 SQL Developer - Ignite has been added to the database
+[2022-11-05 16:15:32,907: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-03 16:15:32.905341) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:34,185: INFO/ForkPoolWorker-7] 152 Research Science Analyst - Panorama Financial Institutions Center has been added to the database
+[2022-11-05 16:15:35,581: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-29 16:15:35.577495) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:37,002: INFO/ForkPoolWorker-7] 153 Associate Design Director - UX has been added to the database
+[2022-11-05 16:15:38,374: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-02 16:15:38.372836) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:38,740: INFO/ForkPoolWorker-7] 154 Solution Manager - Power Solutions has been added to the database
+[2022-11-05 16:15:40,046: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 16:15:40.045481) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:40,488: INFO/ForkPoolWorker-7] 155 Capabilities and Insights Analyst_Payments Asia Hub_Gurugram has been added to the database
+[2022-11-05 16:15:41,823: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-29 16:15:41.822422) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:42,116: INFO/ForkPoolWorker-7] 156 Knowledge Analyst - IT Services Procurement - McKinsey Digital has been added to the database
+[2022-11-05 16:15:43,490: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-29 16:15:43.489001) while time zone support is active.
+  warnings.warn(
+
+[2022-11-05 16:15:43,788: INFO/ForkPoolWorker-7] 157 Associate Design Director - UX has been added to the database
+[2022-11-05 16:15:43,789: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[1dbf4638-1c31-409e-be51-382f278915bf] succeeded in 68.90681030899941s: None
+[2022-11-05 16:18:44,426: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[a899305f-128a-4b8b-84af-7edc24d1cb2e] received
+[2022-11-05 16:18:44,430: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-05 16:18:44,773: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-05 16:18:50,407: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
+[2022-11-05 16:18:50,976: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-11-05 16:18:51,089: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 40.0k/6.35M [00:00<00:18, 362kB/s]
+[2022-11-05 16:18:51,199: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|1         | 80.0k/6.35M [00:00<00:17, 369kB/s]
+[2022-11-05 16:18:51,314: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|2         | 136k/6.35M [00:00<00:15, 430kB/s] 
+[2022-11-05 16:18:51,415: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|3         | 240k/6.35M [00:00<00:09, 659kB/s]
+[2022-11-05 16:18:52,558: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   5%|5         | 328k/6.35M [00:01<00:38, 162kB/s]
+[2022-11-05 16:18:54,658: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   6%|5         | 376k/6.35M [00:03<01:34, 66.2kB/s]
+[2022-11-05 16:18:55,207: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   6%|6         | 408k/6.35M [00:04<01:36, 64.8kB/s]
+[2022-11-05 16:18:59,969: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   7%|6         | 432k/6.35M [00:08<04:42, 22.0kB/s]
+[2022-11-05 16:19:00,095: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  11%|#1        | 720k/6.35M [00:09<01:11, 83.3kB/s]
+[2022-11-05 16:19:10,976: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  11%|#1        | 720k/6.35M [00:19<01:11, 83.3kB/s]
+[2022-11-05 16:19:18,383: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  11%|#1        | 728k/6.35M [00:27<07:26, 13.2kB/s]
+[2022-11-05 16:19:20,589: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  16%|#5        | 1.00M/6.35M [00:29<03:13, 29.0kB/s]
+[2022-11-05 16:19:20,691: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  17%|#6        | 1.06M/6.35M [00:29<02:42, 34.1kB/s]
+[2022-11-05 16:19:30,978: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  18%|#8        | 1.17M/6.35M [00:40<02:39, 34.1kB/s]
+[2022-11-05 16:19:31,959: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  19%|#8        | 1.18M/6.35M [00:40<04:18, 20.9kB/s]
+[2022-11-05 16:19:32,093: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  26%|##6       | 1.68M/6.35M [00:41<01:24, 58.1kB/s]
+[2022-11-05 16:19:39,130: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  29%|##8       | 1.84M/6.35M [00:48<01:48, 43.6kB/s]
+[2022-11-05 16:19:39,546: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  39%|###9      | 2.49M/6.35M [00:48<00:41, 98.4kB/s]
+[2022-11-05 16:19:39,752: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  45%|####5     | 2.88M/6.35M [00:48<00:25, 142kB/s] 
+[2022-11-05 16:19:39,879: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  62%|######2   | 3.94M/6.35M [00:48<00:07, 317kB/s]
+[2022-11-05 16:19:46,321: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  68%|######7   | 4.29M/6.35M [00:55<00:13, 162kB/s]
+[2022-11-05 16:19:46,431: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  79%|#######9  | 5.05M/6.35M [00:55<00:05, 264kB/s]
+[2022-11-05 16:19:57,632: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  86%|########5 | 5.43M/6.35M [01:06<00:08, 110kB/s]
+[2022-11-05 16:19:57,644: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [01:06<00:00, 99.9kB/s]
+[2022-11-05 16:19:57,953: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
+[2022-11-05 16:19:58,938: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-05 16:20:25,270: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[a899305f-128a-4b8b-84af-7edc24d1cb2e] succeeded in 100.84029664300033s: None
