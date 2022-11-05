@@ -127,14 +127,6 @@ class Filter_tag(models.Model):
             self.tag_search_category = " "
         if not self.tag_search_location:
             self.tag_search_location = " "
-        if not self.tag_experience_level:
-            self.tag_experience_level = " "
-        if not self.tag_contract_type:
-            self.tag_contract_type = " "
-        if not self.tag_degree:
-            self.tag_degree = " "
-        if not self.tag_date_posted:
-            self.tag_date_posted = " "
         
 
         if (
