@@ -19,7 +19,7 @@ from .models import Scraping_Service
 
 
 chrome_options = Options()
-chrome_options.headless = True
+chrome_options.headless = False
 # chrome_options.add_argument('--remote=debugging-port=9222')
 chrome_options.add_argument("incognito")
 # ua = UserAgent(use_cache_server=False, verify_ssl=False)
@@ -57,7 +57,7 @@ def start_web_scraping_indeed():
                         job_rating = card.find("span", class_="ratingNumber")["aria-label"]
                         job_duties = card.find("div", class_="job-snippet").find("li").text
                         try:
-                            job_type = card.find("div", class_="attribute_snippet")
+                            job_type = card.find("div", class_="attribute_snippet").text
                         except Exception:
                             job_type = None
                     except Exception as e:
