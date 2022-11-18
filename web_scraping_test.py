@@ -10,8 +10,10 @@ from bs4 import BeautifulSoup as beauty
 url = 'https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=9346afd4052633e7'
 url2 = 'https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true'
 url3 = 'https://in.indeed.com/viewjob?jk=e65622a1d40c94ee&from=serp&vjs=3'
+
 url4 = 'https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6'
-url5 = "https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6"
+url5 = "https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6" #test one
+url6 = "https://ng.indeed.com/jobs?q=python+developer&l=Lagos&vjk=d39780ce052454c7"
 # # response = requests.get(url)
   
 # # print(response)
