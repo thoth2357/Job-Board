@@ -1,4 +1,3 @@
-from pyexpat import model
 from django.db import models
 from django.urls import reverse
 from django.template.defaultfilters import slugify
@@ -19,7 +18,7 @@ class Job(models.Model):
     rating = models.CharField(max_length=200, null=True, blank=True)
     salary = models.CharField(max_length=100, null=True, blank=True)
     uniqueId = models.CharField(null=True, blank=True, max_length=100)
-    full_job_qualifactions_dutes_all = models.TextField(null=True, blank=True)
+    full_job_qualifications_duties_all = models.TextField(null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     requirements = models.TextField(null=True, blank=True)
     duties = models.TextField(null=True, blank=True)
@@ -40,7 +39,7 @@ class Job(models.Model):
     def save(self, *args, **kwargs):
         if self.uniqueId is None:
             self.uniqueId = str(uuid.uuid4())
-        if self.contract_type1:  
+        if self.contract_type1:
             if Contract_Type.objects.filter(contract_type=self.contract_type1).exists():
                 contract_model_object = Contract_Type.objects.filter(contract_type=self.contract_type1)[0]
                 self.contract_type = contract_model_object
