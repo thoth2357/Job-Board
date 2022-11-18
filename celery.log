@@ -3327,3 +3327,639 @@ Stacktrace:
 [2022-11-05 16:19:57,953: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
 [2022-11-05 16:19:58,938: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
 [2022-11-05 16:20:25,270: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[a899305f-128a-4b8b-84af-7edc24d1cb2e] succeeded in 100.84029664300033s: None
+[2022-11-18 07:35:50,833: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 07:35:50,880: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 07:35:51,893: INFO/MainProcess] mingle: all alone
+[2022-11-18 07:35:52,014: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 07:35:52,014: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 07:35:52,019: INFO/MainProcess] Task celery.backend_cleanup[21398648-2647-4e78-b9c8-cb2d4053c61c] received
+[2022-11-18 07:35:52,033: INFO/ForkPoolWorker-7] Task celery.backend_cleanup[21398648-2647-4e78-b9c8-cb2d4053c61c] succeeded in 0.0049124020006274804s: None
+[2022-11-18 07:37:49,638: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[6c37390d-c39f-41fe-844d-4c95507679bd] received
+[2022-11-18 07:37:49,639: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-18 07:37:49,713: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-18 07:37:56,099: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
+[2022-11-18 07:37:56,668: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-11-18 07:37:56,774: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 64.0k/6.35M [00:00<00:10, 626kB/s]
+[2022-11-18 07:37:56,931: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|1         | 128k/6.35M [00:00<00:13, 484kB/s] 
+[2022-11-18 07:37:57,036: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|3         | 232k/6.35M [00:00<00:09, 693kB/s]
+[2022-11-18 07:37:57,138: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   6%|6         | 400k/6.35M [00:00<00:05, 1.05MB/s]
+[2022-11-18 07:37:57,241: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   8%|8         | 544k/6.35M [00:00<00:05, 1.18MB/s]
+[2022-11-18 07:37:57,341: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  13%|#3        | 864k/6.35M [00:00<00:03, 1.85MB/s]
+[2022-11-18 07:37:57,444: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  18%|#8        | 1.15M/6.35M [00:00<00:02, 2.24MB/s]
+[2022-11-18 07:37:57,552: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  23%|##3       | 1.46M/6.35M [00:00<00:02, 2.50MB/s]
+[2022-11-18 07:37:57,653: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  28%|##7       | 1.77M/6.35M [00:00<00:01, 2.73MB/s]
+[2022-11-18 07:37:57,769: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  32%|###2      | 2.04M/6.35M [00:01<00:01, 2.61MB/s]
+[2022-11-18 07:37:57,877: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  37%|###6      | 2.34M/6.35M [00:01<00:01, 2.70MB/s]
+[2022-11-18 07:37:57,992: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  41%|####1     | 2.63M/6.35M [00:01<00:01, 2.71MB/s]
+[2022-11-18 07:37:58,093: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  46%|####6     | 2.95M/6.35M [00:01<00:01, 2.85MB/s]
+[2022-11-18 07:37:58,229: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  51%|#####     | 3.23M/6.35M [00:01<00:01, 2.61MB/s]
+[2022-11-18 07:37:58,441: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  55%|#####4    | 3.48M/6.35M [00:01<00:01, 2.02MB/s]
+[2022-11-18 07:38:02,741: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  58%|#####8    | 3.70M/6.35M [00:06<00:14, 196kB/s] 
+[2022-11-18 07:38:03,141: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  61%|######    | 3.86M/6.35M [00:06<00:11, 220kB/s]
+[2022-11-18 07:38:03,272: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  70%|######9   | 4.41M/6.35M [00:06<00:04, 426kB/s]
+[2022-11-18 07:38:03,374: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  89%|########8 | 5.65M/6.35M [00:06<00:00, 1.06MB/s]
+[2022-11-18 07:38:04,708: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  97%|#########7| 6.16M/6.35M [00:08<00:00, 738kB/s] 
+[2022-11-18 07:38:04,940: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:08<00:00, 805kB/s]
+[2022-11-18 07:38:05,289: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
+[2022-11-18 07:38:05,966: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 07:38:05,966: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-18 07:38:05,966: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-18 07:38:37,350: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[6c37390d-c39f-41fe-844d-4c95507679bd] succeeded in 47.71131896800944s: None
+[2022-11-18 07:40:42,364: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[1b4963bd-1fa7-455b-b7ad-00923f38be5a] received
+[2022-11-18 07:40:42,366: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-18 07:40:42,447: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-18 07:40:43,247: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-11-18 07:40:43,977: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 07:40:43,977: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-18 07:40:43,978: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-18 07:41:05,197: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[1b4963bd-1fa7-455b-b7ad-00923f38be5a] succeeded in 22.831278313009534s: None
+[2022-11-18 07:47:10,647: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 07:47:10,651: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 07:47:11,664: INFO/MainProcess] mingle: all alone
+[2022-11-18 07:47:11,696: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 07:47:11,697: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 07:48:21,896: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[cf00b75d-7fe0-422c-b3fd-32b1d2a6938b] received
+[2022-11-18 07:48:21,899: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-18 07:48:21,948: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-18 07:48:27,711: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-11-18 07:48:28,652: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 07:48:28,652: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-18 07:48:28,652: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-18 07:49:08,625: WARNING/ForkPoolWorker-7] got here
+[2022-11-18 07:49:08,626: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e518fc2f735cad0b&fccid=a5b4499d9e91a5c6&vjs=3
+[2022-11-18 07:49:43,430: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[cf00b75d-7fe0-422c-b3fd-32b1d2a6938b] raised unexpected: TypeError("Job() got an unexpected keyword argument 'full_job_qualifications_duties_all'")
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 110, in start_web_scraping_indeed
+    job_entry = Job.objects.create(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 512, in create
+    obj = self.model(**kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/base.py", line 559, in __init__
+    raise TypeError(
+TypeError: Job() got an unexpected keyword argument 'full_job_qualifications_duties_all'
+[2022-11-18 08:00:48,049: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 08:00:48,053: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 08:00:49,065: INFO/MainProcess] mingle: all alone
+[2022-11-18 08:00:49,096: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 08:00:49,096: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 08:10:02,855: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 08:10:02,860: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 08:10:03,874: INFO/MainProcess] mingle: all alone
+[2022-11-18 08:10:03,901: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 08:10:03,901: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 08:11:38,883: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[1195ffdb-8451-429a-8c9d-eb861f41bee1] received
+[2022-11-18 08:11:38,887: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-18 08:11:39,058: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-18 08:11:44,737: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-11-18 08:11:46,071: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 08:11:46,072: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-18 08:11:46,072: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-18 08:12:25,448: WARNING/ForkPoolWorker-7] got here
+[2022-11-18 08:12:25,450: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=a9a6a6ef6d55c28e&fccid=a5b4499d9e91a5c6&vjs=3
+[2022-11-18 08:13:02,830: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[1195ffdb-8451-429a-8c9d-eb861f41bee1] raised unexpected: TypeError("'NoneType' object is not callable")
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 110, in start_web_scraping_indeed
+    job_entry = Job.objects.create(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 44, in save
+    if Contract_Type.objects.filter(contract_type=self.contract_type1).exists():
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1386, in build_filter
+    value = self.resolve_lookup_value(value, can_reuse, allow_joins)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1158, in resolve_lookup_value
+    value = value.resolve_expression(
+TypeError: 'NoneType' object is not callable
+[2022-11-18 08:28:49,636: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 08:28:49,644: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 08:28:50,655: INFO/MainProcess] mingle: all alone
+[2022-11-18 08:28:50,669: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 08:28:50,669: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 08:30:57,824: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[51a12185-9186-4eb5-bd81-03906e2d6104] received
+[2022-11-18 08:30:57,827: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-18 08:30:57,875: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-18 08:31:03,572: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-11-18 08:31:04,779: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 08:31:04,779: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-18 08:31:04,779: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-18 08:31:45,560: WARNING/ForkPoolWorker-7] got here
+[2022-11-18 08:31:45,563: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e518fc2f735cad0b&fccid=a5b4499d9e91a5c6&vjs=3
+[2022-11-18 08:32:23,623: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[51a12185-9186-4eb5-bd81-03906e2d6104] raised unexpected: TypeError("'NoneType' object is not callable")
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 110, in start_web_scraping_indeed
+    job_entry = Job.objects.create(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 44, in save
+    if Contract_Type.objects.filter(contract_type=self.contract_type1).exists():
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1386, in build_filter
+    value = self.resolve_lookup_value(value, can_reuse, allow_joins)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1158, in resolve_lookup_value
+    value = value.resolve_expression(
+TypeError: 'NoneType' object is not callable
+[2022-11-18 08:34:42,105: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 08:34:42,107: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 08:34:43,113: INFO/MainProcess] mingle: all alone
+[2022-11-18 08:34:43,125: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 08:34:43,126: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 08:36:35,128: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 08:36:35,131: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 08:36:36,141: INFO/MainProcess] mingle: all alone
+[2022-11-18 08:36:36,177: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 08:36:36,178: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 08:37:46,990: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[972a550f-d22b-4092-8b02-644db5cb6718] received
+[2022-11-18 08:37:46,996: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-18 08:37:47,080: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-18 08:37:53,616: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-11-18 08:37:55,071: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 08:37:55,072: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-18 08:37:55,072: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-18 08:38:33,165: WARNING/ForkPoolWorker-7] got here
+[2022-11-18 08:38:33,166: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e518fc2f735cad0b&fccid=a5b4499d9e91a5c6&vjs=3
+[2022-11-18 08:39:07,457: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 08:39:07,457: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:39:07,458: WARNING/ForkPoolWorker-7] <div class="attribute_snippet"><svg aria-hidden="true" aria-label="Job type" fill="none" height="13" role="presentation" viewbox="0 0 14 13" width="14" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M4.50226.5c-.27614 0-.5.223858-.5.5v2.1H.5c-.276142 0-.5.22386-.5.5v1.9h14V3.6c0-.27614-.2239-.5-.5-.5h-3.4977V1c0-.276142-.22389-.5-.50004-.5h-5Zm4.19962 2.6H5.30344V1.8h3.39844v1.3Z" fill="#595959" fill-rule="evenodd"></path><path d="M5.70117 6.80005H0v5.20005c0 .2761.223857.5.5.5h13c.2761 0 .5-.2239.5-.5V6.80005H8.30117v.80322c0 .27614-.22386.5-.5.5h-1.6c-.27614 0-.5-.22386-.5-.5v-.80322Z" fill="#595959"></path></svg>Full-time</div>
+[2022-11-18 08:39:07,465: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[972a550f-d22b-4092-8b02-644db5cb6718] raised unexpected: TypeError("'NoneType' object is not callable")
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 110, in start_web_scraping_indeed
+    job_entry = Job.objects.create(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 45, in save
+    if Contract_Type.objects.filter(contract_type=self.contract_type1).exists():
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1386, in build_filter
+    value = self.resolve_lookup_value(value, can_reuse, allow_joins)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1158, in resolve_lookup_value
+    value = value.resolve_expression(
+TypeError: 'NoneType' object is not callable
+[2022-11-18 08:43:26,787: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 08:43:26,791: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 08:43:27,801: INFO/MainProcess] mingle: all alone
+[2022-11-18 08:43:27,839: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 08:43:27,839: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 08:46:04,893: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 08:46:04,897: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 08:46:05,907: INFO/MainProcess] mingle: all alone
+[2022-11-18 08:46:05,939: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 08:46:05,939: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 08:47:42,214: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[f94022ef-1794-46bf-b125-4cbc89fbd4e5] received
+[2022-11-18 08:47:42,217: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-18 08:47:42,275: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-18 08:47:47,869: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-11-18 08:47:48,936: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 08:47:48,937: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-18 08:47:48,937: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-18 08:48:19,843: WARNING/ForkPoolWorker-7] got here
+[2022-11-18 08:48:19,844: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=a9a6a6ef6d55c28e&fccid=a5b4499d9e91a5c6&vjs=3
+[2022-11-18 08:48:53,905: WARNING/ForkPoolWorker-7] from tasks.py, contract_type: 
+[2022-11-18 08:48:53,905: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:48:53,906: WARNING/ForkPoolWorker-7] <div class="attribute_snippet"><svg aria-hidden="true" aria-label="Job type" fill="none" height="13" role="presentation" viewbox="0 0 14 13" width="14" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M4.50226.5c-.27614 0-.5.223858-.5.5v2.1H.5c-.276142 0-.5.22386-.5.5v1.9h14V3.6c0-.27614-.2239-.5-.5-.5h-3.4977V1c0-.276142-.22389-.5-.50004-.5h-5Zm4.19962 2.6H5.30344V1.8h3.39844v1.3Z" fill="#595959" fill-rule="evenodd"></path><path d="M5.70117 6.80005H0v5.20005c0 .2761.223857.5.5.5h13c.2761 0 .5-.2239.5-.5V6.80005H8.30117v.80322c0 .27614-.22386.5-.5.5h-1.6c-.27614 0-.5-.22386-.5-.5v-.80322Z" fill="#595959"></path></svg>Full-time</div>
+[2022-11-18 08:48:53,906: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 08:48:53,907: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:48:53,907: WARNING/ForkPoolWorker-7] <div class="attribute_snippet"><svg aria-hidden="true" aria-label="Job type" fill="none" height="13" role="presentation" viewbox="0 0 14 13" width="14" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M4.50226.5c-.27614 0-.5.223858-.5.5v2.1H.5c-.276142 0-.5.22386-.5.5v1.9h14V3.6c0-.27614-.2239-.5-.5-.5h-3.4977V1c0-.276142-.22389-.5-.50004-.5h-5Zm4.19962 2.6H5.30344V1.8h3.39844v1.3Z" fill="#595959" fill-rule="evenodd"></path><path d="M5.70117 6.80005H0v5.20005c0 .2761.223857.5.5.5h13c.2761 0 .5-.2239.5-.5V6.80005H8.30117v.80322c0 .27614-.22386.5-.5.5h-1.6c-.27614 0-.5-.22386-.5-.5v-.80322Z" fill="#595959"></path></svg>Full-time</div>
+[2022-11-18 08:48:53,911: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[f94022ef-1794-46bf-b125-4cbc89fbd4e5] raised unexpected: TypeError("'NoneType' object is not callable")
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 111, in start_web_scraping_indeed
+    job_entry = Job.objects.create(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 514, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/jobs/models.py", line 45, in save
+    if Contract_Type.objects.filter(contract_type=self.contract_type1).exists():
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1071, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1089, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/query.py", line 1096, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1502, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1386, in build_filter
+    value = self.resolve_lookup_value(value, can_reuse, allow_joins)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1158, in resolve_lookup_value
+    value = value.resolve_expression(
+TypeError: 'NoneType' object is not callable
+[2022-11-18 08:50:40,440: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-18 08:50:40,447: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-18 08:50:41,459: INFO/MainProcess] mingle: all alone
+[2022-11-18 08:50:41,470: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-18 08:50:41,470: INFO/MainProcess] celery@Asteria ready.
+[2022-11-18 08:51:54,361: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[7910e7db-9c82-43d0-bcdb-7f5b6d692c9f] received
+[2022-11-18 08:51:54,363: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-18 08:51:54,478: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-18 08:52:00,090: INFO/ForkPoolWorker-7] Driver [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249/chromedriver] found in cache
+[2022-11-18 08:52:02,156: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 08:52:02,156: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-18 08:52:02,156: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is found and active. Scraping jobs from it
+[2022-11-18 08:52:39,820: WARNING/ForkPoolWorker-7] got here
+[2022-11-18 08:52:39,822: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=e518fc2f735cad0b&fccid=a5b4499d9e91a5c6&vjs=3
+[2022-11-18 08:53:15,125: WARNING/ForkPoolWorker-7] from tasks.py, contract_type: 
+[2022-11-18 08:53:15,126: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:53:15,126: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 08:53:15,127: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 08:53:15,128: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:53:15,128: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 08:53:15,139: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-15 08:52:56.912867) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 08:53:15,643: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 08:53:15,643: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:53:15,643: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 08:53:15,775: INFO/ForkPoolWorker-7] 158 Chief Compliance Officer has been added to the database
+[2022-11-18 08:53:15,776: WARNING/ForkPoolWorker-7] got here
+[2022-11-18 08:53:15,777: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=a9a6a6ef6d55c28e&fccid=a5b4499d9e91a5c6&vjs=3
+[2022-11-18 08:53:40,379: WARNING/ForkPoolWorker-7] from tasks.py, contract_type: 
+[2022-11-18 08:53:40,380: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:53:40,380: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 08:53:40,381: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 08:53:40,381: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:53:40,381: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 08:53:40,385: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-08 08:53:27.877947) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 08:53:40,868: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 08:53:40,869: WARNING/ForkPoolWorker-7]  
+[2022-11-18 08:53:40,869: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 08:53:41,000: INFO/ForkPoolWorker-7] 159 Head of Government Engagement, Google for Education has been added to the database
+[2022-11-18 08:53:41,000: WARNING/ForkPoolWorker-7] got here
+[2022-11-18 08:53:41,002: WARNING/ForkPoolWorker-7] https://in.indeed.com/rc/clk?jk=551f7ca79f541677&fccid=a5b4499d9e91a5c6&vjs=3
+[2022-11-18 08:53:41,053: ERROR/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[7910e7db-9c82-43d0-bcdb-7f5b6d692c9f] raised unexpected: NoSuchWindowException('no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome=106.0.5249.103)', None, ['#0 0x55934f3122c3 <unknown>', '#1 0x55934f11b83a <unknown>', '#2 0x55934f0fa8e3 <unknown>', '#3 0x55934f176ebd <unknown>', '#4 0x55934f18a029 <unknown>', '#5 0x55934f172d63 <unknown>', '#6 0x55934f1477e3 <unknown>', '#7 0x55934f148a21 <unknown>', '#8 0x55934f36018e <unknown>', '#9 0x55934f363622 <unknown>', '#10 0x55934f346aae <unknown>', '#11 0x55934f3642a3 <unknown>', '#12 0x55934f33aecf <unknown>', '#13 0x55934f384588 <unknown>', '#14 0x55934f384706 <unknown>', '#15 0x55934f39e8b2 <unknown>', '#16 0x7faea137e74d <unknown>', ''])
+Traceback (most recent call last):
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+  File "/run/media/pirate/STORAGE/Pirate/Code-House/Web-Applications/jobWebsite/jobWebsite/services/tasks.py", line 77, in start_web_scraping_indeed
+    driver.get(url_link_new)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 440, in get
+    self.execute(Command.GET, {'url': url})
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "/run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.103)
+Stacktrace:
+#0 0x55934f3122c3 <unknown>
+#1 0x55934f11b83a <unknown>
+#2 0x55934f0fa8e3 <unknown>
+#3 0x55934f176ebd <unknown>
+#4 0x55934f18a029 <unknown>
+#5 0x55934f172d63 <unknown>
+#6 0x55934f1477e3 <unknown>
+#7 0x55934f148a21 <unknown>
+#8 0x55934f36018e <unknown>
+#9 0x55934f363622 <unknown>
+#10 0x55934f346aae <unknown>
+#11 0x55934f3642a3 <unknown>
+#12 0x55934f33aecf <unknown>
+#13 0x55934f384588 <unknown>
+#14 0x55934f384706 <unknown>
+#15 0x55934f39e8b2 <unknown>
+#16 0x7faea137e74d <unknown>
+
+[2022-11-18 09:05:58,625: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[f39e1c19-87f9-40df-9294-4f15f4a39b1b] received
+[2022-11-18 09:06:00,223: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-18 09:06:00,226: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[f39e1c19-87f9-40df-9294-4f15f4a39b1b] succeeded in 1.2370370839926181s: None
+[2022-11-18 09:10:42,872: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[dad843d9-ef55-40bf-9ba1-58523b1d05ea] received
+[2022-11-18 09:10:42,876: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is found and active. Scraping jobs from it
+[2022-11-18 09:10:50,860: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:10:50,860: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:10:50,860: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:10:51,392: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-13 09:10:50.860183) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:10:51,694: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:10:51,694: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:10:51,694: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:10:51,838: INFO/ForkPoolWorker-7] 160 Business Analyst has been added to the database
+[2022-11-18 09:10:53,266: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:10:53,266: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:10:53,266: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:10:53,268: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-11 09:10:53.266224) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:10:53,487: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:10:53,488: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:10:53,488: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:10:53,619: INFO/ForkPoolWorker-7] 161 Business Analyst has been added to the database
+[2022-11-18 09:10:55,460: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:10:55,460: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:10:55,461: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:10:55,462: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-11 09:10:55.460304) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:10:56,760: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:10:56,760: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:10:56,760: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:10:56,893: INFO/ForkPoolWorker-7] 162 Business Analyst has been added to the database
+[2022-11-18 09:10:58,337: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:10:58,337: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:10:58,338: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:10:58,339: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-11 09:10:58.337631) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:10:58,563: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:10:58,564: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:10:58,564: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:10:58,696: INFO/ForkPoolWorker-7] 163 Business Analyst has been added to the database
+[2022-11-18 09:11:00,084: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:00,085: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:00,085: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:00,086: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-17 09:11:00.084777) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:00,225: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:00,225: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:00,225: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:00,363: INFO/ForkPoolWorker-7] 164 Business Analyst has been added to the database
+[2022-11-18 09:11:01,830: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:01,830: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:01,830: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:01,831: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-11 09:11:01.829880) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:02,035: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:02,035: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:02,035: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:02,176: INFO/ForkPoolWorker-7] 165 Business Analyst has been added to the database
+[2022-11-18 09:11:03,539: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:03,540: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:03,540: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:03,541: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-16 09:11:03.539690) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:03,672: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:03,672: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:03,673: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:03,892: INFO/ForkPoolWorker-7] 166 Project Finance Controller has been added to the database
+[2022-11-18 09:11:05,275: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:05,275: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:05,275: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:05,276: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-04 09:11:05.275231) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:05,926: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:05,927: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:05,927: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:06,081: INFO/ForkPoolWorker-7] 167 Capabilities & Insights Analyst - People and Organizational Performance has been added to the database
+[2022-11-18 09:11:07,524: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:07,524: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:07,524: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:07,526: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-12 09:11:07.524124) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:07,763: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:07,763: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:07,764: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:07,962: INFO/ForkPoolWorker-7] 168 Technology Consultant - McKinsey Digital has been added to the database
+[2022-11-18 09:11:09,312: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:09,312: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:09,312: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:09,314: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-04 09:11:09.312306) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:09,446: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:09,446: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:09,447: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:09,590: INFO/ForkPoolWorker-7] 169 Office Services Administrator has been added to the database
+[2022-11-18 09:11:11,064: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:11,064: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:11,064: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:11,066: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-17 09:11:11.063920) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:12,378: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:12,378: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:12,378: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:12,522: INFO/ForkPoolWorker-7] 170 Knowledge Analyst - Life Sciences has been added to the database
+[2022-11-18 09:11:14,013: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:14,013: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:14,013: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:14,015: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-04 09:11:14.013412) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:15,298: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:15,298: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:15,298: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:16,475: INFO/ForkPoolWorker-7] 171 Capabilities & Insights Analyst - Banking & Financial Services has been added to the database
+[2022-11-18 09:11:17,809: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:17,809: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:17,809: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:17,810: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-11 09:11:17.809550) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:17,982: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:17,983: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:17,983: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:18,400: INFO/ForkPoolWorker-7] 172 Proposal Manager has been added to the database
+[2022-11-18 09:11:19,891: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:19,891: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:19,891: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:19,892: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-12 09:11:19.891087) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:20,588: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:20,588: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:20,588: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:21,798: INFO/ForkPoolWorker-7] 173 Knowledge Analyst – Manufacturing & Supply Chain has been added to the database
+[2022-11-18 09:11:23,341: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:23,341: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:23,341: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:23,343: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-11 09:11:23.341377) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:23,503: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:23,503: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:23,504: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:23,656: INFO/ForkPoolWorker-7] 174 Research Science Analyst - Global Payments Map - Gurugram has been added to the database
+[2022-11-18 09:11:25,019: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:25,019: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:25,020: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:25,021: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-04 09:11:25.019627) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:25,151: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:25,151: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:25,151: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:25,283: INFO/ForkPoolWorker-7] 175 Research Science Analyst - Panorama Financial Institutions Center has been added to the database
+[2022-11-18 09:11:28,042: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:28,042: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:28,042: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:28,043: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-04 09:11:28.042352) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:28,275: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:28,275: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:28,275: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:28,692: INFO/ForkPoolWorker-7] 176 Team Leader has been added to the database
+[2022-11-18 09:11:30,055: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:30,055: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:30,056: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:30,058: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-04 09:11:30.055490) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:30,287: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:30,287: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:30,287: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:30,464: INFO/ForkPoolWorker-7] 177 Senior Implementation Facilitator - McKinsey Implementation has been added to the database
+[2022-11-18 09:11:32,427: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:32,427: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:32,427: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:32,429: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-17 09:11:32.427548) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:33,649: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:33,649: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:33,650: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:33,791: INFO/ForkPoolWorker-7] 178 Professional Development Manager – McKinsey Digital (Build Hub) has been added to the database
+[2022-11-18 09:11:35,181: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:35,181: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:35,181: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:35,183: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-12 09:11:35.181287) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:35,408: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:35,408: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:35,408: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:35,540: INFO/ForkPoolWorker-7] 179 SQL Developer - Ignite has been added to the database
+[2022-11-18 09:11:36,944: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:36,945: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:36,945: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:36,946: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-11 09:11:36.944818) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:37,168: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:37,169: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:37,169: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:37,311: INFO/ForkPoolWorker-7] 180 Knowledge Analyst - Automotive, Product Development has been added to the database
+[2022-11-18 09:11:38,814: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:38,814: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:38,815: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:38,819: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-16 09:11:38.814073) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:39,049: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:39,049: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:39,050: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:39,192: INFO/ForkPoolWorker-7] 181 Associate Design Director - UX has been added to the database
+[2022-11-18 09:11:40,589: ERROR/ForkPoolWorker-7] warning 'NoneType' object has no attribute 'text'
+[2022-11-18 09:11:41,930: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:41,930: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:41,930: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:41,932: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-16 09:11:41.930212) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:42,173: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:42,173: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:42,173: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:42,360: INFO/ForkPoolWorker-7] 182 Associate Design Director - UX has been added to the database
+[2022-11-18 09:11:43,704: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:43,704: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:43,705: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:43,706: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-28 09:11:43.704694) while time zone support is active.
+  warnings.warn(
+
+[2022-11-18 09:11:43,844: WARNING/ForkPoolWorker-7] source of error
+[2022-11-18 09:11:43,844: WARNING/ForkPoolWorker-7]  
+[2022-11-18 09:11:43,844: WARNING/ForkPoolWorker-7] Full-time
+[2022-11-18 09:11:43,988: INFO/ForkPoolWorker-7] 183 Knowledge Analyst - IT Services Procurement - McKinsey Digital has been added to the database
+[2022-11-18 09:11:43,989: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_linkedin[dad843d9-ef55-40bf-9ba1-58523b1d05ea] succeeded in 61.11475481399975s: None
