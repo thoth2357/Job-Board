@@ -1,2 +1,3 @@
 #TODO  uncomment job whole list side bar and finish it functionality. Lazy boy  #FIXED ALREADY
 #TODO  create functions to scrape glassdoor
+#TODO create functions to scrape ankauri
