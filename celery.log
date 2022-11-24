@@ -4110,3 +4110,68 @@ Stacktrace:
 [2022-11-18 19:20:28,602: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[453459da-0902-4546-926c-a3f567dd7feb] succeeded in 147.97149694900008s: None
 [2022-11-19 08:05:38,130: INFO/MainProcess] Task celery.backend_cleanup[76eb0f12-1c0c-4d3a-8542-f1913d1c3a15] received
 [2022-11-19 08:05:38,138: INFO/ForkPoolWorker-7] Task celery.backend_cleanup[76eb0f12-1c0c-4d3a-8542-f1913d1c3a15] succeeded in 0.002306593999492179s: None
+[2022-11-21 10:13:03,179: INFO/MainProcess] Connected to redis://localhost:6379//
+[2022-11-21 10:13:03,183: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-21 10:13:04,193: INFO/MainProcess] mingle: all alone
+[2022-11-21 10:13:04,312: WARNING/MainProcess] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/celery/fixups/django.py:203: UserWarning: Using settings.DEBUG leads to a memory
+            leak, never use this setting in production environments!
+  warnings.warn('''Using settings.DEBUG leads to a memory
+
+[2022-11-21 10:13:04,312: INFO/MainProcess] celery@Asteria ready.
+[2022-11-21 10:14:53,475: INFO/MainProcess] Task services.tasks.start_web_scraping_indeed[f5b774d3-8f43-4999-9cab-4e145ef8c428] received
+[2022-11-21 10:14:53,477: INFO/ForkPoolWorker-7] ====== WebDriver manager ======
+[2022-11-21 10:14:53,519: INFO/ForkPoolWorker-7] Get LATEST chromedriver version for google-chrome 106.0.5249
+[2022-11-21 10:14:59,623: INFO/ForkPoolWorker-7] About to download new driver from https://chromedriver.storage.googleapis.com/106.0.5249.61/chromedriver_linux64.zip
+[2022-11-21 10:15:00,039: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 0.00/6.35M [00:00<?, ?B/s]
+[2022-11-21 10:15:00,145: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   0%|          | 24.0k/6.35M [00:00<00:28, 235kB/s]
+[2022-11-21 10:15:00,262: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   1%|          | 64.0k/6.35M [00:00<00:21, 304kB/s]
+[2022-11-21 10:15:00,372: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   2%|1         | 128k/6.35M [00:00<00:14, 436kB/s] 
+[2022-11-21 10:15:00,472: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   4%|3         | 248k/6.35M [00:00<00:08, 728kB/s]
+[2022-11-21 10:15:00,576: WARNING/ForkPoolWorker-7] [WDM] - Downloading:   7%|6         | 440k/6.35M [00:00<00:05, 1.14MB/s]
+[2022-11-21 10:15:00,686: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  11%|#1        | 720k/6.35M [00:00<00:03, 1.65MB/s]
+[2022-11-21 10:15:06,130: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  14%|#3        | 904k/6.35M [00:06<00:58, 97.7kB/s]
+[2022-11-21 10:15:06,306: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  39%|###8      | 2.45M/6.35M [00:06<00:08, 489kB/s]
+[2022-11-21 10:15:11,437: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  44%|####4     | 2.80M/6.35M [00:11<00:16, 224kB/s]
+[2022-11-21 10:15:12,288: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  48%|####8     | 3.05M/6.35M [00:12<00:14, 235kB/s]
+[2022-11-21 10:15:13,872: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  54%|#####3    | 3.41M/6.35M [00:13<00:13, 235kB/s]
+[2022-11-21 10:15:13,971: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  80%|#######9  | 5.08M/6.35M [00:13<00:02, 628kB/s]
+[2022-11-21 10:15:17,529: WARNING/ForkPoolWorker-7] [WDM] - Downloading:  89%|########9 | 5.68M/6.35M [00:17<00:01, 386kB/s]
+[2022-11-21 10:15:17,626: WARNING/ForkPoolWorker-7] [WDM] - Downloading: 100%|##########| 6.35M/6.35M [00:17<00:00, 379kB/s]
+[2022-11-21 10:15:18,171: INFO/ForkPoolWorker-7] Driver has been saved in cache [/home/pirate/.wdm/drivers/chromedriver/linux64/106.0.5249]
+[2022-11-21 10:15:19,294: INFO/ForkPoolWorker-7] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2022-11-21 10:15:19,294: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-21 10:15:19,294: INFO/ForkPoolWorker-7] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2022-11-21 10:15:19,295: INFO/ForkPoolWorker-7] https://ng.indeed.com/jobs?q=python+developer&l=Lagos&vjk=d39780ce052454c7 is found and active. Scraping jobs from it
+[2022-11-21 10:16:03,015: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:16:03,015: WARNING/ForkPoolWorker-7] https://ng.indeed.com/company/Bincom-Dev-Center/jobs/PHP-MySQL-Junior-Developer-d39780ce052454c7?fccid=df9c6744652926b8&vjs=3
+[2022-11-21 10:16:22,076: INFO/ForkPoolWorker-7] 195 PHP/MySQL Junior Developer (Nov 2022) has been added to the database
+[2022-11-21 10:16:22,079: WARNING/ForkPoolWorker-7] https://ng.indeed.com/rc/clk?jk=66f2fd1653270f49&fccid=3e69816593d11e13&vjs=3
+[2022-11-21 10:16:54,261: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 10:16:36.090116) while time zone support is active.
+  warnings.warn(
+
+[2022-11-21 10:16:56,299: INFO/ForkPoolWorker-7] 196 Junior Developer (PHP or Python or Javascript) has been added to the database
+[2022-11-21 10:16:56,300: WARNING/ForkPoolWorker-7] https://ng.indeed.com/company/Bincom-Dev-Center/jobs/Python-Developer-36b6a67aebbf906a?fccid=df9c6744652926b8&vjs=3
+[2022-11-21 10:17:25,212: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-20 10:17:13.333849) while time zone support is active.
+  warnings.warn(
+
+[2022-11-21 10:17:28,090: INFO/ForkPoolWorker-7] 197 Python Developer (Internship) (Nov 2022) has been added to the database
+[2022-11-21 10:17:28,091: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:17:28,095: WARNING/ForkPoolWorker-7] https://ng.indeed.com/company/Bincom-Dev-Center/jobs/Senior-7543dc8af7177bd9?fccid=df9c6744652926b8&vjs=3
+[2022-11-21 10:17:52,319: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-11-19 10:17:40.585805) while time zone support is active.
+  warnings.warn(
+
+[2022-11-21 10:17:55,218: INFO/ForkPoolWorker-7] 198 Senior / Experienced Software Engineer (Nov 2022) has been added to the database
+[2022-11-21 10:17:55,220: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:17:55,221: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:17:55,224: WARNING/ForkPoolWorker-7] https://ng.indeed.com/rc/clk?jk=a98c977582b2ec13&fccid=3e69816593d11e13&vjs=3
+[2022-11-21 10:18:20,026: WARNING/ForkPoolWorker-7] /run/media/pirate/STORAGE/System-Application/anaconda3/envs/Django_env/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1534: RuntimeWarning: DateTimeField Job.date_posted received a naive datetime (2022-10-22 10:18:06.984381) while time zone support is active.
+  warnings.warn(
+
+[2022-11-21 10:18:22,654: INFO/ForkPoolWorker-7] 199 Python Trainee Developer (Internship) has been added to the database
+[2022-11-21 10:18:22,655: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:18:22,657: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:18:22,658: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:18:22,659: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:18:22,659: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
+[2022-11-21 10:18:22,660: ERROR/ForkPoolWorker-7] warning 'NoneType' object has no attribute 'find'
+[2022-11-21 10:18:22,717: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[f5b774d3-8f43-4999-9cab-4e145ef8c428] succeeded in 209.23973935899994s: None
