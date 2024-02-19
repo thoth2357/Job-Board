@@ -8,6 +8,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+celery = "^5.3.6"
+redis = "^5.0.1"
+django = "^5.0.2"
 
 
 [build-system]
