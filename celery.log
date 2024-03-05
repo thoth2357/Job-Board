@@ -4175,3 +4175,91 @@ Stacktrace:
 [2022-11-21 10:18:22,659: ERROR/ForkPoolWorker-7] warning 'NoneType' object is not subscriptable
 [2022-11-21 10:18:22,660: ERROR/ForkPoolWorker-7] warning 'NoneType' object has no attribute 'find'
 [2022-11-21 10:18:22,717: INFO/ForkPoolWorker-7] Task services.tasks.start_web_scraping_indeed[f5b774d3-8f43-4999-9cab-4e145ef8c428] succeeded in 209.23973935899994s: None
+[2024-02-28 13:44:02,758: WARNING/MainProcess] /usr/local/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-02-28 13:44:02,768: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 2.00 seconds... (1/100)
+
+[2024-02-28 13:44:04,771: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 4.00 seconds... (2/100)
+
+[2024-02-28 13:44:08,775: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 6.00 seconds... (3/100)
+
+[2024-02-28 13:44:14,779: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 8.00 seconds... (4/100)
+
+[2024-02-28 13:44:22,783: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 10.00 seconds... (5/100)
+
+[2024-02-28 13:44:32,788: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 12.00 seconds... (6/100)
+
+[2024-02-28 13:44:44,795: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 14.00 seconds... (7/100)
+
+[2024-02-28 13:44:58,803: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 16.00 seconds... (8/100)
+
+[2024-02-28 13:45:14,810: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 18.00 seconds... (9/100)
+
+[2024-02-28 13:45:32,817: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 20.00 seconds... (10/100)
+
+[2024-02-28 13:45:52,826: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 22.00 seconds... (11/100)
+
+[2024-02-28 13:46:14,835: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 24.00 seconds... (12/100)
+
+[2024-02-28 13:46:38,848: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 26.00 seconds... (13/100)
+
+[2024-02-28 13:47:04,880: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 28.00 seconds... (14/100)
+
+[2024-02-28 13:47:32,893: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: Error 99 connecting to localhost:6379. Cannot assign requested address..
+Trying again in 30.00 seconds... (15/100)
+
+[2024-02-28 13:48:10,647: WARNING/MainProcess] /usr/local/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-02-28 13:48:10,674: INFO/MainProcess] Connected to redis://redis:6379//
+[2024-02-28 13:48:10,677: WARNING/MainProcess] /usr/local/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-02-28 13:48:10,680: INFO/MainProcess] mingle: searching for neighbors
+[2024-02-28 13:48:11,696: INFO/MainProcess] mingle: all alone
+[2024-02-28 13:48:11,714: INFO/MainProcess] celery@474f0b1585aa ready.
+[2024-02-28 13:58:09,308: INFO/MainProcess] Task services.tasks.start_web_scraping_linkedin[b1e15baa-454f-4c2e-bdc3-980c229a4111] received
+[2024-02-28 13:58:09,361: INFO/ForkPoolWorker-15] https://www.linkedin.com/jobs/search/?currentJobId=3187861296&geoId=102713980&keywords=mckinsey&location=India&refresh=true is not active. Checking Scraping Service in admin page
+[2024-02-28 13:58:09,362: INFO/ForkPoolWorker-15] https://in.indeed.com/jobs?q=mckinsey&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2024-02-28 13:58:09,363: INFO/ForkPoolWorker-15] https://in.indeed.com/jobs?q=google&start=0&vjk=d25cab40526ba5f6 is not active. Checking Scraping Service in admin page
+[2024-02-28 13:58:09,368: INFO/ForkPoolWorker-15] Task services.tasks.start_web_scraping_linkedin[b1e15baa-454f-4c2e-bdc3-980c229a4111] succeeded in 0.04834173999552149s: None
+[2024-02-28 13:59:05,156: WARNING/MainProcess] /usr/local/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-02-28 13:59:05,166: INFO/MainProcess] Connected to redis://redis:6379//
+[2024-02-28 13:59:05,168: WARNING/MainProcess] /usr/local/lib/python3.11/site-packages/celery/worker/consumer/consumer.py:507: CPendingDeprecationWarning: The broker_connection_retry configuration setting will no longer determine
+whether broker connection retries are made during startup in Celery 6.0 and above.
+If you wish to retain the existing behavior for retrying connections on startup,
+you should set broker_connection_retry_on_startup to True.
+  warnings.warn(
+
+[2024-02-28 13:59:05,173: INFO/MainProcess] mingle: searching for neighbors
+[2024-02-28 13:59:06,183: INFO/MainProcess] mingle: all alone
+[2024-02-28 13:59:06,200: INFO/MainProcess] celery@6ca5c6426f8b ready.
