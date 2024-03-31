@@ -1,19 +1,75 @@
-#starting celery beat and worker process
-celery -A jobWebsite beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
-celery -A jobWebsite worker -E -l info --logfile=celery.log --detach  #if you plan to detach worker process
-celery -A jobWebsite worker -E -l info --logfile=celery.log #if you dont plan to detach worker process
 
-#starting redis
-redis-server --daemonize yes
-redis-cli ping
+# Dynamic Job Board Application
 
-Note: 
-you are to start the redis daemonize first
-then check its running with the ping command ,if it returns pong then you are good to go
+A job board is an online platform where employers list job vacancies and job seekers apply for positions. But what is the twist about this particular one is how we get the jobs to display , Which brings about the dynamic prefix name. 
 
-Open two separate terminal process and run the above beat and worker process in different terminal
-i.e the two celery commands must be running at the same time.
+This web application includes a automatic job scraping mechanism that scrapes job from platforms such as linkedin, medium, glassdoor or links set by the super admin.
 
-Then login to admin panel and Go to periodic tasks , you should see three periodic tasks who are disabled , enable the one you interested in starting
 
-#note leave the backend cleanup tasks the way it is. Thanks 
+The Frequency of how this jobs are scrapped are set by the super admin.
+
+
+
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  
+
+
+## Features
+
+- User Registration and Login
+- Scheduled Automatic Job Scraping
+- Comprehensive Search & filtering Mechanisms
+- Custom Filter tags (set by super admin)
+- Comprehensive Log Reporting
+
+
+
+
+## Prequsities
+
+- Docker
+- Docker Compose
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/thoth2357/Job-board-web-application.git
+```
+
+Go to the project directory
+
+```bash
+  cd Job-board-web-application
+```
+
+Start the Application 
+
+```bash
+  docker compose up --build
+```
+To Create Super Admin, drop into terminal by executing the below command
+
+```docker
+docker exec -it <webserver-container-id> /bin/sh
+```
+Then Execute the below command in the opened docker shell to create the superadmin  
+
+```bash
+    poetry run python manage.py createsuperuser
+```
+
+
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Authors
+
+- [@thoth2357](https://www.github.com/thoth2357)
+
