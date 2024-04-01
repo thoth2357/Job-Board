@@ -1,5 +1,6 @@
 
 # Dynamic Job Board Application
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  
 
 A job board is an online platform where employers list job vacancies and job seekers apply for positions. But what is the twist about this particular one is how we get the jobs to display , Which brings about the dynamic prefix name. 
 
@@ -12,7 +13,6 @@ The Frequency of how this jobs are scrapped are set by the super admin.
 
 
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)  
 
 
 ## Features
