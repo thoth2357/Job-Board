@@ -65,11 +65,24 @@ Then Execute the below command in the opened docker shell to create the superadm
 
 
 ## Screenshots
+- Home Page
+![App Screenshot](https://github.com/thoth2357/Dynamic-Job-Board-Application/blob/main/public/screenshots/Screenshot%202024-03-31%20at%2017.40.24.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+- Job Search Page
+![App Screenshot](https://github.com/thoth2357/Dynamic-Job-Board-Application/blob/main/public/screenshots/Screenshot%202024-03-31%20at%2017.40.50.png)
 
+- Login Page
+![App Screenshot](https://github.com/thoth2357/Dynamic-Job-Board-Application/blob/main/public/screenshots/Screenshot%202024-03-31%20at%2017.41.52.png)
 
+- Admin Page
+![App Screenshot](https://github.com/thoth2357/Dynamic-Job-Board-Application/blob/main/public/screenshots/Screenshot%202024-03-31%20at%2018.38.14.png)
+
+- Admin Page (Task Scheduling Page)
+![App Screenshot](https://github.com/thoth2357/Dynamic-Job-Board-Application/blob/main/public/screenshots/Screenshot%202024-03-31%20at%2018.38.14.png)
+
+- Admin Page (Links to Scrape)
+![App Screenshot](https://github.com/thoth2357/Dynamic-Job-Board-Application/blob/main/public/screenshots/Screenshot%202024-03-31%20at%2018.49.39.png)
+  
 ## Authors
-
 - [@thoth2357](https://www.github.com/thoth2357)
 
